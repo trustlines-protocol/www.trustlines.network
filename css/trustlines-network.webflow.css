@@ -1,17 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+
 h1 {
   margin-top: 40px;
   margin-bottom: 20px;
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #1f2532;
   font-size: 38px;
   line-height: 44px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h2 {
   margin-top: 40px;
   margin-bottom: 20px;
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #1f2532;
   font-size: 32px;
   line-height: 36px;
@@ -21,7 +23,7 @@ h2 {
 h3 {
   margin-top: 40px;
   margin-bottom: 20px;
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #1f2532;
   font-size: 24px;
   line-height: 30px;
@@ -31,7 +33,7 @@ h3 {
 h4 {
   margin-top: 40px;
   margin-bottom: 20px;
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #1f2532;
   font-size: 18px;
   line-height: 24px;
@@ -41,7 +43,7 @@ h4 {
 h5 {
   margin-top: 40px;
   margin-bottom: 20px;
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #1f2532;
   font-size: 16px;
   line-height: 24px;
@@ -51,17 +53,17 @@ h5 {
 h6 {
   margin-top: 40px;
   margin-bottom: 20px;
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #1f2532;
   font-size: 12px;
   line-height: 18px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 p {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #8e929c;
   font-size: 14px;
   font-weight: 300;
@@ -93,7 +95,7 @@ blockquote {
   margin-right: auto;
   margin-left: auto;
   background-color: transparent;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Work Sans';
   color: rgba(12, 21, 47, 0.6);
   font-size: 16px;
   line-height: 24px;
@@ -242,7 +244,7 @@ blockquote {
   background-size: cover, cover;
   background-repeat: repeat, no-repeat;
   background-attachment: scroll, scroll;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Work Sans';
   color: hsla(0, 0%, 100%, 0.8);
   font-size: 16px;
   line-height: 24px;
@@ -510,7 +512,7 @@ blockquote {
   margin-bottom: 20px;
   padding: 20px 0px 0px 50px;
   opacity: 1;
-  font-family: B612, sans-serif;
+  font-family: 'Work Sans';
   color: #4b4b4b;
   font-size: 13px;
   letter-spacing: 1px;
@@ -523,7 +525,7 @@ blockquote {
 
 .nav-link.w--current {
   color: #f05a55;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .text-block {
@@ -599,8 +601,8 @@ blockquote {
   background-image: url('../images/190226-TN-Website-Icons-06.png');
 }
 
-.icon.medium {
-  background-image: url('../images/190226-TN-Website-Icons-05.png');
+.icon.blog {
+  background-image: url('../images/190226-TN-Website-Icons-Ghost.png');
 }
 
 .dropdown-toggle {
@@ -618,7 +620,7 @@ blockquote {
   background-image: linear-gradient(135deg, #6f06f5, #3f74ff);
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   font-size: 14px;
   line-height: 24px;
   font-weight: 500;
@@ -698,7 +700,7 @@ blockquote {
   margin-left: 0px;
   float: none;
   border-style: solid;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Work Sans';
 }
 
 .button.nav-button.blog {
@@ -819,7 +821,7 @@ blockquote {
 .white-text {
   margin-top: 0px;
   margin-bottom: 24px;
-  font-family: B612, sans-serif;
+  font-family: 'Work Sans';
   color: #fff;
   font-size: 48px;
   line-height: 58px;
@@ -840,7 +842,7 @@ blockquote {
   margin-bottom: 0px;
   padding-top: 25px;
   padding-bottom: 20px;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Work Sans';
   color: #f05a55;
   font-size: 12px;
   line-height: 20px;
@@ -851,7 +853,7 @@ blockquote {
 }
 
 .white-text.footer.left:hover {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .white-text.black {
@@ -862,7 +864,7 @@ blockquote {
   color: #fff;
   font-size: 60px;
   line-height: 70px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .white-text.big.shadow {
@@ -898,7 +900,7 @@ blockquote {
   margin-bottom: 20px;
   margin-left: auto;
   padding-right: 0px;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Work Sans';
   color: #4b4b4b;
   font-size: 20px;
   line-height: 28px;
@@ -915,7 +917,7 @@ blockquote {
 }
 
 .paragraph-large.hero.white {
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #fff;
   font-weight: 300;
 }
@@ -925,7 +927,7 @@ blockquote {
   width: 100%;
   max-width: auto;
   margin: 0px auto 45px;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Work Sans';
   color: #fff0f0;
   text-align: center;
 }
@@ -933,7 +935,7 @@ blockquote {
 .paragraph-large.hero.white.left.one {
   width: 100%;
   max-width: 100%;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Work Sans';
   color: #fff;
   font-size: 20px;
   line-height: 30px;
@@ -1017,7 +1019,7 @@ blockquote {
 .icon-top {
   min-height: 180px;
   margin-bottom: 24px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Work Sans';
 }
 
 .icon-top.center {
@@ -1045,7 +1047,7 @@ blockquote {
   padding-bottom: 12px;
   border-radius: 100px;
   background-color: #c83237;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Work Sans';
   color: rgba(12, 21, 47, 0.6);
   text-align: center;
 }
@@ -1078,10 +1080,10 @@ blockquote {
   margin-top: 0px;
   margin-bottom: 12px;
   padding-top: 15px;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Work Sans';
   color: #4b4b4b;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -1129,10 +1131,10 @@ blockquote {
   margin-top: 0px;
   margin-bottom: 5px;
   padding-top: auto;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Work Sans';
   color: #4b4b4b;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .eco-tittle.position {
@@ -1230,7 +1232,7 @@ blockquote {
   border-radius: 0px;
   background-color: transparent;
   box-shadow: none;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Work Sans';
   color: #fff0f0;
 }
 
@@ -1247,11 +1249,11 @@ blockquote {
 .section-tittle {
   margin-top: 0px;
   margin-bottom: 24px;
-  font-family: B612, sans-serif;
+  font-family: 'Work Sans';
   color: #fff0f0;
   font-size: 36px;
   line-height: 46px;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
   letter-spacing: 0.5px;
   text-transform: none;
@@ -1273,10 +1275,10 @@ blockquote {
 }
 
 .section-tittle.light {
-  font-family: B612, sans-serif;
+  font-family: 'Work Sans';
   color: #4b4b4b;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.5px;
 }
 
@@ -1300,7 +1302,7 @@ blockquote {
   margin-bottom: 0px;
   float: left;
   border-radius: 100px;
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   font-size: 14px;
   text-align: center;
 }
@@ -1331,7 +1333,7 @@ blockquote {
   border-color: #3e4a63 #3e4a63 #fff0f0;
   border-radius: 0px;
   background-color: transparent;
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #fff0f0;
   font-weight: 300;
 }
@@ -1363,7 +1365,7 @@ blockquote {
   padding-top: 0px;
   padding-bottom: 0px;
   background-color: #aa2328;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Work Sans';
   color: hsla(0, 0%, 100%, 0.8);
 }
 
@@ -1470,7 +1472,7 @@ blockquote {
 .blog-tittle-link {
   display: block;
   margin-top: 40px;
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #1f2532;
   font-size: 16px;
   line-height: 26px;
@@ -1487,7 +1489,7 @@ blockquote {
   padding-top: 10px;
   padding-left: 10px;
   float: none;
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #8e929c;
   font-size: 13px;
   font-weight: 500;
@@ -1520,13 +1522,13 @@ blockquote {
   left: 0px;
   bottom: 40px;
   display: inline-block;
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #1f2532;
 }
 
 .pricing-text.dollar.large {
   position: static;
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #1f2532;
   font-size: 80px;
   line-height: 110px;
@@ -1536,7 +1538,7 @@ blockquote {
   padding: 6px;
   border-radius: 8px;
   background-color: #6f06f5;
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #fff;
   font-size: 32px;
   line-height: 36px;
@@ -1568,7 +1570,7 @@ blockquote {
 .field-label.contact-us-field {
   margin-bottom: 8px;
   color: #1f2532;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .left-form {
@@ -1700,7 +1702,7 @@ blockquote {
 
 .name-of {
   padding-bottom: 0px;
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #fff;
   font-weight: 500;
   letter-spacing: 1px;
@@ -1713,7 +1715,7 @@ blockquote {
 
 .process-text-head {
   margin-top: 0px;
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #8e929c;
   font-size: 13px;
   letter-spacing: 2px;
@@ -1935,7 +1937,7 @@ blockquote {
 .blog-tittle {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #fff0f0;
   font-size: 16px;
   font-weight: 400;
@@ -2137,7 +2139,7 @@ blockquote {
   border-radius: 10px;
   background-color: #ff7508;
   box-shadow: 1px 1px 17px 0 rgba(0, 0, 0, 0.22);
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #fff;
   font-size: 10px;
   font-weight: 500;
@@ -2204,7 +2206,7 @@ blockquote {
 .link-2 {
   margin-top: 12px;
   float: right;
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #1f2532;
   font-size: 12px;
   font-weight: 600;
@@ -2227,7 +2229,7 @@ blockquote {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
 }
 
 .blog-sidebar {
@@ -2279,7 +2281,7 @@ blockquote {
 }
 
 .sidebar-link {
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #8e929c;
   font-size: 12px;
   line-height: 34px;
@@ -2318,7 +2320,7 @@ blockquote {
 }
 
 .text-block-3 {
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #8e929c;
   font-size: 12px;
   line-height: 32px;
@@ -2434,7 +2436,7 @@ blockquote {
 .success-message {
   border-radius: 200px;
   background-color: #34cf2c;
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #fff;
   text-align: center;
 }
@@ -2443,7 +2445,7 @@ blockquote {
   padding: 20px;
   border-radius: 200px;
   background-color: red;
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #fff;
   text-align: center;
 }
@@ -2604,7 +2606,7 @@ blockquote {
 }
 
 .text-block-4 {
-  font-family: B612, sans-serif;
+  font-family: 'Work Sans';
   color: #4b4b4b;
   font-size: 12px;
 }
@@ -2695,7 +2697,7 @@ blockquote {
   background-color: #f05a55;
   -webkit-transition: box-shadow 400ms ease;
   transition: box-shadow 400ms ease;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Work Sans';
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -2707,12 +2709,12 @@ blockquote {
 
 .text-field-2 {
   border-radius: 100px;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Work Sans';
   text-align: center;
 }
 
 .password {
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Work Sans';
   color: #f05a55;
 }
 
@@ -2761,12 +2763,12 @@ blockquote {
 }
 
 .link-licensing {
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #1f2532;
 }
 
 .link-licensing:hover {
-  font-family: Poppins, sans-serif;
+  font-family: 'Work Sans';
   color: #3f74ff;
   font-style: normal;
 }
@@ -3091,7 +3093,7 @@ blockquote {
 .paragraph-32 {
   padding-right: 50px;
   padding-left: 51px;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Work Sans';
   color: #8e929c;
   font-size: 16px;
   font-weight: 400;
@@ -3120,7 +3122,7 @@ blockquote {
   width: auto;
   padding-right: 50px;
   padding-left: 50px;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Work Sans';
   color: #4b4b4b;
   font-size: 16px;
   font-weight: 400;
@@ -3197,7 +3199,7 @@ blockquote {
   margin-bottom: 20px;
   margin-left: auto;
   padding-right: 0px;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Work Sans';
   color: #fff0f0;
   font-size: 20px;
   line-height: 28px;
@@ -3216,7 +3218,7 @@ blockquote {
 }
 
 .bold-text-2 {
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Work Sans';
   color: #4b4b4b;
   font-size: 20px;
 }
@@ -3227,14 +3229,14 @@ blockquote {
 
 .contact-links {
   margin-top: 0px;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Work Sans';
   color: #4b4b4b;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .light {
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Work Sans';
   color: #fff0f0;
   font-size: 16px;
   font-weight: 400;
@@ -3261,7 +3263,7 @@ blockquote {
 .bold-red {
   position: static;
   color: #4b4b4b;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .protocol-layers.skew {
@@ -3339,7 +3341,7 @@ blockquote {
   margin-bottom: 12px;
   padding-top: 15px;
   padding-left: 30px;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Work Sans';
   color: #fff0f0;
   font-size: 12px;
   line-height: 18px;
@@ -3353,13 +3355,13 @@ blockquote {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 0px;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Work Sans';
   color: #fff0f0;
   font-weight: 600;
 }
 
 .case-description {
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Work Sans';
   color: #fff0f0;
   font-size: 14px;
   text-align: left;
@@ -3449,9 +3451,9 @@ blockquote {
 .nav-link-2 {
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: B612, sans-serif;
+  font-family: 'Work Sans';
   color: #4b4b4b;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
@@ -3459,12 +3461,12 @@ blockquote {
 
 .nav-link-2:hover {
   color: #f05a55;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .nav-link-2.w--current {
   color: #f05a55;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .nav-menu-3 {
@@ -3485,15 +3487,15 @@ blockquote {
 .imprint-question {
   width: 75%;
   margin-bottom: 0px;
-  font-family: 'Gothic A1', sans-serif;
-  font-weight: 700;
+  font-family: 'Work Sans';
+  font-weight: 600;
   text-align: left;
 }
 
 .paragraph-imprint {
   width: 75%;
   margin-top: 0px;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Work Sans';
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -3521,7 +3523,7 @@ blockquote {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Work Sans';
   color: #fff0f0;
   font-size: 14px;
   font-weight: 500;
@@ -4874,7 +4876,7 @@ html.w-mod-js *[data-ix="move-up-on-load"] {
     text-align: center;
   }
   .white-text.footer.left:hover {
-    font-weight: 700;
+    font-weight: 600;
   }
   .white-text.black {
     width: 100%;
@@ -5219,7 +5221,7 @@ html.w-mod-js *[data-ix="move-up-on-load"] {
     padding-bottom: 5px;
   }
   .footer-link:hover {
-    font-weight: 700;
+    font-weight: 600;
   }
   .imprint-question {
     width: 100%;
@@ -5249,4 +5251,3 @@ html.w-mod-js *[data-ix="move-up-on-load"] {
     margin-left: auto;
   }
 }
-
