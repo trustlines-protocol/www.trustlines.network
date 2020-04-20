@@ -78,6 +78,15 @@
   src: url("../fonts/Inter-SemiBoldItalic.woff?v=3.13") format("woff");
 }
 
+/* Inter font
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––
+    Version : 3.13
+    Website : https://rsms.me/inter/
+    Repo    : https://github.com/rsms/inter
+    Author  : The Inter Project Authors
+    License : SIL OPEN FONT LICENSE Version 1.1
+    –––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 h1 {
   margin-top: 40px;
   margin-bottom: 20px;
