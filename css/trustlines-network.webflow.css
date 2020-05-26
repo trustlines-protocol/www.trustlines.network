@@ -160,7 +160,8 @@ ul {
   margin-top: 0px;
   margin-bottom: 10px;
   padding-left: 40px;
-  color: #12121F;}
+  color: #12121F;
+}
 
 blockquote {
   margin-top: 30px;
@@ -899,7 +900,8 @@ blockquote {
 .column {
   padding-right: 0px;
   padding-left: 0px;
-  border-right: 1px none #12121F;}
+  border-right: 1px none #12121F;
+}
 
 .white-text {
   margin-top: 0px;
@@ -3243,14 +3245,16 @@ blockquote {
   margin-left: -75px;
   float: right;
   clear: left;
-  color: #12121F;}
+  color: #12121F;
+}
 
 .eco-description {
   width: auto;
   padding-right: 50px;
   padding-left: 50px;
   font-family: 'Inter';
-  color: #12121F;  font-size: 16px;
+  color: #12121F;
+  font-size: 16px;
   font-weight: 400;
   text-align: center;
 }
@@ -3348,7 +3352,8 @@ blockquote {
 }
 
 .bold-text-3 {
-  color: #12121F;}
+  color: #12121F;
+}
 
 .contact-links {
   margin-top: 0px;
