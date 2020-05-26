@@ -2693,7 +2693,7 @@ blockquote {
 .tabs-memu {
   border-style: solid none none;
   border-width: 1px;
-  border-color: rgba(234, 240, 253, 0.27) #000 #12121F;
+  border-color: #12121F;
   text-align: center;
 }
 
