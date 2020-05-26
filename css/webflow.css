@@ -1152,8 +1152,7 @@ textarea.w-select {
  *    underneath the lightbox.
  */
 .w-lightbox-backdrop {
-  color: #000;
-  cursor: auto;
+  color: #12121F;  cursor: auto;
   font-family: serif;
   font-size: medium;
   font-style: normal;
@@ -1609,14 +1608,14 @@ textarea.w-select {
   position: relative;
   float: left;
   text-decoration: none;
-  color: #333333;
+  color: #12121F;
 }
 .w-nav-link {
   position: relative;
   display: inline-block;
   vertical-align: top;
   text-decoration: none;
-  color: #222222;
+  color: #12121F;
   padding: 20px;
   text-align: left;
   margin-left: auto;
