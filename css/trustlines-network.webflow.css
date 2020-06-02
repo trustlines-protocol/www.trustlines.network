@@ -314,6 +314,9 @@ blockquote {
 
 .nav-bar {
   background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .section {
@@ -3596,25 +3599,21 @@ blockquote {
   padding-bottom: 10px;
   font-family: 'Inter';
   color: #12121F;
-  font-size: 14px;
-  letter-spacing: 1px;
   text-decoration: none;
-  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140.6%;
+  
 }
 
 .nav-link-2:hover {
   color: #f05a55;
-  font-weight: 400;
 }
 
 .nav-link-2.w--current {
   color: #f05a55;
   font-weight: 600;
-}
-
-.nav-menu-3 {
-  padding-top: 12px;
-  padding-bottom: 0px;
 }
 
 .imprint-link {
@@ -3711,13 +3710,13 @@ blockquote {
 }
 
 .brand-logo {
-  width: 150px;
+  width: 200px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
 .brand-logo.w--current {
-  width: 150px;
+  width: 200px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -4556,9 +4555,6 @@ html.w-mod-js *[data-ix="move-up-on-load"] {
   }
   .menu-button {
     color: #f05a55;
-  }
-  .nav-menu-3 {
-    background-color: #fff0f0;
   }
   .icon-5 {
     color: #f05a55;
