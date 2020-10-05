@@ -160,7 +160,7 @@ ul {
   margin-top: 0px;
   margin-bottom: 10px;
   padding-left: 40px;
-  color: #000;
+  color: #12121F;
 }
 
 blockquote {
@@ -314,6 +314,9 @@ blockquote {
 
 .nav-bar {
   background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .section {
@@ -600,7 +603,7 @@ blockquote {
   padding: 20px 0px 0px 50px;
   opacity: 1;
   font-family: 'Inter';
-  color: #4b4b4b;
+  color: #12121F;
   font-size: 13px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -843,7 +846,7 @@ blockquote {
 }
 
 .button.blue.single-form-button.outline {
-  border-color: #000;
+  border-color: #12121F;
   background-color: #1f2532;
   background-image: none;
 }
@@ -902,7 +905,7 @@ blockquote {
 .column {
   padding-right: 0px;
   padding-left: 0px;
-  border-right: 1px none #000;
+  border-right: 1px none #12121F;
 }
 
 .white-text {
@@ -988,7 +991,7 @@ blockquote {
   margin-left: auto;
   padding-right: 0px;
   font-family: 'Inter';
-  color: #4b4b4b;
+  color: #12121F;
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
@@ -1168,7 +1171,7 @@ blockquote {
   margin-bottom: 12px;
   padding-top: 15px;
   font-family: 'Inter';
-  color: #4b4b4b;
+  color: #12121F;
   font-size: 20px;
   font-weight: 500;
   text-align: center;
@@ -1219,7 +1222,7 @@ blockquote {
   margin-bottom: 5px;
   padding-top: auto;
   font-family: 'Inter';
-  color: #4b4b4b;
+  color: #12121F;
   font-size: 18px;
   font-weight: 500;
 }
@@ -1363,7 +1366,7 @@ blockquote {
 
 .section-tittle.light {
   font-family: 'Inter';
-  color: #4b4b4b;
+  color: #12121F;
   font-size: 36px;
   font-weight: 300;
   letter-spacing: 0.5px;
@@ -1436,7 +1439,7 @@ blockquote {
   border-bottom-style: solid;
   border-bottom-color: #cfcfcf;
   border-left-style: solid;
-  border-left-color: #000;
+  border-left-color: #12121F;
   border-radius: 0px;
   background-color: transparent;
 }
@@ -1468,7 +1471,7 @@ blockquote {
 }
 
 .footer_row a {
-  color: #000;
+  color: #12121F;
   text-decoration: none;
   padding: 0px 15px 0px 5px;
 }
@@ -1483,7 +1486,7 @@ blockquote {
 }
 
 .footer_column p a {
-  color: #000;
+  color: #12121F;
   text-decoration: none;
   font-size: 14px;
 }
@@ -1839,7 +1842,7 @@ blockquote {
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
   transform: scale(1.5);
-  color: #000;
+  color: #12121F;
   text-align: center;
 }
 
@@ -2693,7 +2696,7 @@ blockquote {
 .tabs-memu {
   border-style: solid none none;
   border-width: 1px;
-  border-color: rgba(234, 240, 253, 0.27) #000 #000;
+  border-color: #12121F;
   text-align: center;
 }
 
@@ -2750,7 +2753,7 @@ blockquote {
 
 .text-block-4 {
   font-family: 'Inter';
-  color: #4b4b4b;
+  color: #12121F;
   font-size: 12px;
 }
 
@@ -3246,7 +3249,7 @@ blockquote {
 .paragraph-32.protocol {
   padding-right: 15px;
   padding-left: 0px;
-  color: #4b4b4b;
+  color: #12121F;
   text-align: left;
 }
 
@@ -3258,7 +3261,7 @@ blockquote {
   margin-left: -75px;
   float: right;
   clear: left;
-  color: #4b4b4b;
+  color: #12121F;
 }
 
 .eco-description {
@@ -3266,7 +3269,7 @@ blockquote {
   padding-right: 50px;
   padding-left: 50px;
   font-family: 'Inter';
-  color: #4b4b4b;
+  color: #12121F;
   font-size: 16px;
   font-weight: 400;
   text-align: center;
@@ -3352,7 +3355,7 @@ blockquote {
 
 .paragraph-medium.light {
   width: 80%;
-  color: #4b4b4b;
+  color: #12121F;
   font-size: 20px;
 }
 
@@ -3362,18 +3365,18 @@ blockquote {
 
 .bold-text-2 {
   font-family: 'Inter';
-  color: #4b4b4b;
+  color: #12121F;
   font-size: 20px;
 }
 
 .bold-text-3 {
-  color: #4b4b4b;
+  color: #12121F;
 }
 
 .contact-links {
   margin-top: 0px;
   font-family: 'Inter';
-  color: #4b4b4b;
+  color: #12121F;
   font-size: 18px;
   font-weight: 500;
 }
@@ -3405,7 +3408,7 @@ blockquote {
 
 .bold-red {
   position: static;
-  color: #4b4b4b;
+  color: #12121F;
   font-weight: 600;
 }
 
@@ -3595,26 +3598,22 @@ blockquote {
   padding-top: 10px;
   padding-bottom: 10px;
   font-family: 'Inter';
-  color: #4b4b4b;
-  font-size: 14px;
-  letter-spacing: 1px;
+  color: #12121F;
   text-decoration: none;
-  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140.6%;
+  
 }
 
 .nav-link-2:hover {
   color: #f05a55;
-  font-weight: 400;
 }
 
 .nav-link-2.w--current {
   color: #f05a55;
   font-weight: 600;
-}
-
-.nav-menu-3 {
-  padding-top: 12px;
-  padding-bottom: 0px;
 }
 
 .imprint-link {
@@ -3711,13 +3710,13 @@ blockquote {
 }
 
 .brand-logo {
-  width: 150px;
+  width: 200px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
 .brand-logo.w--current {
-  width: 150px;
+  width: 200px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -4136,7 +4135,7 @@ html.w-mod-js *[data-ix="move-up-on-load"] {
     text-align: center;
   }
   .white-text.dark {
-    color: #000;
+    color: #12121F;
     text-align: left;
   }
   .white-text.center {
@@ -4556,9 +4555,6 @@ html.w-mod-js *[data-ix="move-up-on-load"] {
   }
   .menu-button {
     color: #f05a55;
-  }
-  .nav-menu-3 {
-    background-color: #fff0f0;
   }
   .icon-5 {
     color: #f05a55;
@@ -5330,7 +5326,7 @@ html.w-mod-js *[data-ix="move-up-on-load"] {
     line-height: 24px;
   }
   .bold-red {
-    color: #4b4b4b;
+    color: #12121F;
   }
   .layers-container.client {
     margin-bottom: 75px;
