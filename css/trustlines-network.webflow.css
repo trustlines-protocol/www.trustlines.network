@@ -121,7 +121,7 @@ p {
   font-family: 'Inter';
   color: #8e929c;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 ul {
@@ -883,7 +883,7 @@ blockquote {
   color: #fff;
   font-size: 48px;
   line-height: 58px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.5px;
   text-transform: none;
 }
@@ -977,7 +977,7 @@ blockquote {
 .paragraph-large.hero.white {
   font-family: 'Inter';
   color: #fff;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .paragraph-large.hero.white.center {
@@ -997,7 +997,7 @@ blockquote {
   color: #fff;
   font-size: 20px;
   line-height: 30px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .paragraph-large.hero.dark.left {
@@ -1017,7 +1017,7 @@ blockquote {
   font-size: 19px;
   line-height: 26px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .paragraph-large.left {
@@ -1311,7 +1311,7 @@ blockquote {
   color: #fff0f0;
   font-size: 36px;
   line-height: 46px;
-  font-weight: 300;
+  font-weight: 600;
   text-align: center;
   letter-spacing: 0.5px;
   text-transform: none;
@@ -1336,7 +1336,7 @@ blockquote {
   font-family: 'Inter';
   color: #12121F;
   font-size: 36px;
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: 0.5px;
 }
 
@@ -1393,7 +1393,7 @@ blockquote {
   background-color: transparent;
   font-family: 'Inter';
   color: #fff0f0;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .text-field.contact-form.footer:hover {
@@ -1628,7 +1628,7 @@ blockquote {
   margin-top: 0px;
   margin-bottom: 12px;
   color: #8e929c;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 .pricing-text.dollar {
@@ -4715,7 +4715,7 @@ html.w-mod-js *[data-ix="move-up-on-load"] {
     margin-top: 0px;
     font-size: 30px;
     line-height: 36px;
-    font-weight: 300;
+    font-weight: 600;
   }
   .text-field.single {
     display: block;
@@ -4993,7 +4993,7 @@ html.w-mod-js *[data-ix="move-up-on-load"] {
     font-size: 25px;
     line-height: 30px;
     text-align: center;
-    font-weight: 300;
+    font-weight: 400;
   }
   .white-text.footer.left:hover {
     font-weight: 600;
