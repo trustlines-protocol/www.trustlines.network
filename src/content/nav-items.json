@@ -5,22 +5,27 @@
     "subNavItems": [
       {
         "label": "Financial Inclusion For All People",
-        "subLabel": "Learn about the network's role to promote trustlines",
+        "subLabel": "Learn about the network's role to promote trustlines.",
         "to": "/"
       },
       {
-        "label": "Financial Inclusion For All People",
-        "subLabel": "Learn about the network's role to promote trustlines",
+        "label": "The Current Financial System",
+        "subLabel": "About the problems we are solving.",
         "to": "/"
       },
       {
-        "label": "Financial Inclusion For All People",
-        "subLabel": "Learn about the network's role to promote trustlines",
+        "label": "Cryptocurrencies",
+        "subLabel": "How cryptocurrency is involved.",
         "to": "/"
       },
       {
-        "label": "Financial Inclusion For All People",
-        "subLabel": "Learn about the network's role to promote trustlines",
+        "label": "How Trustlines Works",
+        "subLabel": "Find out about how this works.",
+        "to": "/"
+      },
+      {
+        "label": "Why People Powered Money",
+        "subLabel": "Introduction to the community responsible for trustlines network.",
         "to": "/"
       }
     ]
@@ -30,23 +35,28 @@
     "to": "/communities",
     "subNavItems": [
       {
-        "label": "Financial Inclusion For All People",
-        "subLabel": "Learn about the network's role to promote trustlines",
+        "label": "Ecosystem",
+        "subLabel": "Learn about the network’s role within the Trutlines ecosystem.",
         "to": "/"
       },
       {
-        "label": "Financial Inclusion For All People",
-        "subLabel": "Learn about the network's role to promote trustlines",
+        "label": "Communities",
+        "subLabel": "All the information you need to start using the smart contract system.",
         "to": "/"
       },
       {
-        "label": "Financial Inclusion For All People",
-        "subLabel": "Learn about the network's role to promote trustlines",
+        "label": "Learn",
+        "subLabel": "An overview of all of the members that are a part of the network.",
         "to": "/"
       },
       {
-        "label": "Financial Inclusion For All People",
-        "subLabel": "Learn about the network's role to promote trustlines",
+        "label": "News & Events",
+        "subLabel": "Introduction to the community responsible for trustlines network.",
+        "to": "/"
+      },
+      {
+        "label": "Use Cases",
+        "subLabel": "Introduction to the community responsible for trustlines network.",
         "to": "/"
       }
     ]
@@ -56,23 +66,8 @@
     "to": "/ecosystem",
     "subNavItems": [
       {
-        "label": "Financial Inclusion For All People",
-        "subLabel": "Learn about the network's role to promote trustlines",
-        "to": "/"
-      },
-      {
-        "label": "Financial Inclusion For All People",
-        "subLabel": "Learn about the network's role to promote trustlines",
-        "to": "/"
-      },
-      {
-        "label": "Financial Inclusion For All People",
-        "subLabel": "Learn about the network's role to promote trustlines",
-        "to": "/"
-      },
-      {
-        "label": "Financial Inclusion For All People",
-        "subLabel": "Learn about the network's role to promote trustlines",
+        "label": "Partners",
+        "subLabel": "Learn about the network’s role within the Trutlines ecosystem.",
         "to": "/"
       }
     ]
@@ -82,23 +77,18 @@
     "to": "/learn",
     "subNavItems": [
       {
-        "label": "Financial Inclusion For All People",
-        "subLabel": "Learn about the network's role to promote trustlines",
+        "label": "Documentation",
+        "subLabel": "Learn about the network’s role within the Trutlines ecosystem.",
         "to": "/"
       },
       {
-        "label": "Financial Inclusion For All People",
-        "subLabel": "Learn about the network's role to promote trustlines",
+        "label": "Developer Documentation",
+        "subLabel": "All the information you need to start using the smart contract system.",
         "to": "/"
       },
       {
-        "label": "Financial Inclusion For All People",
-        "subLabel": "Learn about the network's role to promote trustlines",
-        "to": "/"
-      },
-      {
-        "label": "Financial Inclusion For All People",
-        "subLabel": "Learn about the network's role to promote trustlines",
+        "label": "FAQ",
+        "subLabel": "An overview of all of the members that are a part of the network.",
         "to": "/"
       }
     ]
@@ -108,22 +98,27 @@
     "to": "/news",
     "subNavItems": [
       {
-        "label": "Financial Inclusion For All People",
+        "label": "Payments",
+        "subLabel": "Learn about the network’s role within the Trutlines ecosystem.",
+        "to": "/"
+      },
+      {
+        "label": "Charity Organization",
         "subLabel": "Learn about the network's role to promote trustlines",
         "to": "/"
       },
       {
-        "label": "Financial Inclusion For All People",
+        "label": "Community Currency",
         "subLabel": "Learn about the network's role to promote trustlines",
         "to": "/"
       },
       {
-        "label": "Financial Inclusion For All People",
+        "label": "Timebanking",
         "subLabel": "Learn about the network's role to promote trustlines",
         "to": "/"
       },
       {
-        "label": "Financial Inclusion For All People",
+        "label": "Surviving Economic Crisis",
         "subLabel": "Learn about the network's role to promote trustlines",
         "to": "/"
       }

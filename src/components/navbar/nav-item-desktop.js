@@ -24,7 +24,7 @@ export default function NavItemDesktop(props) {
       </div>
       <div
         ref={subNavItemsContainerRef}
-        className={`absolute pt-2 ${showSubNavItems ? "" : "hidden"}`}
+        className={`absolute pt-2 w-64 ${showSubNavItems ? "" : "hidden"}`}
       >
         <div className=" bg-gray-100 p-2 -ml-5 rounded-lg shadow-md">
           {props.subNavItems.map((subNavItem, i) => (
