@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { throttle } from "lodash";
-import resolveConfig from "tailwindcss/resolveConfig";
-
-import tailwindConfig from "../../tailwind.config.js";
 
 export function useIsMobile() {
+  if (typeof window === "undefined") {
+    return;
+  }
+
   const [isMobile, setIsMobile] = useState(getIsMobile(window.innerWidth));
 
   useEffect(() => {
@@ -19,8 +20,7 @@ export function useIsMobile() {
 }
 
 function getIsMobile(screenWidth) {
-  const twConfig = resolveConfig(tailwindConfig);
-  return screenWidth < parseInt(twConfig.theme.screens.md);
+  return screenWidth < 768;
 }
 
 export default useIsMobile;
