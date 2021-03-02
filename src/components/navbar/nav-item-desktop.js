@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import { useHover } from "../hooks/useHover";
+import { useHover } from "../../hooks/useHover";
 
-export default function NavItem(props) {
+export default function NavItemDesktop(props) {
   const [hoverRef, isHovered] = useHover();
   const [subNavItemsContainerRef, isSubNavItemsContainerHovered] = useHover();
 
