@@ -1,0 +1,132 @@
+[
+  {
+    "label": "About",
+    "to": "/about",
+    "subNavItems": [
+      {
+        "label": "Financial Inclusion For All People",
+        "subLabel": "Learn about the network's role to promote trustlines",
+        "to": "/"
+      },
+      {
+        "label": "Financial Inclusion For All People",
+        "subLabel": "Learn about the network's role to promote trustlines",
+        "to": "/"
+      },
+      {
+        "label": "Financial Inclusion For All People",
+        "subLabel": "Learn about the network's role to promote trustlines",
+        "to": "/"
+      },
+      {
+        "label": "Financial Inclusion For All People",
+        "subLabel": "Learn about the network's role to promote trustlines",
+        "to": "/"
+      }
+    ]
+  },
+  {
+    "label": "Communities",
+    "to": "/communities",
+    "subNavItems": [
+      {
+        "label": "Financial Inclusion For All People",
+        "subLabel": "Learn about the network's role to promote trustlines",
+        "to": "/"
+      },
+      {
+        "label": "Financial Inclusion For All People",
+        "subLabel": "Learn about the network's role to promote trustlines",
+        "to": "/"
+      },
+      {
+        "label": "Financial Inclusion For All People",
+        "subLabel": "Learn about the network's role to promote trustlines",
+        "to": "/"
+      },
+      {
+        "label": "Financial Inclusion For All People",
+        "subLabel": "Learn about the network's role to promote trustlines",
+        "to": "/"
+      }
+    ]
+  },
+  {
+    "label": "Ecosystem",
+    "to": "/ecosystem",
+    "subNavItems": [
+      {
+        "label": "Financial Inclusion For All People",
+        "subLabel": "Learn about the network's role to promote trustlines",
+        "to": "/"
+      },
+      {
+        "label": "Financial Inclusion For All People",
+        "subLabel": "Learn about the network's role to promote trustlines",
+        "to": "/"
+      },
+      {
+        "label": "Financial Inclusion For All People",
+        "subLabel": "Learn about the network's role to promote trustlines",
+        "to": "/"
+      },
+      {
+        "label": "Financial Inclusion For All People",
+        "subLabel": "Learn about the network's role to promote trustlines",
+        "to": "/"
+      }
+    ]
+  },
+  {
+    "label": "Learn",
+    "to": "/learn",
+    "subNavItems": [
+      {
+        "label": "Financial Inclusion For All People",
+        "subLabel": "Learn about the network's role to promote trustlines",
+        "to": "/"
+      },
+      {
+        "label": "Financial Inclusion For All People",
+        "subLabel": "Learn about the network's role to promote trustlines",
+        "to": "/"
+      },
+      {
+        "label": "Financial Inclusion For All People",
+        "subLabel": "Learn about the network's role to promote trustlines",
+        "to": "/"
+      },
+      {
+        "label": "Financial Inclusion For All People",
+        "subLabel": "Learn about the network's role to promote trustlines",
+        "to": "/"
+      }
+    ]
+  },
+  {
+    "label": "News & Events",
+    "to": "/news",
+    "subNavItems": [
+      {
+        "label": "Financial Inclusion For All People",
+        "subLabel": "Learn about the network's role to promote trustlines",
+        "to": "/"
+      },
+      {
+        "label": "Financial Inclusion For All People",
+        "subLabel": "Learn about the network's role to promote trustlines",
+        "to": "/"
+      },
+      {
+        "label": "Financial Inclusion For All People",
+        "subLabel": "Learn about the network's role to promote trustlines",
+        "to": "/"
+      },
+      {
+        "label": "Financial Inclusion For All People",
+        "subLabel": "Learn about the network's role to promote trustlines",
+        "to": "/"
+      }
+    ]
+  }
+]
