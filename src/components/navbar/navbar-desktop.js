@@ -9,7 +9,7 @@ export default function NavbarDesktop(props) {
   return (
     <div className="fixed w-full bg-white top-0">
       <div className="flex h-24 pb-4 flex-col justify-end mx-auto container">
-        <div className="flex flex-row justify-between items-center">
+        <div className="flex flex-row justify-between items-center px-2">
           <Link to="/">
             <img src={Logo} />
           </Link>
@@ -18,10 +18,10 @@ export default function NavbarDesktop(props) {
               <NavItem key={item.label} {...item} />
             ))}
             <div
-              className="bg-gray-100 px-8 py-4 cursor-pointer rounded-full hover:bg-gray-300"
+              className="bg-gray-100 px-8 py-4 cursor-pointer rounded-full hover:bg-gray-300 whitespace-nowrap"
               onClick={() => console.log("TODO")}
             >
-              How it works
+              <div className="text-sm lg:text-base">How it works</div>
             </div>
           </div>
         </div>
