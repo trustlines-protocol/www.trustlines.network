@@ -1,0 +1,127 @@
+[
+  {
+    "label": "About",
+    "to": "/about",
+    "subNavItems": [
+      {
+        "label": "Financial Inclusion For All People",
+        "subLabel": "Learn about the network's role to promote trustlines.",
+        "to": "/"
+      },
+      {
+        "label": "The Current Financial System",
+        "subLabel": "About the problems we are solving.",
+        "to": "/"
+      },
+      {
+        "label": "Cryptocurrencies",
+        "subLabel": "How cryptocurrency is involved.",
+        "to": "/"
+      },
+      {
+        "label": "How Trustlines Works",
+        "subLabel": "Find out about how this works.",
+        "to": "/"
+      },
+      {
+        "label": "Why People Powered Money",
+        "subLabel": "Introduction to the community responsible for trustlines network.",
+        "to": "/"
+      }
+    ]
+  },
+  {
+    "label": "Communities",
+    "to": "/communities",
+    "subNavItems": [
+      {
+        "label": "Ecosystem",
+        "subLabel": "Learn about the network’s role within the Trutlines ecosystem.",
+        "to": "/"
+      },
+      {
+        "label": "Communities",
+        "subLabel": "All the information you need to start using the smart contract system.",
+        "to": "/"
+      },
+      {
+        "label": "Learn",
+        "subLabel": "An overview of all of the members that are a part of the network.",
+        "to": "/"
+      },
+      {
+        "label": "News & Events",
+        "subLabel": "Introduction to the community responsible for trustlines network.",
+        "to": "/"
+      },
+      {
+        "label": "Use Cases",
+        "subLabel": "Introduction to the community responsible for trustlines network.",
+        "to": "/"
+      }
+    ]
+  },
+  {
+    "label": "Ecosystem",
+    "to": "/ecosystem",
+    "subNavItems": [
+      {
+        "label": "Partners",
+        "subLabel": "Learn about the network’s role within the Trutlines ecosystem.",
+        "to": "/"
+      }
+    ]
+  },
+  {
+    "label": "Learn",
+    "to": "/learn",
+    "subNavItems": [
+      {
+        "label": "Documentation",
+        "subLabel": "Learn about the network’s role within the Trutlines ecosystem.",
+        "to": "/"
+      },
+      {
+        "label": "Developer Documentation",
+        "subLabel": "All the information you need to start using the smart contract system.",
+        "to": "/"
+      },
+      {
+        "label": "FAQ",
+        "subLabel": "An overview of all of the members that are a part of the network.",
+        "to": "/"
+      }
+    ]
+  },
+  {
+    "label": "News & Events",
+    "to": "/news",
+    "subNavItems": [
+      {
+        "label": "Payments",
+        "subLabel": "Learn about the network’s role within the Trutlines ecosystem.",
+        "to": "/"
+      },
+      {
+        "label": "Charity Organization",
+        "subLabel": "Learn about the network's role to promote trustlines",
+        "to": "/"
+      },
+      {
+        "label": "Community Currency",
+        "subLabel": "Learn about the network's role to promote trustlines",
+        "to": "/"
+      },
+      {
+        "label": "Timebanking",
+        "subLabel": "Learn about the network's role to promote trustlines",
+        "to": "/"
+      },
+      {
+        "label": "Surviving Economic Crisis",
+        "subLabel": "Learn about the network's role to promote trustlines",
+        "to": "/"
+      }
+    ]
+  }
+]

@@ -8,7 +8,7 @@ export default function Landing() {
         <title>Landing page</title>
         <meta name="description" content="landing page meta description" />
       </Helmet>
-      Landing page
+      <div>Landing page</div>
     </div>
   );
 }
