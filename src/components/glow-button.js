@@ -8,12 +8,13 @@ export default function GlowButton(props) {
   return (
     <div
       ref={hoverRef}
-      className={`rounded-full ease-linear text-white h-11 flex flex-row items-center justify-center px-4 py-3 gap-2 cursor-pointer ${
+      className={`rounded-full ease-linear text-white h-11 flex flex-row items-center justify-center px-4 py-3 gap-2
+      cursor-pointer text-sm md:text-base whitespace-nowrap z-10 ${
         isHovered
           ? `shadow-glow-${props.color} bg-${props.color}`
           : "bg-rich-black"
       }`}
-      onClick={props.onClick && props.onClick()}
+      onClick={props.onClick}
     >
       <div
         className={`rounded-full w-4 h-4 ${
