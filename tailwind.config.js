@@ -14,9 +14,11 @@ module.exports = {
           DEFAULT: "#FF7C4E",
         },
         "app-blue": {
+          lightest: "#E6EFFC",
           DEFAULT: "#007AFF",
         },
         "majorelle-blue": {
+          lightest: "#FFF0FF",
           DEFAULT: "#7657ED",
         },
         "neon-pink": {
@@ -27,6 +29,13 @@ module.exports = {
         "card-blue": "0px 0px 25px rgba(0, 122, 255, 0.1)",
         "glow-app-blue": "0px 15px 37px rgba(0, 122, 255, 0.25)",
         "glow-coral-red": "0px 15px 37px rgba(255, 124, 78, 0.25)",
+      },
+      zIndex: {
+        "-1": "-1",
+        "-10": "-10",
+      },
+      strokeWidth: {
+        "4/3": "1.33",
       },
     },
   },
