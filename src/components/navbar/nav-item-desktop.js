@@ -13,7 +13,7 @@ export default function NavItemDesktop(props) {
     <div className="cursor-pointer inline-block" ref={hoverRef}>
       <div className="flex flex-col justify-center">
         <Link
-          className={`text-base ${
+          className={`text-sm lg:text-base whitespace-nowrap ${
             showSubNavItems ? "text-coral-red" : "text-rich-black-lighter"
           }`}
           to={props.to}
