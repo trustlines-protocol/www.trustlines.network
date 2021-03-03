@@ -23,6 +23,11 @@ module.exports = {
           DEFAULT: "#FFA0B7",
         },
       },
+      boxShadow: {
+        "card-blue": "0px 0px 25px rgba(0, 122, 255, 0.1)",
+        "glow-app-blue": "0px 15px 37px rgba(0, 122, 255, 0.25)",
+        "glow-coral-red": "0px 15px 37px rgba(255, 124, 78, 0.25)",
+      },
     },
   },
   variants: {
