@@ -16,7 +16,7 @@ export default function NavbarMobile(props) {
   const [isFullScreenNavOpen, setIsFullScreenNavOpen] = useState(false);
 
   return isFullScreenNavOpen ? (
-    <div className="sticky w-full h-full z-10 p-4 bg-white overflow-y-scroll">
+    <div className="fixed top-0 w-full h-full z-50 p-4 bg-white overflow-y-scroll">
       <div className="flex flex-col">
         <div className="flex flex-row justify-end">
           <CloseButton onClick={() => setIsFullScreenNavOpen(false)} />
@@ -65,7 +65,7 @@ export default function NavbarMobile(props) {
       </div>
     </div>
   ) : (
-    <div className="sticky w-full bg-white p-4 flex flex-row justify-between">
+    <div className="sticky top-0 z-50 w-full bg-white p-4 flex flex-row justify-between">
       <Link to="/">
         <img src={Logo} />
       </Link>

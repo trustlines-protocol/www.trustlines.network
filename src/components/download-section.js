@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 
 import GlowButton from "./glow-button";
 import GlowButtonCircle from "./glow-button-circle";
@@ -14,24 +13,13 @@ import GradientCircle from "../images/gradient-circle.svg";
 export default function DownloadSection() {
   const [showOverlay, setShowOverlay] = useState(false);
 
-  const data = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: "download-section/phone.png" }) {
-        childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
-        }
-      }
-    }
-  `);
-  const phoneImage = getImage(data.file);
-
   return (
     <div className="container mx-auto px-4 md:px-0">
-      <div className="relative rounded-2xl shadow-card-blue flex flex-col-reverse md:flex-row overflow-hidden">
+      <div className="relative rounded-3xl shadow-card-blue flex flex-col-reverse md:flex-row overflow-hidden">
         {showOverlay && (
           <DownloadSectionOverlay onClickClose={() => setShowOverlay(false)} />
         )}
-        <div className="absolute flex justify-center items-center top-0 left-0 right-0 bottom-0">
+        <div className="absolute flex justify-center items-center top-0 left-0 right-0 bottom-0 mb-24 md:mb-0">
           <GlowButtonCircle
             color="app-blue"
             label="Download For Free"
@@ -73,9 +61,10 @@ export default function DownloadSection() {
               className="h-96 -mt-52 md:mt-0 md:object-cover md:h-auto md:w-full"
               src={GradientCircle}
             />
-            <GatsbyImage
+            <StaticImage
               className="absolute top-0 left-0 h-full md:-left-48"
-              image={phoneImage}
+              src="../content/download-section/phone.png"
+              layout="constrained"
               alt="Trustlines app image"
             />
           </div>
