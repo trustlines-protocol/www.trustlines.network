@@ -23,6 +23,9 @@ module.exports = {
           DEFAULT: "#FFA0B7",
         },
       },
+      zIndex: {
+        "-10": "-10",
+      },
     },
   },
   variants: {

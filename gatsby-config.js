@@ -6,6 +6,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
     `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-plugin-layout`,
@@ -13,6 +14,7 @@ module.exports = {
         component: require.resolve(`./src/components/layout`),
       },
     },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
