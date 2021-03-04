@@ -56,7 +56,7 @@ export default function UseCasesSection() {
           <UseCaseCard key={node.title} {...node} />
         ))}
         <IconButton
-          Icon={() => <PlusIcon />}
+          Icon={<PlusIcon />}
           label="More"
           textColor="white"
           bgColor="rich-black"
