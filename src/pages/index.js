@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 
 import DownloadSection from "../components/download-section";
+import UseCasesSection from "../components/use-cases-section";
 
 export default function Landing() {
   return (
@@ -12,6 +13,7 @@ export default function Landing() {
       </Helmet>
       <div>Landing page</div>
       <DownloadSection />
+      <UseCasesSection />
     </div>
   );
 }
