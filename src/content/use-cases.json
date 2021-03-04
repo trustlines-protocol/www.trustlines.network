@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Send & Receive Payments",
+    "description": "Anyone can create money, make and receive payments, and manage their balance.",
+    "image": "./images/send-receive-payments.png",
+    "readMoreLink": "/"
+  },
+  {
+    "title": "Timebanking",
+    "description": "Anyone can create money, make and receive payments, and manage their balance.",
+    "image": "./images/timebanking.png",
+    "readMoreLink": "/"
+  },
+  {
+    "title": "Manage a Community",
+    "description": "Anyone can create money, make and receive payments, and manage their balance.",
+    "image": "./images/community-currencies.png",
+    "readMoreLink": "/"
+  },
+  {
+    "title": "Withdraw Cash from People",
+    "description": "Anyone can create money, make and receive payments, and manage their balance.",
+    "image": "./images/people-atm.png",
+    "readMoreLink": "/"
+  }
+]

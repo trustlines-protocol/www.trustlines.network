@@ -14,7 +14,7 @@ export default function DownloadSection() {
   const [showOverlay, setShowOverlay] = useState(false);
 
   return (
-    <div className="container mx-auto px-4 md:px-0">
+    <div className="container mx-auto px-4 md:px-0 mb-32">
       <div className="relative rounded-3xl shadow-card-blue flex flex-col-reverse md:flex-row overflow-hidden">
         {showOverlay && (
           <DownloadSectionOverlay onClickClose={() => setShowOverlay(false)} />
@@ -63,7 +63,7 @@ export default function DownloadSection() {
             />
             <StaticImage
               className="absolute top-0 left-0 h-full md:-left-48"
-              src="../content/download-section/phone.png"
+              src="../content/images/phone.png"
               layout="constrained"
               alt="Trustlines app image"
             />

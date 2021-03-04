@@ -14,7 +14,7 @@ export default function GlowButtonCircle(props) {
         isHovered
           ? `shadow-glow-${props.color} bg-${props.color}`
           : "bg-rich-black"
-      }`}
+      } ${props.className || ""}`}
       onClick={props.onClick}
     >
       {props.icon}
