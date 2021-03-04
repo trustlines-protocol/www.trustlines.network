@@ -128,7 +128,7 @@ function DownloadButton(props) {
       onClick={props.onClick}
     >
       <div
-        className={`flex flex-row items-center justify-center w-14 h-14 rounded-full bg-opacity-20 bg-${props.color}`}
+        className={`flex flex-row items-center justify-center w-14 h-14 rounded-full gradient-bg`}
       >
         {props.icon}
       </div>
