@@ -39,7 +39,8 @@ export default function ContactForm(props) {
       <div className="flex flex-col md:flex-row gap-4 items-center">
         <textarea
           className="w-full md:w-auto flex-1 px-6 py-4 bg-gray-300 rounded-full text-sm font-semibold"
-          placeholder="Message (optional)"
+          placeholder="Message"
+          required
           rows={1}
         />
         <IconButton
