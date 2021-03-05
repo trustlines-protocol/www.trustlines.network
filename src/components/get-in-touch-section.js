@@ -69,8 +69,9 @@ function GetInTouchForm(props) {
           <select
             className="flex-1 bg-gray-300 text-sm font-semibold w-full"
             required
+            defaultValue=""
           >
-            <option label="Select Topic" disabled selected />
+            <option label="Select Topic" value={""} disabled />
             {GetInTouchTopicsJSON.map((topic) => (
               <option
                 key={topic.label}
