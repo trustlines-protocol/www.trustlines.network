@@ -4,7 +4,7 @@ import Navbar from "./navbar/index";
 
 export default function Layout({ children }) {
   return (
-    <div className="pt-24">
+    <div>
       <Navbar />
       {children}
     </div>

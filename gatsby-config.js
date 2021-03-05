@@ -8,6 +8,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-yaml`,
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-plugin-layout`,
       options: {

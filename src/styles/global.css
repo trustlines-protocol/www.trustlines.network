@@ -9,3 +9,13 @@
   border-right: 5px solid transparent;
   border-bottom: 5px solid rgba(243, 244, 246);
 }
+
+.gradient-bg {
+  background: linear-gradient(
+    131.04deg,
+    rgba(0, 122, 255, 0.25) -30.65%,
+    rgba(118, 87, 237, 0.25) 12.4%,
+    rgba(0, 122, 255, 0.25) 71.98%,
+    rgba(129, 188, 253, 0.25) 114.38%
+  );
+}

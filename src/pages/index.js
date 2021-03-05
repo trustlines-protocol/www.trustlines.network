@@ -1,11 +1,10 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import ContentSlider from "../components/content-slider";
-import { graphql } from "gatsby";
+import DownloadSection from "../components/download-section";
+import UseCasesSection from "../components/use-cases-section";
 
-export default function Landing({data}) {
-
-  console.log('landing data', data)
+export default function Landing() {
   return (
     <div>
       <Helmet>
@@ -14,8 +13,8 @@ export default function Landing({data}) {
       </Helmet>
       <div>Landing page</div>
       <ContentSlider />
+      <DownloadSection />
+      <UseCasesSection />
     </div>
   );
 }
-
-
