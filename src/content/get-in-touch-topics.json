@@ -1,0 +1,26 @@
+[
+  {
+    "label": "I would like to learn more",
+    "value": "I would like learn more"
+  },
+  {
+    "label": "I would like to get started",
+    "value": "I would like to get started"
+  },
+  {
+    "label": "I would like to build a community",
+    "value": "I would like to build a community"
+  },
+  {
+    "label": "I would like to use Trustlines for my community",
+    "value": "I would like to use Trustlines for my community"
+  },
+  {
+    "label": "I would like to share my feedback",
+    "value": "I would like to share my feedback"
+  },
+  {
+    "label": "Other",
+    "value": "Other"
+  }
+]

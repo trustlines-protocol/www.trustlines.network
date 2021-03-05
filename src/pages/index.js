@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import ContentSlider from "../components/content-slider";
 import DownloadSection from "../components/download-section";
 import UseCasesSection from "../components/use-cases-section";
+import GetInTouchSection from "../components/get-in-touch-section";
 
 export default function Landing() {
   return (
@@ -15,6 +16,7 @@ export default function Landing() {
       <ContentSlider />
       <DownloadSection />
       <UseCasesSection />
+      <GetInTouchSection />
     </div>
   );
 }
