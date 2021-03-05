@@ -47,7 +47,7 @@ export default function UseCasesSection() {
           <GlowButtonCircle
             color="coral-red"
             label="More"
-            icon={<PlusIcon />}
+            icon={<PlusIcon className="stroke-current text-white stroke-4/3" />}
           />
         </div>
       </div>
@@ -56,7 +56,7 @@ export default function UseCasesSection() {
           <UseCaseCard key={node.title} {...node} />
         ))}
         <IconButton
-          Icon={<PlusIcon />}
+          Icon={<PlusIcon className="stroke-current text-white stroke-4/3" />}
           label="More"
           textColor="white"
           bgColor="rich-black"

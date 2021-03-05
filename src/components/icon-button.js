@@ -15,6 +15,7 @@ export default function IconButton(props) {
     onClick,
     label,
     className = "",
+    isCircle = false,
     ...restProps
   } = props;
 
@@ -32,7 +33,9 @@ export default function IconButton(props) {
   return (
     <button
       ref={hoverRef}
-      className={`rounded-full h-11 flex items-center justify-center px-4 py-3 gap-2 cursor-pointer
+      className={`rounded-full flex items-center justify-center gap-2 cursor-pointer ${
+        isCircle ? "p-0 h-10 w-10" : "px-4 py-3 h-11"
+      }
       text-sm md:text-base whitespace-nowrap z-10 ring-2 transition-all duration-500 ease-in-out ${
         iconPosition === "left" ? "flex-row" : "flex-row-reverse"
       } ${
