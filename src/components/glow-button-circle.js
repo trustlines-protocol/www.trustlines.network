@@ -10,7 +10,7 @@ export default function GlowButtonCircle(props) {
       ref={hoverRef}
       className={`
       rounded-full w-28 h-28 text-white flex flex-col items-center justify-center px-4 py-3 gap-0 
-      cursor-pointer text-center z-10 ${
+      cursor-pointer text-center z-10 transition-all duration-500 ease-in-out ${
         isHovered
           ? `shadow-glow-${props.color} bg-${props.color}`
           : "bg-rich-black"
