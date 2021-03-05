@@ -6,9 +6,23 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-transformer-remark`,
     `gatsby-transformer-yaml`,
     `gatsby-transformer-json`,
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-default-html-attrs`,
+            options: {
+              a: {
+                className: "underline hover:text-coral-red",
+              },
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-layout`,
       options: {
