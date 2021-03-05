@@ -4,6 +4,7 @@ import ContentSlider from "../components/content-slider";
 import DownloadSection from "../components/download-section";
 import UseCasesSection from "../components/use-cases-section";
 import GetInTouchSection from "../components/get-in-touch-section";
+import TargetGroupSection from "../components/target-groups-section";
 
 export default function Landing() {
   return (
@@ -17,6 +18,7 @@ export default function Landing() {
       <DownloadSection />
       <UseCasesSection />
       <GetInTouchSection />
+      <TargetGroupSection />
     </div>
   );
 }
