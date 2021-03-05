@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-
+import ContentSlider from "../components/content-slider";
 import DownloadSection from "../components/download-section";
 import UseCasesSection from "../components/use-cases-section";
 
@@ -12,6 +12,7 @@ export default function Landing() {
         <meta name="description" content="landing page meta description" />
       </Helmet>
       <div>Landing page</div>
+      <ContentSlider />
       <DownloadSection />
       <UseCasesSection />
     </div>
