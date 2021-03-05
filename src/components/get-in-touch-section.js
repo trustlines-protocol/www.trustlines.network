@@ -11,6 +11,7 @@ import GetInTouchTopicsJSON from "../content/get-in-touch-topics.json";
 
 // TODO: Source out
 const CONTACT_MAIL = "";
+const FORM_POST_URL = "";
 
 export default function GetInTouchSection() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -58,12 +59,17 @@ function GetInTouchForm(props) {
   return (
     <form
       className={`flex flex-col gap-4 mt-4 ${props.hidden ? "hidden" : ""}`}
+      action={FORM_POST_URL}
+      method="POST"
     >
       <div className="flex flex-col md:flex-row gap-4">
         <Input placeholder="Name" required />
         <Input placeholder="Email" required />
-        <div className="flex-1 flex py-4 md:py-0 px-6 bg-gray-300 rounded-full over overflow-hidden">
-          <select className="flex-1 bg-gray-300 text-sm font-semibold" required>
+        <div className="flex-1 flex py-4 md:py-0 px-6 bg-gray-300 rounded-full overflow-hidden overflow-ellipsis">
+          <select
+            className="flex-1 bg-gray-300 text-sm font-semibold w-full"
+            required
+          >
             <option label="Select Topic" disabled selected />
             {GetInTouchTopicsJSON.map((topic) => (
               <option
