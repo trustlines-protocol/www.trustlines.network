@@ -5,6 +5,7 @@ import DownloadSection from "../components/download-section";
 import UseCasesSection from "../components/use-cases-section";
 import GetInTouchSection from "../components/get-in-touch-section";
 import TargetGroupSection from "../components/target-groups-section";
+import CommunitiesMapSection from "../components/communities-map-section";
 
 export default function Landing() {
   return (
@@ -19,6 +20,7 @@ export default function Landing() {
       <UseCasesSection />
       <GetInTouchSection />
       <TargetGroupSection />
+      <CommunitiesMapSection />
     </div>
   );
 }
