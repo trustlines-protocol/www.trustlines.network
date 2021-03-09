@@ -2,6 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: 'Inter';
+    src: local('Inter'), url(./fonts/Inter-Regular.woff) format('woff');
+  }
+  h1 {
+    @apply text-2xl;
+  }
+  .slide-content h2 {
+    @apply text-2xl font-semibold mt-4 mb-4 tracking-tightest;
+  }
+
+  .slide-content p {
+    @apply text-rich-black-lightest tracking-tightest mb-3;
+  }
+
+  .slide-content p:last-child {
+    @apply mt-10;
+  }
+
+  .slide-content a {
+    @apply rounded-full py-2 px-2 pr-4 cursor-pointer justify-center hover:border-transparent
+    ring-2 bg-black ease-in-out transition-all text-white flex-initial no-underline
+    hover:bg-coral-red hover:text-white ring-transparent
+    ;
+  }
+
+  .slide-content a:before {
+    content: " ";
+    @apply rounded-full w-4 h-4 bg-coral-red inline-block mr-2 ml-1 align-middle hover:bg-white;
+  }
+  .slide-content a:hover:before {
+    @apply bg-white;
+  }
+}
+
 .arrow-up {
   width: 0;
   height: 0;
@@ -35,4 +71,38 @@
 
 .grayscale-filter {
   filter: grayscale(1);
+}
+
+.pagination-left {
+  display: inline-block;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transform: rotate(-180deg);
+  fill: white;
+}
+
+.pagination-right {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.fade-in-out-appear {
+  opacity: 0;
+}
+.fade-in-out-enter {
+  opacity: 0;
+}
+.fade-in-out-appear-active,
+.fade-in-out-enter-active {
+  opacity: 1;
+  transition: opacity 200ms ease-in;
+}
+.fade-in-out-exit {
+  opacity: 1;
+}
+.fade-in-out-exit-active {
+  opacity: 0;
+  transition: opacity 200ms ease-out;
 }

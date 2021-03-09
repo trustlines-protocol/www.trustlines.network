@@ -2,6 +2,7 @@
 order: 1
 slide_title: "About"
 slide_subtitle: "Trustlines"
+slide_heading_color: "#FFD2BF"
 slide_background_image: images/trustlines-bg.jpg
 content_image: images/trustlines.jpg
 ---

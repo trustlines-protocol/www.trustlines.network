@@ -15,7 +15,6 @@ export default function Landing() {
         <title>Landing page</title>
         <meta name="description" content="landing page meta description" />
       </Helmet>
-      <div>Landing page</div>
       <ContentSlider />
       <DownloadSection />
       <UseCasesSection />
