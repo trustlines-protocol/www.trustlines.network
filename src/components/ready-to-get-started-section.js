@@ -4,7 +4,7 @@ import DownloadOverlay from "./download-overlay";
 import IconButton from "./icon-button";
 import DownloadIcon from "./icons/download";
 import MailIcon from "./icons/mail";
-import TwitterIcon from "./icons/twitter";
+import TwitterIcon from "./icons/twitter-outlined";
 import { useIsMobile } from "../hooks/useIsMobile";
 
 import GetStartedBg from "../images/get-started-bg.svg";
