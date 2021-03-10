@@ -2,13 +2,12 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-import GlowButtonCircle from "./glow-button-circle";
 import PlusIcon from "./icons/plus";
 import ArrowRightIcon from "./icons/arrow-right";
 import IconButton from "./icon-button";
 
 import { useHover } from "../hooks/useHover";
-import { useIsMobile } from "../hooks/useIsMobile";
+import { useIsDevice } from "../hooks/useIsDevice";
 
 export default function UseCasesSection() {
   const query = graphql`
@@ -32,7 +31,7 @@ export default function UseCasesSection() {
   const data = useStaticQuery(query);
 
   return (
-    <div className="container mx-auto px-4 md:px-0 flex flex-col mb-32">
+    <div className="container mx-auto px-4 flex flex-col mb-32">
       <div className="flex flex-row justify-between mb-3">
         <div>
           <div className="text-3xl font-semibold mb-2">
@@ -44,10 +43,15 @@ export default function UseCasesSection() {
           </div>
         </div>
         <div className="hidden md:block">
-          <GlowButtonCircle
-            color="coral-red"
+          <IconButton
+            textColor={"white"}
+            bgColor={"rich-black"}
+            ringColor={"transparent"}
+            hoverBgColor="coral-red"
             label="More"
-            icon={<PlusIcon className="stroke-current text-white stroke-4/3" />}
+            className={"w-28 h-28 flex flex-col"}
+            isCircle={true}
+            Icon={<PlusIcon className="stroke-current text-white stroke-4/3" />}
           />
         </div>
       </div>
@@ -71,7 +75,7 @@ export default function UseCasesSection() {
 
 function UseCaseCard(props) {
   const [hoverRef, isHovered] = useHover();
-  const isMobile = useIsMobile();
+  const isMobile = useIsDevice("tablet");
 
   const image = getImage(props.image);
 

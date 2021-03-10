@@ -1,9 +1,12 @@
 import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
+import IconButton from "../icon-button";
+import Circle from "../icons/circle";
+import useIsDevice from "../../hooks/useIsDevice";
 
 export const Slide = ({ children }) => {
   return (
-    <div className={"container px-4 md:px-0 mx-auto slide-content mb-56"}>
+    <div className={"container px-4 mx-auto slide-content mb-56"}>
       <div className={"grid grid-cols-2 sm:grid-cols-3"}>{children}</div>
     </div>
   );
@@ -14,15 +17,18 @@ export const SlideMainContent = ({ html }) => {
 };
 
 export const SlideImage = ({ image, order }) => {
+  const isMobile = useIsDevice("mobile");
   return (
     <GatsbyImage
       image={image}
       alt={"test"}
       className={"rounded -z-10"}
+      style={isMobile ? {} : { minHeight: "400px" }}
       key={"slide-image-" + order}
     />
   );
 };
+
 export const SlideHeading = ({ slide_title, slide_subtitle, style }) => {
   return (
     <div className={"hidden sm:block"}>
@@ -36,6 +42,33 @@ export const SlideHeading = ({ slide_title, slide_subtitle, style }) => {
         <br />
         {slide_subtitle}
       </div>
+    </div>
+  );
+};
+
+export const SlideActionButtons = ({ links = [] }) => {
+  return (
+    <div className={"flex flex-row"}>
+      {links.map((link) => {
+        return (
+          <IconButton
+            bgColor={"black"}
+            textColor={"white"}
+            ringColor={"transparent"}
+            hoverRingColor={"transparent"}
+            hoverBgColor={"coral-red"}
+            glowColor={"coral-red"}
+            label={link.label}
+            href={link.link}
+            Icon={
+              <Circle
+                size={24}
+                className={"bg-coral-red group-hover:bg-white"}
+              />
+            }
+          />
+        );
+      })}
     </div>
   );
 };

@@ -11,7 +11,8 @@ export default function Footer() {
   return (
     <div className="bg-rich-black">
       <div className="mx-auto container">
-        <div className="flex flex-col md:flex-row gap-8 justify-between pt-8 md:pt-16 pb-7 md:pb-14 md:border-b border-rich-black-lighter">
+        <div className="flex flex-col md:flex-row gap-8 justify-between pt-8
+        md:pt-16 pb-7 md:pb-14 px-4 md:border-b border-rich-black-lighter">
           {FooterBoxes.map((footerBox) => (
             <FooterBox key={footerBox.title} {...footerBox} />
           ))}
@@ -27,7 +28,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-between md:py-28 gap-2">
+        <div className="flex flex-col md:flex-row justify-between md:py-28 gap-2  px-4">
           <div className="flex-1">
             <div className="text-rich-black-lightest font-semibold pb-2 text-center md:text-left">
               Trustlines is aimed at{" "}
@@ -39,7 +40,7 @@ export default function Footer() {
                 SDG target 8.10
               </a>
             </div>
-            <div className="text-rich-black-lightest max-w-xl px-4 md:px-0 text-center md:text-left">
+            <div className="text-rich-black-lightest max-w-xl text-center md:text-left">
               Strengthen the capacity of domestic financial institutions to
               encourage and expand access to banking, insurance and financial
               services for all.

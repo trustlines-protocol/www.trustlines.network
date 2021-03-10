@@ -5,15 +5,15 @@ import ArrowDownIcon from "./icons/arrow-down";
 import ArrowUpIcon from "./icons/arrow-up";
 import ContactForm from "./contact-form";
 
-import useIsMobile from "../hooks/useIsMobile";
+import { useIsDevice } from "../hooks/useIsDevice";
 
 export default function GetInTouchSection() {
   const [isExpanded, setIsExpanded] = useState(false);
-  const isMobile = useIsMobile();
+  const isMobile = useIsDevice('tablet');
 
   return (
     <div className="bg-rich-black-lighter md:h-96 md:bg-gray-200 flex flex-col justify-center items-center mb-32">
-      <div className="container mx-auto p-4 md:p-0">
+      <div className="container mx-auto p-4">
         <div className="flex flex-row justify-between items-center">
           <div>
             <div className="font-semibold text-2xl md:text-3xl mb-2 text-white md:text-rich-black">

@@ -11,7 +11,7 @@
     @apply text-2xl;
   }
   .slide-content h2 {
-    @apply text-2xl font-semibold mt-4 mb-4 tracking-tightest;
+    @apply text-2xl font-semibold mt-6 mb-4 tracking-tightest;
   }
 
   .slide-content p {
@@ -22,20 +22,6 @@
     @apply mt-10;
   }
 
-  .slide-content a {
-    @apply rounded-full py-2 px-2 pr-4 cursor-pointer justify-center hover:border-transparent
-    ring-2 bg-black ease-in-out transition-all text-white flex-initial no-underline
-    hover:bg-coral-red hover:text-white ring-transparent
-    ;
-  }
-
-  .slide-content a:before {
-    content: " ";
-    @apply rounded-full w-4 h-4 bg-coral-red inline-block mr-2 ml-1 align-middle hover:bg-white;
-  }
-  .slide-content a:hover:before {
-    @apply bg-white;
-  }
 }
 
 .arrow-up {
@@ -74,18 +60,19 @@
 }
 
 .pagination-left {
+  transform: rotate(-180deg);
+}
+
+.pagination-left,
+.pagination-right {
   display: inline-block;
   cursor: pointer;
   width: 24px;
   height: 24px;
-  transform: rotate(-180deg);
-  fill: white;
-}
-
-.pagination-right {
   display: inline-block;
   width: 24px;
   height: 24px;
+  fill: white;
 }
 
 .fade-in-out-appear {

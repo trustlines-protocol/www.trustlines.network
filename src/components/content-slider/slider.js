@@ -1,14 +1,20 @@
-import React  from "react";
-import { Slide, SlideHeading, SlideImage, SlideMainContent } from "./slide";
+import React from "react";
+import {
+  Slide,
+  SlideActionButtons,
+  SlideHeading,
+  SlideImage,
+  SlideMainContent,
+} from "./slide";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Pagination from "./pagination";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
-import useIsMobile from "../../hooks/useIsMobile";
+import useIsDevice from "../../hooks/useIsDevice";
 
 export default function Slider({ slides, activePage, onPageChange }) {
   const activeSlide = slides.find((slide) => slide.meta.order === activePage);
   const { meta, html } = activeSlide;
-  const isMobile = useIsMobile();
+  const isMobile = useIsDevice("mobile");
   const image = meta.slide_background_image.childImageSharp.gatsbyImageData;
 
   const onNext = () => {
@@ -86,7 +92,7 @@ export default function Slider({ slides, activePage, onPageChange }) {
           )}
           <SlideImage image={slideImage} order={meta.order} />
           {isMobile && (
-            <div className={"text-rich-black-lightest"}>
+            <div className={"text-rich-black-lightest mt-6 mb-4"}>
               <InternalPagination
                 slides={slides}
                 meta={meta}
@@ -96,6 +102,7 @@ export default function Slider({ slides, activePage, onPageChange }) {
             </div>
           )}
           <SlideMainContent html={html} />
+          <SlideActionButtons links={meta.bottom_links} />
         </div>
       </Slide>
     </div>

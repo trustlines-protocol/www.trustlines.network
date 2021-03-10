@@ -14,38 +14,41 @@ export default function IconButton(props) {
     hoverTextColor = textColor,
     onClick,
     label,
+    href = "",
     className = "",
     isCircle = false,
+    glowColor = "",
+    whitespaceClass = "whitespace-nowrap",
     ...restProps
   } = props;
 
-  const [hoverRef, isHovered] = useHover();
-
   const IconComponent = React.cloneElement(Icon, {
     size: Icon.props.size,
-    className: `${
-      Icon.props.className
-    } transition-all duration-500 ease-in-out stroke-current text-${
-      isHovered ? hoverTextColor : textColor
-    }`,
+    className: `${Icon.props.className} stroke-current group:text-${hoverTextColor}`,
   });
 
+  const cssClasses = `group rounded-full flex items-center justify-center gap-2 cursor-pointer ${
+    isCircle ? "p-0 h-10 w-10" : "px-4 py-3 h-11"
+  }
+      text-sm md:text-base ${whitespaceClass} z-10 ring-2 transition-all duration-500 ease-in-out ${
+    iconPosition === "left" ? "flex-row" : ""
+  } 
+      hover:text-${hoverTextColor} hover:bg-${hoverBgColor} hover:ring-${hoverRingColor}
+      text-${textColor} bg-${bgColor} ring-${ringColor}
+      ${glowColor ? `hover:shadow-glow-${glowColor}` : ""}
+      ${className}`;
+
+  if (href) {
+    return (
+      <a href={href} className={cssClasses} {...restProps}>
+        {IconComponent}
+        {label}
+      </a>
+    );
+  }
+
   return (
-    <button
-      ref={hoverRef}
-      className={`rounded-full flex items-center justify-center gap-2 cursor-pointer ${
-        isCircle ? "p-0 h-10 w-10" : "px-4 py-3 h-11"
-      }
-      text-sm md:text-base whitespace-nowrap z-10 ring-2 transition-all duration-500 ease-in-out ${
-        iconPosition === "left" ? "flex-row" : "flex-row-reverse"
-      } ${
-        isHovered
-          ? `text-${hoverTextColor} bg-${hoverBgColor} ring-${hoverRingColor}`
-          : `text-${textColor} bg-${bgColor} ring-${ringColor}`
-      } ${className}`}
-      onClick={onClick}
-      {...restProps}
-    >
+    <button className={cssClasses} onClick={onClick} {...restProps}>
       {IconComponent}
       {label}
     </button>

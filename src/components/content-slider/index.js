@@ -15,11 +15,15 @@ export default function ContentSlider(props) {
             slide_title
             slide_heading_color
             order
+            bottom_links {
+              label
+              link
+            }
             content_image {
               childImageSharp {
                 gatsbyImageData(
-                  width: 853
-                  placeholder: DOMINANT_COLOR
+                  layout: FULL_WIDTH
+                  placeholder: BLURRED
                   formats: [AUTO, WEBP, AVIF]
                 )
               }
