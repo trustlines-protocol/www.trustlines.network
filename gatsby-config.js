@@ -8,6 +8,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-transformer-yaml`,
     `gatsby-transformer-json`,
+    "gatsby-plugin-react-leaflet",
     {
       resolve: "gatsby-transformer-remark",
       options: {

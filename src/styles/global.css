@@ -19,3 +19,16 @@
     rgba(129, 188, 253, 0.25) 114.38%
   );
 }
+
+.leaflet-container {
+  width: 100wh;
+  height: 320px;
+}
+
+.custom-leaflet-popup .leaflet-popup-content-wrapper {
+  background-color: #3e3e48;
+}
+
+.custom-leaflet-popup .leaflet-popup-tip {
+  background: #3e3e48;
+}

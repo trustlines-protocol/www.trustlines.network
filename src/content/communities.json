@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Community 1",
+    "position": [51.505, -0.09],
+    "contactName": "Jose Diaz",
+    "contactTitle": "Community Manager",
+    "contactMail": "bla@bla.com"
+  },
+  {
+    "name": "Community 2",
+    "position": [50.1109, 8.6821],
+    "contactName": "Jose Diaz",
+    "contactTitle": "Community Manager",
+    "contactMail": "bla@bla.com"
+  },
+  {
+    "name": "Community 3",
+    "position": [49.992863, 8.247253],
+    "contactName": "Jose Diaz",
+    "contactTitle": "Community Manager",
+    "contactMail": "bla@bla.com"
+  }
+]
