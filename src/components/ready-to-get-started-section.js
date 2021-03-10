@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { StaticImage } from "gatsby-plugin-image";
 
 import DownloadOverlay from "./download-overlay";
 import IconButton from "./icon-button";
@@ -6,9 +7,6 @@ import DownloadIcon from "./icons/download";
 import MailIcon from "./icons/mail";
 import TwitterIcon from "./icons/twitter-outlined";
 import { useIsDevice } from "../hooks/useIsDevice";
-
-import GetStartedBg from "../images/get-started-bg.svg";
-import GetStartedBgMobile from "../images/get-started-bg-mobile.svg";
 
 import SocialMediaLinks from "../content/social-media-links.json";
 
@@ -21,10 +19,17 @@ export default function ReadyToGetStartedSection() {
       {showDownloadOverlay && (
         <DownloadOverlay onClickClose={() => setShowDownloadOverlay(false)} />
       )}
-      <img
-        src={isMobile ? GetStartedBgMobile : GetStartedBg}
-        className="w-screen"
-      />
+      {isMobile ? (
+        <StaticImage
+          src="../content/get-started/images/bg-mobile.png"
+          className="w-screen"
+        />
+      ) : (
+        <StaticImage
+          src="../content/get-started/images/bg-desktop.png"
+          className="w-screen"
+        />
+      )}
       <div className="absolute flex justify-center items-center top-0 left-0 right-0 bottom-0 flex-col">
         <div className="mb-6 text-center text-rich-black font-semibold text-2xl md:text-3xl max-w-xs md:max-w-full ">
           Ready to get started with Trustlines?
