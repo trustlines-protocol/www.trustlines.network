@@ -32,3 +32,7 @@
 .custom-leaflet-popup .leaflet-popup-tip {
   background: #3e3e48;
 }
+
+.grayscale-filter {
+  filter: grayscale(1);
+}

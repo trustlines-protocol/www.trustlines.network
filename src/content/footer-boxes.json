@@ -1,0 +1,67 @@
+[
+  {
+    "title": "Websites",
+    "links": [
+      {
+        "label": "Trustlines Blog",
+        "to": ""
+      },
+      {
+        "label": "Trustlines Foundation",
+        "to": ""
+      },
+      {
+        "label": "Trustlines Docs",
+        "to": ""
+      }
+    ]
+  },
+  {
+    "title": "Community",
+    "links": [
+      {
+        "label": "Trustlines Forum",
+        "to": ""
+      },
+      {
+        "label": "Trustlines Newsletter",
+        "to": ""
+      },
+      {
+        "label": "Trustlines Network in Telegram",
+        "to": ""
+      }
+    ]
+  },
+  {
+    "title": "Developers",
+    "links": [
+      {
+        "label": "Trustlines in GitHub",
+        "to": ""
+      },
+      {
+        "label": "Trustlines Dev Docs",
+        "to": ""
+      },
+      {
+        "label": "Trustlines Technical Chat",
+        "to": ""
+      }
+    ]
+  },
+  {
+    "title": "Legal",
+    "links": [
+      {
+        "label": "Legal Imprint",
+        "to": ""
+      },
+      {
+        "label": "Privacy Policy",
+        "to": ""
+      }
+    ],
+    "withSocialMediaLinks": true
+  }
+]

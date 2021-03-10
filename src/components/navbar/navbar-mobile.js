@@ -3,14 +3,10 @@ import { Link } from "gatsby";
 
 import NavItemMobile from "./nav-item-mobile";
 import CloseButton from "../close-button";
+import SocialLinksRow from "../social-links-row";
 
 import Logo from "../../images/logo.svg";
 import BurgerMenu from "../../images/burger-menu.svg";
-import Twitter from "../../images/twitter.svg";
-import YouTube from "../../images/youtube.svg";
-import MessageBox from "../../images/message-box.svg";
-
-import SocialMediaLinks from "../../content/social-media-links.json";
 
 export default function NavbarMobile(props) {
   const [isFullScreenNavOpen, setIsFullScreenNavOpen] = useState(false);
@@ -45,17 +41,7 @@ export default function NavbarMobile(props) {
             How it works
           </div>
         </div>
-        <div className="flex flex-row gap-4 mb-4 items-center">
-          <Link to={SocialMediaLinks.twitter}>
-            <img src={Twitter} />
-          </Link>
-          <Link to={SocialMediaLinks.youtube}>
-            <img src={YouTube} />
-          </Link>
-          <Link to={SocialMediaLinks.telegram}>
-            <img src={MessageBox} />
-          </Link>
-        </div>
+        <SocialLinksRow iconSize={24} iconColor="rich-black" />
         <Link
           className="font-semibold text-base mb-4"
           onClick={() => setIsFullScreenNavOpen(false)}
