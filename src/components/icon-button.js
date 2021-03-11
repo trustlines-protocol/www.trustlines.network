@@ -27,7 +27,7 @@ export default function IconButton(props) {
     className: `${Icon.props.className} stroke-current group:text-${hoverTextColor}`,
   });
 
-  const cssClasses = `group rounded-full flex items-center justify-center gap-2 cursor-pointer ${
+  const cssClasses = `${className} group rounded-full flex items-center justify-center gap-2 cursor-pointer ${
     isCircle ? "p-0 h-10 w-10" : "px-4 py-3 h-11"
   }
     focus:outline-none text-sm md:text-base ${whitespaceClass} z-10 ring-2 transition-all duration-500 ease-in-out ${
@@ -35,8 +35,7 @@ export default function IconButton(props) {
   } 
       hover:text-${hoverTextColor} hover:bg-${hoverBgColor} hover:ring-${hoverRingColor}
       text-${textColor} bg-${bgColor} ring-${ringColor}
-      ${glowColor ? `hover:shadow-glow-${glowColor}` : ""}
-      ${className}`;
+      ${glowColor ? `hover:shadow-glow-${glowColor}` : ""}`;
 
   if (href) {
     return (

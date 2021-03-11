@@ -97,6 +97,10 @@
   width: 100%;
 }
 
+.section {
+  min-height: 390px;
+}
+
 @media (min-width: 640px) {
   .container-half {
     max-width: 320px;
@@ -106,6 +110,11 @@
 @media (min-width: 768px) {
   .container-half {
     max-width: 384px;
+  }
+
+  .section {
+    max-height: 544px;
+    height: 43vw;
   }
 }
 
