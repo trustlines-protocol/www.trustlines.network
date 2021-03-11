@@ -3,3 +3,7 @@ node_modules
 public
 .DS_Store
 .idea
+/firebase-functions/functions/env.dev.json
+/firebase-functions/functions/env.prod.json
+/yarn-error.log
+/firebase-functions/functions/.runtimeconfig.json
