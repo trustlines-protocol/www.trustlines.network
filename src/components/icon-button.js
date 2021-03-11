@@ -8,8 +8,8 @@ export default function IconButton(props) {
     iconPosition = "left",
     bgColor,
     textColor,
-    ringColor = bgColor,
-    hoverRingColor = bgColor,
+    ringColor = "transparent",
+    hoverRingColor = "transparent",
     hoverBgColor = bgColor,
     hoverTextColor = textColor,
     onClick,
@@ -30,8 +30,8 @@ export default function IconButton(props) {
   const cssClasses = `group rounded-full flex items-center justify-center gap-2 cursor-pointer ${
     isCircle ? "p-0 h-10 w-10" : "px-4 py-3 h-11"
   }
-      text-sm md:text-base ${whitespaceClass} z-10 ring-2 transition-all duration-500 ease-in-out ${
-    iconPosition === "left" ? "flex-row" : ""
+    focus:outline-none text-sm md:text-base ${whitespaceClass} z-10 ring-2 transition-all duration-500 ease-in-out ${
+    iconPosition === "left" ? "flex-row" : "flex-row-reverse"
   } 
       hover:text-${hoverTextColor} hover:bg-${hoverBgColor} hover:ring-${hoverRingColor}
       text-${textColor} bg-${bgColor} ring-${ringColor}
@@ -40,7 +40,13 @@ export default function IconButton(props) {
 
   if (href) {
     return (
-      <a href={href} className={cssClasses} {...restProps}>
+      <a
+        href={href}
+        target="_blank"
+        rel="noreferrer"
+        className={cssClasses}
+        {...restProps}
+      >
         {IconComponent}
         {label}
       </a>
