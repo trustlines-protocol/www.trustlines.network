@@ -61,9 +61,7 @@ export default function CommunitiesMapSection() {
         <div className="bg-neon-pink p-2 flex flex-col md:flex-row justify-center items-center text-sm md:text-base gap-0 md:gap-1">
           <div>Don&apos;t see a group nearby?</div>
           <div>Add yourself to the map!</div>
-          <a className="underline hover:text-white cursor-pointer">
-            Click here
-          </a>
+          <a className="underline">Click here</a>
         </div>
       </div>
     </div>

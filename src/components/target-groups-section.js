@@ -117,7 +117,10 @@ function TargetGroupItem(props) {
               {bottomLinks.map((bottomLink) => (
                 <div
                   key={bottomLink.label}
-                  className="text-coral-red font-semibold flex flex-row items-center hover:opacity-50 cursor-pointer text-sm md:text-lg"
+                  className="text-coral-red font-semibold flex flex-row items-center cursor-pointer text-sm md:text-lg"
+                  href={bottomLink.link}
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   {bottomLink.label}
                   <ArrowRightIcon
@@ -153,6 +156,7 @@ function TargetGroupItemContactForm() {
         bgColor={"coral-red"}
         hoverBgColor={"transparent"}
         ringColor={"transparent"}
+        hoverRingColor={"coral-red"}
         iconPosition="right"
         onClick={() => setShowContactForm(!showContactForm)}
       />

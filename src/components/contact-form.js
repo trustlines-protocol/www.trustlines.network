@@ -49,16 +49,13 @@ export default function ContactForm(props) {
           bgColor="majorelle-blue"
           label="Send"
           iconPosition="right"
-          className="w-full md:w-28 hover:opacity-50"
+          className="w-full md:w-28"
           type="submit"
         />
       </div>
       <div className="text-gray-500 text-center md:text-left">
         Or simply{" "}
-        <a
-          className="underline hover:text-coral-red"
-          href={`mailto:${CONTACT_MAIL}`}
-        >
+        <a className="underline" href={`mailto:${CONTACT_MAIL}`}>
           send us an email
         </a>
         .
