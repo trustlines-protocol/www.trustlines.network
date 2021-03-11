@@ -52,6 +52,9 @@ module.exports = {
       strokeWidth: {
         "4/3": "1.33",
       },
+      scale: {
+        "-100": "-1",
+      },
     },
   },
   variants: {

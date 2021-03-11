@@ -111,13 +111,14 @@ function Box({
       </div>
       <div className={`flex-1 bg-${imageBgColor}`}>
         <div
-          className={`flex flex-col items-end justify-end container-half h-full ${
-            reverse ? "ml-auto" : "mr-auto"
+          className={`flex flex-col justify-end container-half h-full ${
+            reverse ? "items-end ml-auto" : "items-start mr-auto"
           }`}
         >
           <GatsbyImage
             image={getImage(image)}
             key={"about-box-image-" + title}
+            className={reverse ? "" : "transform -scale-x-100"}
           />
         </div>
       </div>
