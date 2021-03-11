@@ -3,9 +3,9 @@ import { uniq } from "lodash";
 
 export const region = "europe-west1";
 
-export const from = functions.config().env.emails.from
+export const from = functions.config().env.emails.from;
 
-export const contactUsEmails : Array<string> = uniq(
+export const contactUsEmails: Array<string> = uniq(
   functions
     .config()
     .env.emails.contactUs.split(",")
@@ -15,5 +15,5 @@ export const contactUsEmails : Array<string> = uniq(
 
 export const mailjetConf = {
   apiPublicKey: functions.config().env.mailjet.api_key_public,
-  apiPrivateKey: functions.config().env.mailjet.api_key_private
-}
+  apiPrivateKey: functions.config().env.mailjet.api_key_private,
+};
