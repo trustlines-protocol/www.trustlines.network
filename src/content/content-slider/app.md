@@ -1,9 +1,13 @@
 ---
 order: 3
 slide_title: "About"
-slide_subtitle: "the app"
+slide_subtitle: "the App"
+slide_heading_color: "#73B4FF"
 slide_background_image: images/app-bg.jpg
 content_image: images/app.jpg
+bottom-links:
+    - link: "https://trustlines.app"
+      label: Go to Trustlines App website
 ---
 
 ## The Trustlines App

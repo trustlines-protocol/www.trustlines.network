@@ -3,6 +3,12 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+      },
+      letterSpacing: {
+        tightest: '-0.01em'
+      },
       colors: {
         "rich-black": {
           lightest: "#6C6C73",

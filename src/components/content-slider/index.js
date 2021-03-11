@@ -5,16 +5,24 @@ import { useStaticQuery, graphql } from "gatsby";
 export default function ContentSlider(props) {
   const data = useStaticQuery(graphql`
     query SliderContent {
-      md: allMarkdownRemark(sort: { fields: frontmatter___order, order: ASC }) {
+      md: allMarkdownRemark(
+        sort: { fields: frontmatter___order, order: ASC }
+        filter: { fileAbsolutePath: { glob: "**/content-slider/**" } }
+      ) {
         slides: nodes {
           meta: frontmatter {
             slide_subtitle
             slide_title
+            slide_heading_color
             order
+            bottom_links {
+              label
+              link
+            }
             content_image {
               childImageSharp {
                 gatsbyImageData(
-                  width: 768
+                  layout: FULL_WIDTH
                   placeholder: BLURRED
                   formats: [AUTO, WEBP, AVIF]
                 )
@@ -22,7 +30,7 @@ export default function ContentSlider(props) {
             }
             slide_background_image {
               childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH, height: 472)
+                gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
               }
             }
           }

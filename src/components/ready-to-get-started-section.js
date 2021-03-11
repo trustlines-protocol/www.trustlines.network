@@ -5,7 +5,7 @@ import IconButton from "./icon-button";
 import DownloadIcon from "./icons/download";
 import MailIcon from "./icons/mail";
 import TwitterIcon from "./icons/twitter-outlined";
-import { useIsMobile } from "../hooks/useIsMobile";
+import { useIsDevice } from "../hooks/useIsDevice";
 
 import GetStartedBg from "../images/get-started-bg.svg";
 import GetStartedBgMobile from "../images/get-started-bg-mobile.svg";
@@ -14,7 +14,7 @@ import SocialMediaLinks from "../content/social-media-links.json";
 
 export default function ReadyToGetStartedSection() {
   const [showDownloadOverlay, setShowDownloadOverlay] = useState(false);
-  const isMobile = useIsMobile();
+  const isMobile = useIsDevice("tablet");
 
   return (
     <div className="relative mb-32">
@@ -29,7 +29,7 @@ export default function ReadyToGetStartedSection() {
         <div className="mb-6 text-center text-rich-black font-semibold text-2xl md:text-3xl max-w-xs md:max-w-full ">
           Ready to get started with Trustlines?
         </div>
-        <div className="flex flex-col md:flex-row gap-4 pb-8 px-4 md:px-0 w-full md:w-auto">
+        <div className="flex flex-col md:flex-row gap-4 pb-8 px-4 w-full md:w-auto">
           <IconButton
             Icon={<DownloadIcon size={16} className="stroke-4/3" />}
             label="Download the App"

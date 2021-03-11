@@ -17,7 +17,7 @@ export default function CommunitiesMapSection() {
   }
 
   return (
-    <div className="container mx-auto mb-16 md:mb-32 p-4 md:p-0">
+    <div className="container mx-auto mb-16 md:mb-32 p-4">
       <div className="text-lg md:text-3xl font-semibold">
         <div>Trustlines Communities</div>
         <div>Around the World</div>

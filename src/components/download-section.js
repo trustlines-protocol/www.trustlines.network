@@ -2,26 +2,35 @@ import React, { useState } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
 import DownloadOverlay from "./download-overlay";
-import GlowButton from "./glow-button";
-import GlowButtonCircle from "./glow-button-circle";
+import IconButton from "./icon-button";
 import DownloadIcon from "./icons/download";
 
 import GradientCircle from "../images/gradient-circle.svg";
+import Circle from "./icons/circle";
 
 export default function DownloadSection() {
   const [showOverlay, setShowOverlay] = useState(false);
 
   return (
-    <div className="container mx-auto px-4 md:px-0 mb-32">
+    <div className="container mx-auto px-4 mb-32">
       <div className="relative rounded-3xl shadow-card-blue flex flex-col-reverse md:flex-row overflow-hidden">
         {showOverlay && (
           <DownloadOverlay onClickClose={() => setShowOverlay(false)} />
         )}
         <div className="absolute flex justify-center items-center top-0 left-0 right-0 bottom-0 mb-24 md:mb-0">
-          <GlowButtonCircle
-            color="app-blue"
+          <IconButton
+            textColor={"white"}
+            bgColor={"rich-black"}
+            ringColor={"transparent"}
+            hoverBgColor={"app-blue"}
             label="Download For Free"
-            icon={
+            className={
+              "w-28 h-28 flex flex-col items-center justify-center py-4 px-3 gap-0 text-center "
+            }
+            whitespaceClass={"whitespace-normal"}
+            isCircle={true}
+            glowColor={"app-blue"}
+            Icon={
               <DownloadIcon className="stroke-current text-white stroke-4/3" />
             }
             onClick={() => setShowOverlay(true)}
@@ -50,7 +59,21 @@ export default function DownloadSection() {
             </div>
           </div>
           <div className="block mt-6 md:flex md:mt-0">
-            <GlowButton color="app-blue" label="Go to Trustlines App website" />
+            <IconButton
+              textColor={"white"}
+              bgColor={"rich-black"}
+              ringColor={"transparent"}
+              hoverBgColor={"app-blue"}
+              label="Go to Trustlines App website"
+              glowColor={"app-blue"}
+              Icon={
+                <Circle
+                  size={16}
+                  className={"bg-app-blue group-hover:bg-white"}
+                />
+              }
+              onClick={() => setShowOverlay(true)}
+            />
           </div>
         </div>
         <div className="flex-1 -z-1">
