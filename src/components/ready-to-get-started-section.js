@@ -39,7 +39,8 @@ export default function ReadyToGetStartedSection() {
             Icon={<DownloadIcon size={16} className="stroke-4/3" />}
             label="Download the App"
             bgColor="coral-red"
-            hoverBgColor="white"
+            ringColor="coral-red"
+            hoverBgColor="black"
             textColor="white"
             hoverTextColor="coral-red"
             className="w-full text-sm md:text-base font-semibold"
@@ -49,25 +50,23 @@ export default function ReadyToGetStartedSection() {
             Icon={<MailIcon size={16} className="stroke-4/3" />}
             label="Get in Touch"
             bgColor="white"
-            hoverBgColor="coral-red"
             textColor="coral-red"
-            hoverTextColor="white"
+            hoverTextColor="black"
             ringColor="coral-red"
+            hoverRingColor="black"
             className="text-sm md:text-base font-semibold"
-            onClick={() =>
-              window.open(`mailto:${SocialMediaLinks.mail}`, "_blank")
-            }
+            href={`mailto:${SocialMediaLinks.mail}`}
           />
           <IconButton
             Icon={<TwitterIcon size={16} className="stroke-4/3" />}
             label="Follow Us"
             bgColor="white"
-            hoverBgColor="coral-red"
             textColor="coral-red"
-            hoverTextColor="white"
+            hoverTextColor="black"
             ringColor="coral-red"
+            hoverRingColor="black"
             className="text-sm md:text-base font-semibold"
-            onClick={() => window.open(SocialMediaLinks.twitter, "_blank")}
+            href={SocialMediaLinks.twitter}
           />
         </div>
       </div>

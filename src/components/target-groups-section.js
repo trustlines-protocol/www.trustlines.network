@@ -11,21 +11,22 @@ import ArrowDownIcon from "./icons/arrow-down";
 
 export default function TargetGroupsSection(props) {
   const data = useStaticQuery(graphql`
-    query MyQuery {
+    query TargetGroups {
       allMarkdownRemark(
+        sort: { fields: frontmatter___order, order: ASC }
         filter: { fileAbsolutePath: { glob: "**/target-groups/**" } }
       ) {
         edges {
           node {
             frontmatter {
               order
-              group_name
-              action_title
-              bottom_links {
+              groupName: group_name
+              actionTitle: action_title
+              bottomLinks: bottom_links {
                 label
                 link
               }
-              enable_contact_form
+              enableContactForm: enable_contact_form
             }
             html
           }
@@ -34,25 +35,17 @@ export default function TargetGroupsSection(props) {
     }
   `);
 
-  const sortedNodes = data.allMarkdownRemark.edges
-    .sort(
-      (edgeA, edgeB) =>
-        edgeA.node.frontmatter.order - edgeB.node.frontmatter.order
-    )
-    .map(({ node }) => ({
-      actionTitle: node.frontmatter["action_title"],
-      bottomLinks: node.frontmatter["bottom_links"] || [],
-      enableContactForm: node.frontmatter["enable_contact_form"] || false,
-      groupName: node.frontmatter["group_name"],
-      html: node.html,
-    }));
+  const targetGroups = data.allMarkdownRemark.edges.map(({ node }) => ({
+    ...node.frontmatter,
+    html: node.html,
+  }));
 
   return (
     <div className="flex flex-col mx-auto container mb-32">
-      {sortedNodes.map((node, index) => (
+      {targetGroups.map((node, index) => (
         <TargetGroupItem
           key={node.groupName}
-          isLastItem={index === sortedNodes.length - 1}
+          isLastItem={index === targetGroups.length - 1}
           {...node}
         />
       ))}
@@ -62,7 +55,7 @@ export default function TargetGroupsSection(props) {
 
 function TargetGroupItem(props) {
   const {
-    bottomLinks = [],
+    bottomLinks,
     enableContactForm = false,
     groupName,
     actionTitle,
@@ -119,7 +112,7 @@ function TargetGroupItem(props) {
             className="flex flex-col gap-4 text-sm md:text-lg text-rich-black"
             dangerouslySetInnerHTML={{ __html: html }}
           />
-          {bottomLinks.length > 0 && (
+          {Array.isArray(bottomLinks) && (
             <div className="flex flex-col md:flex-row mt-10 gap-8">
               {bottomLinks.map((bottomLink) => (
                 <div

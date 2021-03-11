@@ -7,7 +7,7 @@ module.exports = {
         sans: ["Inter", "sans-serif"],
       },
       letterSpacing: {
-        tightest: '-0.01em'
+        tightest: "-0.01em",
       },
       colors: {
         "rich-black": {
@@ -16,6 +16,7 @@ module.exports = {
           DEFAULT: "#12121F",
         },
         "coral-red": {
+          lightest: "#EFAE95",
           lighter: "#FFD2BF",
           DEFAULT: "#FF7C4E",
         },
@@ -25,10 +26,17 @@ module.exports = {
         },
         "majorelle-blue": {
           lightest: "#FFF0FF",
+          lighter: "#897AE7",
           DEFAULT: "#7657ED",
         },
         "neon-pink": {
           DEFAULT: "#FFA0B7",
+        },
+        "aquamarine-green": {
+          DEFAULT: "#09E0A3",
+        },
+        "dark-green": {
+          DEFAULT: "#0EC390",
         },
       },
       boxShadow: {
@@ -47,7 +55,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      ringColor: "hover",
+    },
   },
   plugins: [],
 };
