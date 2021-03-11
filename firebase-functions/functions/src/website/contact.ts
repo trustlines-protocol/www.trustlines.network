@@ -13,6 +13,17 @@ interface errorsInterface {
 export const websiteContact = functions
   .region(region)
   .https.onRequest((req: any, res: any) => {
+    res.set("Access-Control-Allow-Origin", "*");
+
+    // Deal with cors requests
+    if (req.method === "OPTIONS") {
+      // Send response to OPTIONS requests
+      res.set("Access-Control-Allow-Methods", "POST");
+      res.set("Access-Control-Allow-Headers", "Content-Type");
+      res.set("Access-Control-Max-Age", "3600");
+      return res.status(204).send("");
+    }
+
     if (req.method !== "POST") {
       res.status(403).send("Forbidden!");
     }
@@ -47,10 +58,10 @@ export const websiteContact = functions
     }
 
     const text = `
-  A new email from ${mail.name} <${mail.email}>
-  Topic: {mail.topic}
-  Message:
-    ${mail.message}`;
+    A new email from ${mail.name} <${mail.email}>
+    Topic: {mail.topic}
+    Message:
+      ${mail.message}`;
 
     if (Object.keys(errors).length) {
       return res.status(200).send({ success: false, errors: errors });
