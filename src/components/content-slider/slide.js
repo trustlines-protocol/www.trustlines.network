@@ -52,6 +52,7 @@ export const SlideActionButtons = ({ links = [] }) => {
       {links.map((link) => {
         return (
           <IconButton
+            key={link.label}
             bgColor={"black"}
             textColor={"white"}
             ringColor={"transparent"}

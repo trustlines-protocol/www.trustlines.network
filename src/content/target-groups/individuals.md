@@ -2,7 +2,7 @@
 order: 1
 group_name: Individuals
 action_title: Experience People Powered Money
-bottom-links:
+bottom_links:
   - link: ""
     label: Download the iOS app
   - link: ""

@@ -102,7 +102,7 @@ export default function Slider({ slides, activePage, onPageChange }) {
             </div>
           )}
           <SlideMainContent html={html} />
-          <SlideActionButtons links={meta.bottom_links} />
+          <SlideActionButtons links={meta.bottom_links || []} />
         </div>
       </Slide>
     </div>
