@@ -6,11 +6,6 @@ import MarkerIcon from "../images/marker.svg";
 
 import Communities from "../content/communities/groups.json";
 
-const CustomMarkerIcon = icon({
-  iconUrl: MarkerIcon,
-  iconSize: [24, 24],
-});
-
 export default function Map({
   borderColor,
   shadowColor,
@@ -20,6 +15,11 @@ export default function Map({
   if (typeof window === "undefined") {
     return null;
   }
+
+  const CustomMarkerIcon = icon({
+    iconUrl: MarkerIcon,
+    iconSize: [24, 24],
+  });
 
   return (
     <div
