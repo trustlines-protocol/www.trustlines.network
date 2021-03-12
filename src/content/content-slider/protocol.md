@@ -14,4 +14,4 @@ bottom_links:
 
 The Trustlines Protocol is a blockchain-based technology stack that brings People Powered Money to life. Using secure, decentralised blockchain technology is important to ensure that Trustlines remains accessible to everyone.
 
-Developers are encouraged to build their own applications on top of the Protocol. As an example, check out the white-label [Trustlines App]().
+Developers are encouraged to build their own applications on top of the Protocol. As an example, check out the white-label [Trustlines App](https://trustlines.app).
