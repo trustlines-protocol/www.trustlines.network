@@ -19,6 +19,10 @@ export default function Slider() {
 
   useEffect(() => {
     if (isVisible) {
+      setCurrentSlide((prevSlide) => {
+        const nextSlide = prevSlide === null ? 0 : ++prevSlide;
+        return nextSlide % slides.length;
+      });
       const intervalID = setInterval(
         () =>
           setCurrentSlide((prevSlide) => {
