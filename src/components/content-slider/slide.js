@@ -6,7 +6,7 @@ import useIsDevice from "../../hooks/useIsDevice";
 
 export const Slide = ({ children }) => {
   return (
-    <div className={"container px-4 mx-auto slide-content mb-56"}>
+    <div className={"container px-4 mx-auto slide-content mb-72"}>
       <div className={"grid grid-cols-2 sm:grid-cols-3"}>{children}</div>
     </div>
   );

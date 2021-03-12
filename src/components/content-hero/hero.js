@@ -2,7 +2,7 @@ import React from "react";
 import IconButton from "../icon-button";
 import CircleIcon from "../icons/circle";
 
-export default function ContentHero(props) {
+export default function ContentHero() {
   return (
     <div className={"container mx-auto px-2 mb-10 mt-6 lg:mb-20 lg:mt-12"}>
       <h1
