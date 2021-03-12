@@ -74,6 +74,14 @@ export default function Slider() {
   );
 }
 
+const ringSizeToClassNames = {
+  16: "h-16 w-16",
+  20: "h-20 w-20",
+  24: "h-24 w-24",
+  28: "h-28 w-28",
+  32: "h-32 w-32",
+};
+
 function CheckCircle({ activeIndex }) {
   const ringSizes = [16, 20, 24, 28, 32];
 
@@ -83,7 +91,7 @@ function CheckCircle({ activeIndex }) {
     <div className="h-28 w-64 flex flex-row justify-center items-center">
       <div
         className={`
-        h-${ringSize} w-${ringSize} transition-all duration-500
+        ${ringSizeToClassNames[ringSize]} transition-all duration-500
         rounded-full bg-coral-pastel flex flex-row justify-center items-center`}
       >
         <div className="h-14 w-14 rounded-full bg-white flex flex-row justify-center items-center">

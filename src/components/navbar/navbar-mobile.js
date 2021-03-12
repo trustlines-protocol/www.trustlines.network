@@ -17,14 +17,6 @@ export default function NavbarMobile({ navItems = [] }) {
         <div className="flex flex-row justify-end">
           <CloseButton onClick={() => setIsFullScreenNavOpen(false)} />
         </div>
-        <Link
-          className="font-semibold text-2xl mb-4"
-          to="/"
-          activeClassName="text-majorelle-blue"
-          onClick={() => setIsFullScreenNavOpen(false)}
-        >
-          Home
-        </Link>
         {navItems.map((navItem, i) => (
           <div
             key={`${navItem.label}-i`}
@@ -54,7 +46,7 @@ export default function NavbarMobile({ navItems = [] }) {
       </div>
     </div>
   ) : (
-    <div className="sticky top-0 z-50 w-full bg-white p-4 flex flex-row justify-between">
+    <div className="sticky top-0 z-50 w-full bg-white p-4 flex flex-row justify-between md:hidden">
       <Link to="/">
         <img src={Logo} />
       </Link>

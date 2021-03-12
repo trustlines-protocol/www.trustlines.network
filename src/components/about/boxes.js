@@ -7,6 +7,8 @@ import BitcoinIcon from "../icons/bitcoin";
 import MoneyIcon from "../icons/money";
 import TrustlineIcon from "../icons/trustline";
 
+import { COLOR_NAME_CLASSES } from "../../constants";
+
 const NAME_TO_COMPONENT = {
   bitcoin: <BitcoinIcon />,
   money: <MoneyIcon />,
@@ -68,13 +70,19 @@ function Box({
 }) {
   const reverse = order === 2;
 
+  const { bgColorClassName } = COLOR_NAME_CLASSES[bgColor] || {};
+  const { bgColorClassName: imgBgColorClassName } =
+    COLOR_NAME_CLASSES[imageBgColor] || {};
+
   return (
     <div
       className={`flex ${
         reverse ? "flex-col md:flex-row-reverse" : "flex-col md:flex-row"
       }`}
     >
-      <div className={`flex-1 bg-${bgColor} flex flex-col justify-center`}>
+      <div
+        className={`flex-1 ${bgColorClassName} flex flex-col justify-center`}
+      >
         <div
           className={`container-half px-4 ${reverse ? "mr-auto" : "ml-auto"}`}
         >
@@ -111,7 +119,7 @@ function Box({
           </div>
         </div>
       </div>
-      <div className={`flex-1 bg-${imageBgColor}`}>
+      <div className={`flex-1 ${imgBgColorClassName}`}>
         <div
           className={`flex flex-col justify-end container-half h-full ${
             reverse ? "items-end ml-auto" : "items-start mr-auto"

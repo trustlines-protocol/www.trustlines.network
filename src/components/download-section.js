@@ -47,7 +47,9 @@ export default function DownloadSection() {
           </div>
           <div>
             <div className="text-2xl lg:text-4xl">Get started with</div>
-            <div className="text-2xl lg:text-4xl font-semibold">People Powered</div>
+            <div className="text-2xl lg:text-4xl font-semibold">
+              People Powered
+            </div>
             <div className="text-2xl lg:text-4xl font-semibold">Money!</div>
             <div className="mt-6 md:mt-8">
               <div className="text-xs md:text-base text-rich-black">
@@ -82,12 +84,13 @@ export default function DownloadSection() {
               className="h-96 -mt-52 md:mt-0 md:object-cover md:h-auto md:w-full"
               src={GradientCircle}
             />
-            <StaticImage
-              className="absolute top-0 left-0 h-full md:-left-48"
-              src="../content/download/images/phone.png"
-              layout="constrained"
-              alt="Trustlines app image"
-            />
+            <div className="absolute top-0 left-0 h-full md:-left-48">
+              <StaticImage
+                src="../content/download/images/phone.png"
+                layout="constrained"
+                alt="Trustlines app image"
+              />
+            </div>
           </div>
         </div>
       </div>
