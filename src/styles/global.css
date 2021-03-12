@@ -139,15 +139,3 @@
     max-width: 512px;
   }
 }
-
-@media (min-width: 1280px) {
-  .container-half {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container-half {
-    max-width: 778px;
-  }
-}

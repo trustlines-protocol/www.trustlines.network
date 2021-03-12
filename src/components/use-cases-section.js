@@ -32,7 +32,7 @@ export default function UseCasesSection() {
 
   return (
     <div className="container mx-auto px-4 flex flex-col mb-32">
-      <div className="flex flex-row justify-between mb-3">
+      <div className="flex flex-row justify-between mb-3 gap-10">
         <div>
           <div className="text-3xl font-semibold mb-2">
             Why People Powered Money?
