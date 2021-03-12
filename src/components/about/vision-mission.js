@@ -27,7 +27,7 @@ export default function AboutVisionMission() {
       <div className="flex flex-col md:flex-row gap-8">
         {visionMissionData.map(({ node }, i) => (
           <div key={i} className="flex-1">
-            <div className="text-gray-300 text-6xl lg:text-8xl font-semibold mb-4 md:mb-8">
+            <div className="text-gray-300 text-6xl font-semibold mb-4 md:mb-8">
               {node.frontmatter.title}
             </div>
             <div
