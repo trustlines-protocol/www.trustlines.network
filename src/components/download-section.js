@@ -38,17 +38,17 @@ export default function DownloadSection() {
         </div>
         <div className="flex-1 flex flex-col p-4 md:py-8 md:px-10 justify-between">
           <div className="-mt-28 mb-4 md:my-0">
-            <div className="text-xs md:text-base text-rich-black-lightest">
+            <div className="text-xs md:text-base font-semibold text-rich-black-lightest">
               Trustlines App
             </div>
-            <div className="text-xs md:text-base font-semibold text-rich-black-lightest">
+            <div className="text-xs md:text-base  text-rich-black-lightest">
               by Auxiliary GmbH
             </div>
           </div>
           <div>
-            <div className="text-2xl lg:text-5xl">Get started with</div>
-            <div className="text-2xl lg:text-5xl font-bold">People Powered</div>
-            <div className="text-2xl lg:text-5xl font-bold">Money!</div>
+            <div className="text-2xl lg:text-4xl">Get started with</div>
+            <div className="text-2xl lg:text-4xl font-semibold">People Powered</div>
+            <div className="text-2xl lg:text-4xl font-semibold">Money!</div>
             <div className="mt-6 md:mt-8">
               <div className="text-xs md:text-base text-rich-black">
                 Economic Inclusion for all.
