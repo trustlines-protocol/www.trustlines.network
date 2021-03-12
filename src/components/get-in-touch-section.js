@@ -23,25 +23,26 @@ export default function GetInTouchSection() {
               Let us know, and we&apos;ll help you get started!
             </div>
           </div>
-          <IconButton
-            label="Get in touch"
-            textColor={isExpanded ? "majorelle-blue" : "white"}
-            hoverTextColor={isExpanded ? "white" : "majorelle-blue"}
-            bgColor={isExpanded ? "transparent" : "majorelle-blue"}
-            ringColor={"majorelle-blue"}
-            hoverBgColor={isExpanded ? "majorelle-blue" : "transparent"}
-            hoverRingColor={isExpanded ? "transparent" : "majorelle-blue"}
-            Icon={
-              isExpanded ? (
-                <ArrowUpIcon size={16} className="stroke-2" />
-              ) : (
-                <ArrowDownIcon size={16} className="stroke-2" />
-              )
-            }
-            iconPosition="right"
-            className={"hidden md:w-64"}
-            onClick={() => setIsExpanded(!isExpanded)}
-          />
+          <div className="hidden md:flex">
+            <IconButton
+              label="Get in touch"
+              textColor={isExpanded ? "majorelle-blue" : "white"}
+              hoverTextColor={isExpanded ? "white" : "majorelle-blue"}
+              bgColor={isExpanded ? "transparent" : "majorelle-blue"}
+              ringColor={"majorelle-blue"}
+              hoverBgColor={isExpanded ? "majorelle-blue" : "transparent"}
+              hoverRingColor={isExpanded ? "transparent" : "majorelle-blue"}
+              Icon={
+                isExpanded ? (
+                  <ArrowUpIcon size={16} className="stroke-2" />
+                ) : (
+                  <ArrowDownIcon size={16} className="stroke-2" />
+                )
+              }
+              iconPosition="right"
+              onClick={() => setIsExpanded(!isExpanded)}
+            />
+          </div>
         </div>
         <ContactForm hidden={isMobile ? false : !isExpanded} />
       </div>

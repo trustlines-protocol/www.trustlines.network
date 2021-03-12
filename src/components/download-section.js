@@ -84,12 +84,13 @@ export default function DownloadSection() {
               className="h-96 -mt-52 md:mt-0 md:object-cover md:h-auto md:w-full"
               src={GradientCircle}
             />
-            <StaticImage
-              className="absolute top-0 left-0 h-full md:-left-48"
-              src="../content/download/images/phone.png"
-              layout="constrained"
-              alt="Trustlines app image"
-            />
+            <div className="absolute top-0 left-0 h-full md:-left-48">
+              <StaticImage
+                src="../content/download/images/phone.png"
+                layout="constrained"
+                alt="Trustlines app image"
+              />
+            </div>
           </div>
         </div>
       </div>
