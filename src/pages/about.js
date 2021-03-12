@@ -12,8 +12,8 @@ export default function About() {
   return (
     <div>
       <Helmet>
-        <title>About page</title>
-        <meta name="description" content="About page meta description" />
+        <title>About - Trustlines network</title>
+        <meta name="description" content="Financial inclusion for all people" />
       </Helmet>
       <AboutHero />
       <AboutIntro />

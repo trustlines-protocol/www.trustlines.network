@@ -7,14 +7,17 @@ import GetInTouchSection from "../components/get-in-touch-section";
 import TargetGroupSection from "../components/target-groups-section";
 import CommunitiesMapSection from "../components/communities-map-landing";
 import GetStartedSection from "../components/ready-to-get-started-section";
-import ContentHero from "../components/content-hero/hero"
+import ContentHero from "../components/content-hero/hero";
 
 export default function Landing() {
   return (
     <div>
       <Helmet>
-        <title>Landing page</title>
-        <meta name="description" content="landing page meta description" />
+        <title>Home - Trustlines network</title>
+        <meta
+          name="description"
+          content="The Trustlines Network is the first project to create a universally accessible medium of exchange."
+        />
       </Helmet>
       <ContentHero />
       <ContentSlider />
