@@ -17,6 +17,26 @@
   .slide-content p {
     @apply text-rich-black-lightest tracking-tightest mb-3;
   }
+
+  .privacy-policy h1 {
+    @apply font-semibold tracking-tightest;
+  }
+
+  .privacy-policy h2 {
+    @apply text-2xl font-semibold mt-6 mb-4 tracking-tightest;
+  }
+
+  .privacy-policy h3 {
+    @apply text-xl font-semibold mt-6 mb-4 tracking-tightest;
+  }
+
+  .privacy-policy p {
+    @apply text-rich-black-lightest tracking-tightest;
+  }
+
+  .privacy-policy ul {
+    @apply text-rich-black-lightest list-disc pl-8;
+  }
 }
 
 .arrow-up {
