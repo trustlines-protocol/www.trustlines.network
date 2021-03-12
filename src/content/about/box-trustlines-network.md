@@ -7,7 +7,7 @@ bg_color: coral-red
 image_bg_color: coral-red-lightest
 bottom_links:
   - label: Read more about how Trustlines works
-    link: ""
+    link: https://docs.trustlines.network/docs/resources/wp_content/how_trustlines_works.html
 ---
 
 To combat this issue, why not combine the technological innovation of cryptocurrencies with the benefits of a debt-based financial system?

@@ -97,6 +97,8 @@ function Box({
               <a
                 key={label}
                 href={link}
+                rel="noreferrer"
+                target="_blank"
                 className="flex flex-row items-center xl:text-lg mt-4 cursor-pointer font-semibold"
               >
                 {label}

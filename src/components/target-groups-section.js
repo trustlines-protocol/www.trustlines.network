@@ -115,7 +115,7 @@ function TargetGroupItem(props) {
           {Array.isArray(bottomLinks) && (
             <div className="flex flex-col md:flex-row mt-10 gap-8">
               {bottomLinks.map((bottomLink) => (
-                <div
+                <a
                   key={bottomLink.label}
                   className="text-coral-red font-semibold flex flex-row items-center cursor-pointer text-sm md:text-lg"
                   href={bottomLink.link}
@@ -127,7 +127,7 @@ function TargetGroupItem(props) {
                     size={18}
                     className="stroke-current text-coral-red stroke-2"
                   />
-                </div>
+                </a>
               ))}
             </div>
           )}
