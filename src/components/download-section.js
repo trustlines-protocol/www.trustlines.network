@@ -47,7 +47,9 @@ export default function DownloadSection() {
           </div>
           <div>
             <div className="text-2xl lg:text-4xl">Get started with</div>
-            <div className="text-2xl lg:text-4xl font-semibold">People Powered</div>
+            <div className="text-2xl lg:text-4xl font-semibold">
+              People Powered
+            </div>
             <div className="text-2xl lg:text-4xl font-semibold">Money!</div>
             <div className="mt-6 md:mt-8">
               <div className="text-xs md:text-base text-rich-black">

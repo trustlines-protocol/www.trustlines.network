@@ -2,8 +2,10 @@ import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { icon } from "leaflet";
 import { useMapEvents } from "react-leaflet";
+
 import MarkerIcon from "../images/marker.svg";
 
+import { COLOR_NAME_CLASSES } from "../constants";
 import Communities from "../content/communities/groups.json";
 
 function MapEvents() {
@@ -33,11 +35,16 @@ export default function Map({
     iconSize: [24, 24],
   });
 
+  const { borderColorClassName, bgColorClassName } =
+    COLOR_NAME_CLASSES[borderColor] || {};
+  const { shadowCardClassName } = COLOR_NAME_CLASSES[shadowColor] || {};
+  const { textColorClassName } = COLOR_NAME_CLASSES[textColor] || {};
+
   return (
     <div
       className={`
       mt-6 md:mt-11 border-4 rounded-3xl overflow-hidden
-      border-${borderColor} shadow-card-${shadowColor}
+      ${borderColorClassName} ${shadowCardClassName}
       `}
     >
       <MapContainer
@@ -78,7 +85,7 @@ export default function Map({
       </MapContainer>
       <div
         className={`
-        bg-${borderColor} text-${textColor} text-center
+        ${bgColorClassName} ${textColorClassName} text-center
         p-2 flex flex-col md:flex-row justify-center items-center text-sm md:text-base gap-0 md:gap-1
         `}
         dangerouslySetInnerHTML={{ __html: subTextHTML }}

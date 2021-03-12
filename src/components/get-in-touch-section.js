@@ -9,7 +9,7 @@ import { useIsDevice } from "../hooks/useIsDevice";
 
 export default function GetInTouchSection() {
   const [isExpanded, setIsExpanded] = useState(false);
-  const isMobile = useIsDevice('tablet');
+  const isMobile = useIsDevice("tablet");
 
   return (
     <div className="bg-rich-black-lighter md:h-96 md:bg-gray-200 flex flex-col justify-center items-center mb-32">
@@ -39,7 +39,7 @@ export default function GetInTouchSection() {
               )
             }
             iconPosition="right"
-            className={isMobile ? "hidden" : "w-64"}
+            className={"hidden md:w-64"}
             onClick={() => setIsExpanded(!isExpanded)}
           />
         </div>
