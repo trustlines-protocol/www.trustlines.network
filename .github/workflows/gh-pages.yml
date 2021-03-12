@@ -25,11 +25,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
+      - run: echo ${{ secrets.ENV_PRODUCTION_FILE }} | base64 -d > .env.production
+
       - run: yarn
       - run: yarn build
-        env:
-          GATSBY_CONTACT_MAIL: {{ secrets.GATSBY_CONTACT_MAIL }}
-          GATSBY_FORM_POST_URL: {{ secrets.GATSBY_FORM_POST_URL }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
