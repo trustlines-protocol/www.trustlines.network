@@ -13,8 +13,11 @@ export default function Communities() {
   return (
     <div>
       <Helmet>
-        <title>Communities page</title>
-        <meta name="description" content="Communities page meta description" />
+        <title>Communities - Trustlines network</title>
+        <meta
+          name="description"
+          content="Strengthen the circular economy and encourage sustainable trade loops in your community"
+        />
       </Helmet>
       <JoinSection />
       <GrowSection />
