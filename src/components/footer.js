@@ -73,13 +73,15 @@ function FooterBox({ title, links, withSocialMediaLinks }) {
         {title}
       </div>
       {links.map(({ label, to }) => (
-        <div
+        <a
           key={label}
           className="md:text-base text-white hover:text-coral-red cursor-pointer text-center md:text-left"
-          onClick={() => window.open(to, "_blank")}
+          href={to}
+          target={String(to).startsWith("http") ? "_blank" : "_self"}
+          rel={"noreferrer"}
         >
           {label}
-        </div>
+        </a>
       ))}
       {withSocialMediaLinks && (
         <SocialLinksRow
