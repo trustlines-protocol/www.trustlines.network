@@ -21,11 +21,13 @@ export default function ReadyToGetStartedSection() {
       )}
       {isMobile ? (
         <StaticImage
+          alt={"bg-mobile"}
           src="../content/get-started/images/bg-mobile.png"
           layout="fullWidth"
         />
       ) : (
         <StaticImage
+          alt={"bg-desktop"}
           src="../content/get-started/images/bg-desktop.png"
           layout="fullWidth"
         />

@@ -6,6 +6,7 @@ export default function AboutHero() {
     <div className="bg-coral-red-lightest">
       <div className="relative container mx-auto flex flex-row justify-end">
         <StaticImage
+          alt={"about-here"}
           height={432}
           src="../../content/about/images/about-hero.png"
         />
