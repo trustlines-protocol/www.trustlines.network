@@ -1,6 +1,4 @@
 import React from "react";
-import IconButton from "../icon-button";
-import CircleIcon from "../icons/circle";
 
 export default function ContentHero() {
   return (
@@ -17,15 +15,6 @@ export default function ContentHero() {
         The Trustlines Network is the first project to create a universally
         accessible medium of exchange.
       </p>
-      <IconButton
-        href={""}
-        label={"Join"}
-        textColor="white"
-        bgColor="black"
-        hoverBgColor="coral-red"
-        Icon={<CircleIcon className={"bg-coral-red group-hover:bg-white"} />}
-        glowColor="coral-red"
-      />
     </div>
   );
 }
