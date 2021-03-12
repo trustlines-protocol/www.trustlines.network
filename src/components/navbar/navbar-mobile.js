@@ -8,7 +8,7 @@ import SocialLinksRow from "../social-links-row";
 import Logo from "../../images/logo.svg";
 import BurgerMenu from "../../images/burger-menu.svg";
 
-export default function NavbarMobile(props) {
+export default function NavbarMobile({ navItems = [] }) {
   const [isFullScreenNavOpen, setIsFullScreenNavOpen] = useState(false);
 
   return isFullScreenNavOpen ? (
@@ -25,7 +25,7 @@ export default function NavbarMobile(props) {
         >
           Home
         </Link>
-        {props.navItems.map((navItem, i) => (
+        {navItems.map((navItem, i) => (
           <div
             key={`${navItem.label}-i`}
             onClick={() => setIsFullScreenNavOpen(false)}
@@ -34,12 +34,15 @@ export default function NavbarMobile(props) {
           </div>
         ))}
         <div className="flex mb-20">
-          <div
+          <Link
             className="bg-gray-100 px-8 py-4 rounded-full font-semibold text-2xl"
-            onClick={() => console.log("TODO")}
+            to={
+              "https://docs.trustlines.network/docs/resources/wp_content/how_trustlines_works.html"
+            }
+            target="_blank"
           >
             How it works
-          </div>
+          </Link>
         </div>
         <SocialLinksRow iconSize={24} iconColor="rich-black" />
         <Link
