@@ -20,6 +20,9 @@ module.exports = {
           lighter: "#FFD2BF",
           DEFAULT: "#FF7C4E",
         },
+        "coral-pastel": {
+          DEFAULT: "rgba(255, 210, 191, 1)",
+        },
         "app-blue": {
           lightest: "#E6EFFC",
           DEFAULT: "#007AFF",
@@ -32,16 +35,25 @@ module.exports = {
         "neon-pink": {
           DEFAULT: "#FFA0B7",
         },
+        "pink-pastel": {
+          DEFAULT: "#FFDFE7",
+        },
         "aquamarine-green": {
+          light: "#E1FFF3",
           DEFAULT: "#09E0A3",
         },
         "dark-green": {
           DEFAULT: "#0EC390",
         },
+        "cyber-yellow": {
+          DEFAULT: "#FFD41E",
+          darker: "#DCAE0B",
+        },
       },
       boxShadow: {
         "card-blue": "0px 0px 25px rgba(0, 122, 255, 0.1)",
         "card-gray": "0px 0px 25px rgba(0, 0, 0, 0.08)",
+        "card-neon-pink": "0px 0px 25px 0px rgba(255, 160, 183, 0.25)",
         "glow-app-blue": "0px 15px 37px rgba(0, 122, 255, 0.25)",
         "glow-coral-red": "0px 15px 37px rgba(255, 124, 78, 0.25)",
       },

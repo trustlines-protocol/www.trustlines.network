@@ -17,19 +17,19 @@ export default function SocialLinksRow({
       <Link to={SocialMediaLinks.twitter}>
         <TwitterIcon
           size={iconSize}
-          className={`fill-current text-${iconColor}`}
+          className={`fill-current text-${iconColor} hover:text-coral-red`}
         />
       </Link>
       <Link to={SocialMediaLinks.youtube}>
         <YoutubeIcon
           size={iconSize}
-          className={`fill-current text-${iconColor}`}
+          className={`fill-current text-${iconColor} hover:text-coral-red`}
         />
       </Link>
       <Link to={SocialMediaLinks.telegram}>
         <MessageBoxIcon
           size={iconSize}
-          className={`fill-current text-${iconColor}`}
+          className={`fill-current text-${iconColor} hover:text-coral-red`}
         />
       </Link>
     </div>

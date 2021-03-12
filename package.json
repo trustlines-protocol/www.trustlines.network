@@ -12,6 +12,7 @@
     "lint:fix": "eslint src --fix"
   },
   "dependencies": {
+    "@rooks/use-visibility-sensor": "^4.9.2",
     "gatsby": "^3.0.0",
     "gatsby-plugin-image": "^1.0.0",
     "gatsby-plugin-layout": "^2.0.0",
