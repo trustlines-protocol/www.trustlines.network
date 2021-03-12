@@ -1,10 +1,23 @@
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { icon } from "leaflet";
-
+import { useMapEvents } from "react-leaflet";
 import MarkerIcon from "../images/marker.svg";
 
 import Communities from "../content/communities/groups.json";
+
+function MapEvents() {
+  const map = useMapEvents({
+    click: () => {
+      if (map.scrollWheelZoom.enabled()) {
+        map.scrollWheelZoom.disable();
+      } else {
+        map.scrollWheelZoom.enable();
+      }
+    },
+  });
+  return null;
+}
 
 export default function Map({
   borderColor,
@@ -15,7 +28,6 @@ export default function Map({
   if (typeof window === "undefined") {
     return null;
   }
-
   const CustomMarkerIcon = icon({
     iconUrl: MarkerIcon,
     iconSize: [24, 24],
@@ -29,11 +41,12 @@ export default function Map({
       `}
     >
       <MapContainer
-        center={Communities[1].position}
-        zoom={6}
+        center={[25.072835488010323, -9.120591748774364]}
+        zoom={2}
         scrollWheelZoom={false}
         className="z-40"
       >
+        <MapEvents />
         <TileLayer
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
