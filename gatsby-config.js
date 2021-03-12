@@ -23,6 +23,7 @@ module.exports = {
               },
             },
           },
+          "gatsby-remark-copy-linked-files",
         ],
       },
     },

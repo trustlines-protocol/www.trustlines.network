@@ -13,7 +13,9 @@ export default function JoinSection() {
       markdownRemark(fileAbsolutePath: { glob: "**/communities/join.md" }) {
         frontmatter {
           title
-          bottomLink: bottom_link
+          bottomLinkAttachment: bottom_link_attachment {
+            publicURL
+          }
           bottomLinkLabel: bottom_link_label
         }
         html
@@ -39,7 +41,7 @@ export default function JoinSection() {
             <IconButton
               Icon={<DownloadIcon className="stroke-4/3" />}
               label={frontmatter.bottomLinkLabel}
-              href={frontmatter.bottomLink}
+              href={frontmatter.bottomLinkAttachment.publicURL}
               textColor="white"
               bgColor="majorelle-blue"
             />
