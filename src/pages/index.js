@@ -7,6 +7,7 @@ import GetInTouchSection from "../components/get-in-touch-section";
 import TargetGroupSection from "../components/target-groups-section";
 import CommunitiesMapSection from "../components/communities-map-landing";
 import GetStartedSection from "../components/ready-to-get-started-section";
+import ContentHero from "../components/content-hero/hero"
 
 export default function Landing() {
   return (
@@ -15,6 +16,7 @@ export default function Landing() {
         <title>Landing page</title>
         <meta name="description" content="landing page meta description" />
       </Helmet>
+      <ContentHero />
       <ContentSlider />
       <DownloadSection />
       <UseCasesSection />
