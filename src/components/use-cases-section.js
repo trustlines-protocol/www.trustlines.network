@@ -101,18 +101,20 @@ function UseCaseCard(props) {
         <div className="text-sm lg:text-base text-rich-black">
           {props.description}
         </div>
-        <div
-          className={`h-6 mt-2 font-semibold flex flex-row items-center gap-1 text-coral-red hover:opacity-50 ${
+        <a
+          className={`h-6 mt-2 font-semibold flex flex-row items-center gap-1 text-coral-red ${
             expandCard ? "block" : "hidden"
           }`}
-          onClick={() => window.open(props.readMoreLink, "_blank")}
+          href={props.readMoreLink}
+          target="_blank"
+          rel="noreferrer"
         >
           Read more
           <ArrowRightIcon
             size={16}
             className="stroke-current text-coral-red stroke-2"
           />
-        </div>
+        </a>
       </div>
     </div>
   );

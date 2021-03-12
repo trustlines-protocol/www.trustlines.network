@@ -5,7 +5,7 @@ import { animateScroll } from "react-scroll";
 import SocialLinksRow from "./social-links-row";
 import ArrowUpIcon from "./icons/arrow-up";
 
-import FooterBoxes from "../content/footer-boxes.json";
+import FooterBoxes from "../content/footer/footer-boxes.json";
 
 export default function Footer() {
   return (
@@ -49,7 +49,7 @@ export default function Footer() {
           <StaticImage
             width={400}
             objectFit="contain"
-            src="../images/sdg-logo.png"
+            src="../content/footer/images/sdg-logo.png"
             alt="SDG logo"
             className="grayscale-filter"
           />

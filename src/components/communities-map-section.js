@@ -6,15 +6,15 @@ import MarkerIcon from "../images/marker.svg";
 
 import Communities from "../content/communities.json";
 
-const CustomMarkerIcon = icon({
-  iconUrl: MarkerIcon,
-  iconSize: [24, 24],
-});
-
 export default function CommunitiesMapSection() {
   if (typeof window === "undefined") {
     return null;
   }
+
+  const CustomMarkerIcon = icon({
+    iconUrl: MarkerIcon,
+    iconSize: [24, 24],
+  });
 
   return (
     <div className="container mx-auto mb-16 md:mb-32 p-4">
@@ -61,9 +61,7 @@ export default function CommunitiesMapSection() {
         <div className="bg-neon-pink p-2 flex flex-col md:flex-row justify-center items-center text-sm md:text-base gap-0 md:gap-1">
           <div>Don&apos;t see a group nearby?</div>
           <div>Add yourself to the map!</div>
-          <a className="underline hover:text-white cursor-pointer">
-            Click here
-          </a>
+          <a className="underline">Click here</a>
         </div>
       </div>
     </div>

@@ -5,8 +5,8 @@ import DownloadOverlay from "./download-overlay";
 import IconButton from "./icon-button";
 import DownloadIcon from "./icons/download";
 
-import GradientCircle from "../images/gradient-circle.svg";
 import Circle from "./icons/circle";
+import GradientCircle from "../content/download/images/gradient-circle.svg";
 
 export default function DownloadSection() {
   const [showOverlay, setShowOverlay] = useState(false);
@@ -84,7 +84,7 @@ export default function DownloadSection() {
             />
             <StaticImage
               className="absolute top-0 left-0 h-full md:-left-48"
-              src="../content/images/phone.png"
+              src="../content/download/images/phone.png"
               layout="constrained"
               alt="Trustlines app image"
             />

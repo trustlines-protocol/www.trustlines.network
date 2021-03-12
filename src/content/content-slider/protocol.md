@@ -5,9 +5,9 @@ slide_subtitle: the Protocol
 slide_heading_color: "#BEB6EC"
 slide_background_image: images/protocol-bg.jpg
 content_image: images/protocol.jpg
-bottom-links:
-    - link: "https://dev.trustlines.network"
-      label: Go to Developer Documentation
+bottom_links:
+  - link: "https://dev.trustlines.network"
+    label: Go to Developer Documentation
 ---
 
 ## Accessible Technology
