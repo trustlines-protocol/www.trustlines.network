@@ -5,8 +5,6 @@ action_title: Be a financial sponsor for your community
 enable_contact_form: true
 ---
 
-We encourage you to be a part of the alternative financial system we are building. A system where each individual is empowered to create and manage their money without intermediaries and does not need permission to send or receive payments.
+The Trustlines Blockchain is designed to be available at an extremely low-cost. However, certain fees are required to keep the blockchain running.
 
-We believe that everyone deserves more flexibility and easier access to digital payments.
-
-Together we are bringing People Powered Money to life!
+Since blockchain fees are paid with a native cryptocurrency, and handling it is difficult for most users, delegates are needed to pay these fees on behalf of users. Delegates may offer this for free in support of their community, or can be reimbursed using Trustlines.

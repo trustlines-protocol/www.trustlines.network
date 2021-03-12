@@ -56,7 +56,7 @@ export default function Slider() {
           }`}
         >
           <CheckCircle activeIndex={currentSlide} />
-          <div className="text-white text-lg md:text-3xl max-w-3xl text-center md:text-left h-28 md:flex-1">
+          <div className="text-white text-lg md:text-3xl max-w-3xl text-center md:text-left h-28 md:flex-1 flex flex-col justify-center">
             {slides[currentSlide || 0].text}
           </div>
         </div>

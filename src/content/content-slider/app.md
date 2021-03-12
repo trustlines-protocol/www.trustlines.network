@@ -12,6 +12,6 @@ bottom_links:
 
 ## The Trustlines App
 
-A mobile app that is your key to using People Powered Money and participating in a community-built financial system.
+The mobile app is your key to using [People Powered Money](https://docs.trustlines.network/docs/resources/community_communications_guide.html#people-powered-money-ppm) and participating in a community-built financial system.
 
-Value can be simultaneously represented in over forty currencies, like Euros, Work Hours, or Favours. You can easily send or receive payments, add contacts, manage your balance using the accounting system, or split a bill with your friends.
+Value can be simultaneously represented in over forty currencies, like Euros, as well as Work Hours or Favours. You can easily send or receive payments, add contacts, manage your balance using the accounting system, or split a bill with your friends.

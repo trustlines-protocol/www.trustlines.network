@@ -2,8 +2,8 @@
 order: 3
 group_name: Developers
 action_title: Build custom applications on the Trustlines Protocol
-bottom-links:
-  - link: ""
+bottom_links:
+  - link: https://dev.trustlines.network/
     label: Read the Developer Documentation
 ---
 

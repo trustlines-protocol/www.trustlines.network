@@ -11,8 +11,10 @@ export default function Footer() {
   return (
     <div className="bg-rich-black">
       <div className="mx-auto container">
-        <div className="flex flex-col md:flex-row gap-8 justify-between pt-8
-        md:pt-16 pb-7 md:pb-14 px-4 md:border-b border-rich-black-lighter">
+        <div
+          className="flex flex-col md:flex-row gap-8 justify-between pt-8
+        md:pt-16 pb-7 md:pb-14 px-4 md:border-b border-rich-black-lighter"
+        >
           {FooterBoxes.map((footerBox) => (
             <FooterBox key={footerBox.title} {...footerBox} />
           ))}
@@ -33,9 +35,10 @@ export default function Footer() {
             <div className="text-rich-black-lightest font-semibold pb-2 text-center md:text-left">
               Trustlines is aimed at{" "}
               <a
-                className="underline cursor-pointer hover:text-coral-red"
-                href=""
+                className="underline cursor-pointer"
+                href="https://unstats.un.org/sdgs/metadata/?Text=&Goal=8&Target=8.10"
                 target="_blank"
+                rel="noreferrer"
               >
                 SDG target 8.10
               </a>

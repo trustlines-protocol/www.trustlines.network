@@ -35,11 +35,18 @@ export default function UseCasesSection() {
       <div className="flex flex-row justify-between mb-3">
         <div>
           <div className="text-3xl font-semibold mb-2">
-            Pay with People Powered Money
+            Why People Powered Money?
           </div>
           <div className="text-base text-rich-black-lightest">
             A financial system built on the idea of People Powered Money is
-            accessible for unbanked people and allows them to make payments.
+            accessible for{" "}
+            <a
+              className="underline"
+              href="https://globalfindex.worldbank.org/sites/globalfindex/files/chapters/2017%20Findex%20full%20report_chapter2.pdf"
+            >
+              unbanked people
+            </a>{" "}
+            and allows them to make payments.
           </div>
         </div>
         <div className="hidden md:block">
@@ -52,6 +59,9 @@ export default function UseCasesSection() {
             className={"w-28 h-28 flex flex-col"}
             isCircle={true}
             Icon={<PlusIcon className="stroke-current text-white stroke-4/3" />}
+            href={
+              "https://docs.trustlines.network/docs/resources/wp_content/use_in_the_real_world.html"
+            }
           />
         </div>
       </div>
@@ -67,6 +77,9 @@ export default function UseCasesSection() {
           hoverTextColor="white"
           hoverBgColor="rich-black"
           className="md:hidden"
+          href={
+            "https://docs.trustlines.network/docs/resources/wp_content/use_in_the_real_world.html"
+          }
         />
       </div>
     </div>
@@ -84,7 +97,7 @@ function UseCaseCard(props) {
   return (
     <div
       ref={hoverRef}
-      className={`flex flex-col rounded-3xl shadow-card-gray overflow-hidden cursor-pointer ${
+      className={`flex-1 flex flex-col rounded-3xl shadow-card-gray overflow-hidden cursor-pointer ${
         expandCard ? "mt-0" : "mt-8"
       }`}
       onClick={() => window.open(props.readMoreLink, "_blank")}

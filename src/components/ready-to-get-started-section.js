@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
+import ContactForm from "./contact-form";
 import DownloadOverlay from "./download-overlay";
 import IconButton from "./icon-button";
 import DownloadIcon from "./icons/download";
@@ -12,10 +13,11 @@ import SocialMediaLinks from "../content/social-media-links.json";
 
 export default function ReadyToGetStartedSection() {
   const [showDownloadOverlay, setShowDownloadOverlay] = useState(false);
+  const [showContactForm, setShowContactForm] = useState(false);
   const isMobile = useIsDevice("tablet");
 
   return (
-    <div className="relative mb-32">
+    <div className="relative mb-32 overflow-x-hidden">
       {showDownloadOverlay && (
         <DownloadOverlay onClickClose={() => setShowDownloadOverlay(false)} />
       )}
@@ -57,7 +59,7 @@ export default function ReadyToGetStartedSection() {
             ringColor="coral-red"
             hoverRingColor="black"
             className="text-sm md:text-base font-semibold"
-            href={`mailto:${SocialMediaLinks.mail}`}
+            onClick={() => setShowContactForm(!showContactForm)}
           />
           <IconButton
             Icon={<TwitterIcon size={16} className="stroke-4/3" />}
@@ -71,6 +73,7 @@ export default function ReadyToGetStartedSection() {
             href={SocialMediaLinks.twitter}
           />
         </div>
+        {showContactForm && <ContactForm />}
       </div>
     </div>
   );

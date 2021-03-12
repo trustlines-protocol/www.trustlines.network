@@ -17,10 +17,6 @@
   .slide-content p {
     @apply text-rich-black-lightest tracking-tightest mb-3;
   }
-
-  .slide-content p:last-child {
-    @apply mt-10;
-  }
 }
 
 .arrow-up {
