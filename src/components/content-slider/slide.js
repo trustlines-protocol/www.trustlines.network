@@ -22,7 +22,7 @@ export const SlideImage = ({ image, order }) => {
     <GatsbyImage
       image={image}
       alt={"test"}
-      className={"rounded -z-10"}
+      className={"rounded z-0"}
       style={isMobile ? {} : { minHeight: "400px" }}
       key={"slide-image-" + order}
     />
