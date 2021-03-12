@@ -43,6 +43,8 @@ export default function UseCasesSection() {
             <a
               className="underline"
               href="https://globalfindex.worldbank.org/sites/globalfindex/files/chapters/2017%20Findex%20full%20report_chapter2.pdf"
+              target="_blank"
+              rel="noreferrer"
             >
               unbanked people
             </a>{" "}

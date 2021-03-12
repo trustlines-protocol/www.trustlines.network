@@ -44,8 +44,8 @@ function SubNavItem(props) {
       to={props.to}
       target="_blank"
     >
-      <div className="font-semibold mb-2">{props.label}</div>
-      <div className="text-xs text-rich-black-lightest">{props.subLabel}</div>
+      <div className="font-semibold">{props.label}</div>
+      {/* <div className="text-xs text-rich-black-lightest mt-2">{props.subLabel}</div> */}
     </Link>
   );
 }
