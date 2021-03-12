@@ -45,11 +45,11 @@ export default function NavbarMobile({ navItems = [] }) {
           </Link>
         </div>
         <SocialLinksRow iconSize={24} iconColor="rich-black" />
-        <Link
-          className="font-semibold text-base mb-4"
-          onClick={() => setIsFullScreenNavOpen(false)}
-        >
-          Legal Imprint & Privacy Policy
+        <Link className="font-semibold text-base mb-4" to="/imprint">
+          Legal Imprint
+        </Link>
+        <Link className="font-semibold text-base mb-4" to="/privacy-policy">
+          Privacy Policy
         </Link>
       </div>
     </div>

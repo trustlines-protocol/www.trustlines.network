@@ -55,11 +55,11 @@
     "links": [
       {
         "label": "Legal Imprint",
-        "to": ""
+        "to": "/imprint"
       },
       {
         "label": "Privacy Policy",
-        "to": ""
+        "to": "/privacy-policy"
       }
     ],
     "withSocialMediaLinks": true
