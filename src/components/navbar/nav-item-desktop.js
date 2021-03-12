@@ -14,7 +14,7 @@ export default function NavItemDesktop({ to, label, subNavItems = [] }) {
     <div className="cursor-pointer inline-block" ref={hoverRef}>
       <div className="flex flex-col justify-center">
         <Link
-          className={`text-sm lg:text-base whitespace-nowrap ${
+          className={`text-sm lg:text-base whitespace-nowrap hover:text-coral-red ${
             showSubNavItems ? "text-coral-red" : "text-rich-black-lighter"
           }`}
           to={to}
