@@ -2,12 +2,25 @@ module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    container: {
+      screens: {
+        sm: "100%",
+        md: "100%",
+        lg: "1024px",
+        xl: "1024px",
+      },
+    },
+
     extend: {
       fontFamily: {
         sans: ["Inter", "sans-serif"],
       },
+      fontSize: {
+        "heading-hero": "3.5rem",
+      },
       letterSpacing: {
         tightest: "-0.01em",
+        "max-tightest": "-0.0324em",
       },
       colors: {
         "rich-black": {
