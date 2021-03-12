@@ -4,15 +4,15 @@
     "links": [
       {
         "label": "Trustlines Blog",
-        "to": ""
+        "to": "https://blog.trustlines.network/"
       },
       {
         "label": "Trustlines Foundation",
-        "to": ""
+        "to": "https://trustlines.foundation/"
       },
       {
         "label": "Trustlines Docs",
-        "to": ""
+        "to": "https://docs.trustlines.network/"
       }
     ]
   },
@@ -21,15 +21,15 @@
     "links": [
       {
         "label": "Trustlines Forum",
-        "to": ""
+        "to": "https://forum.trustlines.network/"
       },
       {
         "label": "Trustlines Newsletter",
-        "to": ""
+        "to": "https://foundation.us20.list-manage.com/subscribe?u=ad97861a3786f82a87c0c7417&id=7125095980"
       },
       {
         "label": "Trustlines Network in Telegram",
-        "to": ""
+        "to": "https://t.me/trustlines_network"
       }
     ]
   },
@@ -38,15 +38,15 @@
     "links": [
       {
         "label": "Trustlines in GitHub",
-        "to": ""
+        "to": "https://github.com/trustlines-protocol"
       },
       {
         "label": "Trustlines Dev Docs",
-        "to": ""
+        "to": "https://dev.trustlines.network/"
       },
       {
         "label": "Trustlines Technical Chat",
-        "to": ""
+        "to": "https://gitter.im/trustlines/community"
       }
     ]
   },

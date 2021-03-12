@@ -1,26 +1,26 @@
 [
   {
-    "title": "Send & Receive Payments",
+    "title": "Send and Receive Payments",
     "description": "Anyone can create money, make and receive payments, and manage their balance.",
     "image": "./images/send-receive-payments.png",
-    "readMoreLink": "/"
+    "readMoreLink": "https://docs.trustlines.network/docs/resources/wp_content/use_in_the_real_world.html"
   },
   {
     "title": "Timebanking",
-    "description": "Anyone can create money, make and receive payments, and manage their balance.",
+    "description": "Use time as a currency to track a group’s scope and impact.",
     "image": "./images/timebanking.png",
-    "readMoreLink": "/"
+    "readMoreLink": "https://docs.trustlines.network/docs/resources/wp_content/use_in_the_real_world.html#time-credits"
   },
   {
     "title": "Manage a Community",
-    "description": "Anyone can create money, make and receive payments, and manage their balance.",
+    "description": "Designed to bolster local community trade and encourage hyper-local trading circles.",
     "image": "./images/community-currencies.png",
-    "readMoreLink": "/"
+    "readMoreLink": "https://docs.trustlines.network/docs/resources/wp_content/use_in_the_real_world.html#community-currency"
   },
   {
     "title": "Withdraw Cash from People",
-    "description": "Anyone can create money, make and receive payments, and manage their balance.",
+    "description": "Withdraw cash from any other connected Trustlines users, reducing dependency on ATMs.",
     "image": "./images/people-atm.png",
-    "readMoreLink": "/"
+    "readMoreLink": "https://docs.trustlines.network/docs/resources/wp_content/use_in_the_real_world.html#the-peoples-atm"
   }
 ]

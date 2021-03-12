@@ -18,6 +18,8 @@ module.exports = {
             options: {
               a: {
                 className: "underline",
+                target: "_blank",
+                rel: "noreferrer",
               },
             },
           },

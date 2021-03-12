@@ -54,7 +54,7 @@ export default function DownloadSection() {
                 Economic Inclusion for all.
               </div>
               <div className="text-xs md:text-base text-rich-black">
-                Powered by trustlines.
+                Powered by Trustlines.
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@ export default function DownloadSection() {
               bgColor={"rich-black"}
               ringColor={"transparent"}
               hoverBgColor={"app-blue"}
-              label="Go to Trustlines App website"
+              label="Learn More"
               glowColor={"app-blue"}
               Icon={
                 <Circle
@@ -72,7 +72,7 @@ export default function DownloadSection() {
                   className={"bg-app-blue group-hover:bg-white"}
                 />
               }
-              onClick={() => setShowOverlay(true)}
+              href="https://trustlines.app"
             />
           </div>
         </div>

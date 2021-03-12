@@ -1,18 +1,18 @@
 import React from "react";
 import { Link } from "gatsby";
 
-export default function NavItemMobile(props) {
+export default function NavItemMobile({ subNavItems = [], to, label }) {
   return (
     <div className="flex flex-col mb-4">
       <Link
         className="font-semibold text-2xl "
-        to={props.to}
+        to={to}
         activeClassName="text-majorelle-blue"
       >
-        {props.label}
+        {label}
       </Link>
-      {props.subNavItems.map((item, i) => (
-        <Link key={`${item.label}-${i}`} to={item.to}>
+      {subNavItems.map((item, i) => (
+        <Link key={`${item.label}-${i}`} to={item.to} target="_blank">
           {item.label}
         </Link>
       ))}

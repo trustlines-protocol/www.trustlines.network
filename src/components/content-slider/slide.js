@@ -48,7 +48,7 @@ export const SlideHeading = ({ slide_title, slide_subtitle, style }) => {
 
 export const SlideActionButtons = ({ links = [] }) => {
   return (
-    <div className={"flex flex-row"}>
+    <div className={"flex flex-row mt-10"}>
       {links.map((link) => {
         return (
           <IconButton
