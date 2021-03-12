@@ -5,9 +5,9 @@ slide_subtitle: "Trustlines"
 slide_heading_color: "#FFD2BF"
 slide_background_image: images/trustlines-bg.jpg
 content_image: images/trustlines.jpg
-bottom-links:
-    - link: "https://trustlines.network"
-      label: Learn more
+bottom_links:
+  - link: "https://trustlines.network"
+    label: Learn more
 ---
 
 ## What is the Trustlines Network?

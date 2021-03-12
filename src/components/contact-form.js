@@ -21,7 +21,7 @@ export default function ContactForm(props) {
         <Input placeholder="Email" required />
         <div className="flex-1 flex py-4 md:py-0 px-6 bg-gray-300 rounded-full overflow-hidden overflow-ellipsis">
           <select
-            className="flex-1 bg-gray-300 text-sm font-semibold w-full"
+            className="flex-1 bg-gray-300 text-sm font-semibold w-full focus:outline-none"
             required
             defaultValue=""
           >
@@ -38,7 +38,7 @@ export default function ContactForm(props) {
       </div>
       <div className="flex flex-col md:flex-row gap-4 items-center">
         <textarea
-          className="w-full md:w-auto flex-1 px-6 py-4 bg-gray-300 rounded-full text-sm font-semibold"
+          className="w-full md:w-auto flex-1 px-6 py-4 bg-gray-300 rounded-full text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-majorelle-blue"
           placeholder="Message"
           required
           rows={1}
@@ -49,16 +49,13 @@ export default function ContactForm(props) {
           bgColor="majorelle-blue"
           label="Send"
           iconPosition="right"
-          className="w-full md:w-28 hover:opacity-50"
+          className="w-full md:w-28"
           type="submit"
         />
       </div>
       <div className="text-gray-500 text-center md:text-left">
         Or simply{" "}
-        <a
-          className="underline hover:text-coral-red"
-          href={`mailto:${CONTACT_MAIL}`}
-        >
+        <a className="underline" href={`mailto:${CONTACT_MAIL}`}>
           send us an email
         </a>
         .
@@ -70,7 +67,7 @@ export default function ContactForm(props) {
 function Input(props) {
   return (
     <input
-      className="flex-1 px-6 py-4 bg-gray-300 rounded-full text-sm font-semibold"
+      className="flex-1 px-6 py-4 bg-gray-300 rounded-full text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-majorelle-blue"
       {...props}
     />
   );

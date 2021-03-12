@@ -17,7 +17,7 @@ module.exports = {
             resolve: `gatsby-remark-default-html-attrs`,
             options: {
               a: {
-                className: "underline hover:text-coral-red",
+                className: "underline",
               },
             },
           },

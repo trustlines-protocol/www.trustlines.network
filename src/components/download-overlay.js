@@ -5,6 +5,8 @@ import AppleIcon from "./icons/apple";
 import PlaystoreIcon from "./icons/playstore";
 import DownloadIcon from "./icons/download";
 
+import Links from "../content/download/links.json";
+
 export default function DownloadOverlay(props) {
   return (
     <div className="absolute flex flex-col justify-between top-0 left-0 right-0 bottom-0 bg-white z-40 p-11">
@@ -20,21 +22,22 @@ export default function DownloadOverlay(props) {
             icon={<AppleIcon />}
             label="App Store"
             color="app-blue"
-            onClick={() => console.log("TODO")}
+            href={Links.appStoreLink}
           />
           <DownloadButton
             icon={<PlaystoreIcon />}
             label="Play Store"
             color="majorelle-blue"
-            onClick={() => console.log("TODO")}
+            href={Links.playStoreLink}
           />
         </div>
-        <div
-          className="underline text-lg text-gray-400 hover:text-majorelle-blue cursor-pointer"
-          onClick={() => console.log("TODO")}
+        <a
+          className="underline text-lg text-gray-400 cursor-pointer"
+          href={Links.apkLink}
+          download
         >
           or download the .APK
-        </div>
+        </a>
       </div>
       <div className="text-white">_</div>
     </div>
@@ -43,9 +46,11 @@ export default function DownloadOverlay(props) {
 
 function DownloadButton(props) {
   return (
-    <div
+    <a
       className="flex flex-row gap-2 items-center cursor-pointer hover:opacity-50"
-      onClick={props.onClick}
+      href={props.href}
+      target="_blank"
+      rel="noreferrer"
     >
       <div
         className={`flex flex-row items-center justify-center w-14 h-14 rounded-full gradient-bg`}
@@ -57,6 +62,6 @@ function DownloadButton(props) {
         size={24}
         className={`stroke-current text-${props.color} stroke-4/3`}
       />
-    </div>
+    </a>
   );
 }
