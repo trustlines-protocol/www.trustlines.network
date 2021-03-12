@@ -22,12 +22,12 @@ export default function ReadyToGetStartedSection() {
       {isMobile ? (
         <StaticImage
           src="../content/get-started/images/bg-mobile.png"
-          className="w-screen"
+          layout="fullWidth"
         />
       ) : (
         <StaticImage
           src="../content/get-started/images/bg-desktop.png"
-          className="w-screen"
+          layout="fullWidth"
         />
       )}
       <div className="absolute flex justify-center items-center top-0 left-0 right-0 bottom-0 flex-col">
