@@ -6,15 +6,15 @@ import MarkerIcon from "../images/marker.svg";
 
 import Communities from "../content/communities.json";
 
-const CustomMarkerIcon = icon({
-  iconUrl: MarkerIcon,
-  iconSize: [24, 24],
-});
-
 export default function CommunitiesMapSection() {
   if (typeof window === "undefined") {
     return null;
   }
+
+  const CustomMarkerIcon = icon({
+    iconUrl: MarkerIcon,
+    iconSize: [24, 24],
+  });
 
   return (
     <div className="container mx-auto mb-16 md:mb-32 p-4">
