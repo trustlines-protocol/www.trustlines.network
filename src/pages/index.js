@@ -1,5 +1,6 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+
+import CustomHelmet from "../components/custom-helmet";
 import ContentSlider from "../components/content-slider";
 import DownloadSection from "../components/download-section";
 import UseCasesSection from "../components/use-cases-section";
@@ -12,13 +13,13 @@ import ContentHero from "../components/content-hero/hero";
 export default function Landing() {
   return (
     <div>
-      <Helmet>
+      <CustomHelmet>
         <title>Home - Trustlines network</title>
         <meta
           name="description"
           content="The Trustlines Network is the first project to create a universally accessible medium of exchange."
         />
-      </Helmet>
+      </CustomHelmet>
       <ContentHero />
       <ContentSlider />
       <DownloadSection />

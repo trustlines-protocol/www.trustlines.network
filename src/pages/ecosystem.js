@@ -1,13 +1,14 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+
+import CustomHelmet from "../components/custom-helmet";
 
 export default function Ecosystem() {
   return (
     <div>
-      <Helmet>
+      <CustomHelmet>
         <title>Ecosystem page</title>
         <meta name="description" content="Ecosystem page meta description" />
-      </Helmet>
+      </CustomHelmet>
       Ecosystem page
     </div>
   );

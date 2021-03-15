@@ -1,6 +1,6 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 
+import CustomHelmet from "../components/custom-helmet";
 import AboutHero from "../components/about/hero";
 import AboutIntro from "../components/about/intro";
 import AboutVisionMission from "../components/about/vision-mission";
@@ -11,10 +11,10 @@ import GetStartedSection from "../components/ready-to-get-started-section";
 export default function About() {
   return (
     <div>
-      <Helmet>
+      <CustomHelmet>
         <title>About - Trustlines network</title>
         <meta name="description" content="Financial inclusion for all people" />
-      </Helmet>
+      </CustomHelmet>
       <AboutHero />
       <AboutIntro />
       <AboutVisionMission />
