@@ -43,7 +43,7 @@ export default function Map({
   return (
     <div
       className={`
-      mt-6 md:mt-11 border-4 rounded-3xl overflow-hidden
+      mt-6 md:mt-11 border-4 rounded-3xl overflow-hidden translate-z-0
       ${borderColorClassName} ${shadowCardClassName}
       `}
     >
@@ -86,7 +86,7 @@ export default function Map({
       <div
         className={`
         ${bgColorClassName} ${textColorClassName} text-center
-        p-2 flex flex-col md:flex-row justify-center items-center text-sm md:text-base gap-0 md:gap-1
+        p-2 flex flex-col md:flex-row justify-center items-center text-sm md:text-base md:space-x-1
         `}
         dangerouslySetInnerHTML={{ __html: subTextHTML }}
       />
