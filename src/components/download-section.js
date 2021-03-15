@@ -83,6 +83,7 @@ export default function DownloadSection() {
             <img
               className="h-96 -mt-52 md:mt-0 md:object-cover md:h-auto md:w-full"
               src={GradientCircle}
+              alt="Gradient circle background graphic"
             />
             <div className="absolute top-0 left-0 h-full md:-left-48">
               <StaticImage

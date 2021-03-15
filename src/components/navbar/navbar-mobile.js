@@ -32,6 +32,7 @@ export default function NavbarMobile({ navItems = [] }) {
               "https://docs.trustlines.network/docs/resources/wp_content/how_trustlines_works.html"
             }
             target="_blank"
+            rel="noreferrer"
           >
             How it works
           </Link>
@@ -47,12 +48,15 @@ export default function NavbarMobile({ navItems = [] }) {
     </div>
   ) : (
     <div className="sticky top-0 z-50 w-full bg-white p-4 flex flex-row justify-between md:hidden">
-      <Link to="/">
-        <img src={Logo} />
+      <Link to="/" ariaLabel="Link to home page">
+        <img src={Logo} alt="Trustlines network logo" />
       </Link>
-      <div onClick={() => setIsFullScreenNavOpen(true)}>
-        <img src={BurgerMenu} />
-      </div>
+      <button
+        onClick={() => setIsFullScreenNavOpen(true)}
+        ariaLabel="Menu open button"
+      >
+        <img src={BurgerMenu} alt="Burger menu icon" />
+      </button>
     </div>
   );
 }

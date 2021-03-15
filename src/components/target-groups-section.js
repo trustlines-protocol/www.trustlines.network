@@ -103,6 +103,9 @@ function TargetGroupItem(props) {
             isCircle
             textColor="coral-red"
             bgColor="coral-red-lighter"
+            aria-label={
+              isExpanded ? "Button with minus icon" : "Button with plus icon"
+            }
           />
         </div>
       </div>
