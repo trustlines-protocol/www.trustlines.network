@@ -3,6 +3,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import IconButton from "../icon-button";
 import Circle from "../icons/circle";
 import useIsDevice from "../../hooks/useIsDevice";
+import { navigate } from "gatsby";
 
 export const Slide = ({ children }) => {
   return (
@@ -50,6 +51,17 @@ export const SlideActionButtons = ({ links = [] }) => {
   return (
     <div className={"flex flex-row mt-10"}>
       {links.map((link) => {
+        const isExternal = String(link).startsWith("http");
+        let extraProps = {
+          href: link.link,
+        };
+        if (!isExternal) {
+          extraProps = {
+            onClick: () => {
+              navigate(link.link);
+            },
+          };
+        }
         return (
           <IconButton
             key={link.label}
@@ -60,13 +72,13 @@ export const SlideActionButtons = ({ links = [] }) => {
             hoverBgColor={"coral-red"}
             glowColor={"coral-red"}
             label={link.label}
-            href={link.link}
             Icon={
               <Circle
                 size={24}
                 className={"bg-coral-red group-hover:bg-white"}
               />
             }
+            {...extraProps}
           />
         );
       })}
