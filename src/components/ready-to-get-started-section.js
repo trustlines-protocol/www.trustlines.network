@@ -11,14 +11,16 @@ import TwitterIcon from "./icons/twitter-outlined";
 import { useIsDevice } from "../hooks/useIsDevice";
 
 import SocialMediaLinks from "../content/social-media-links.json";
+import useIsClient from "../hooks/useIsClient";
 
 export default function ReadyToGetStartedSection() {
+  const [, key] = useIsClient();
   const [showDownloadOverlay, setShowDownloadOverlay] = useState(false);
   const [showContactForm, setShowContactForm] = useState(false);
   const isMobile = useIsDevice("tablet");
 
   return (
-    <div className="mb-32" id="container">
+    <div className="mb-24 sm:mb-32" id="container" key={key}>
       <div className="relative overflow-hidden md:py-12">
         {showDownloadOverlay && (
           <DownloadOverlay onClickClose={() => setShowDownloadOverlay(false)} />

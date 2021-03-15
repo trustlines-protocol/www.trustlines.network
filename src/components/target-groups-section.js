@@ -41,7 +41,7 @@ export default function TargetGroupsSection(props) {
   }));
 
   return (
-    <div className="flex flex-col mx-auto container mb-32">
+    <div className="flex flex-col mx-auto container mb-24 sm:mb-32">
       {targetGroups.map((node, index) => (
         <TargetGroupItem
           key={node.groupName}

@@ -8,6 +8,7 @@
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build",
+    "serve": "gatsby serve",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix"
   },

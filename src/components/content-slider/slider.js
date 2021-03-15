@@ -10,8 +10,10 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Pagination from "./pagination";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 import useIsDevice from "../../hooks/useIsDevice";
+import useIsClient from "../../hooks/useIsClient";
 
 export default function Slider({ slides, activePage, onPageChange }) {
+  const [, key] = useIsClient();
   const activeSlide = slides.find((slide) => slide.meta.order === activePage);
   const { meta, html } = activeSlide;
   const isMobile = useIsDevice("mobile");
@@ -42,7 +44,7 @@ export default function Slider({ slides, activePage, onPageChange }) {
   const slideImage = getImage(meta.content_image);
 
   return (
-    <div className={"static"}>
+    <div className={"static" + key} key={key}>
       <div className={"absolute w-full -z-10 hidden sm:block"}>
         <SwitchTransition mode={"in-out"}>
           <CSSTransition
@@ -58,7 +60,7 @@ export default function Slider({ slides, activePage, onPageChange }) {
               key={meta.order}
               image={image}
               loading={"eager"}
-              alt={"test"}
+              alt={"slider-background-image"}
               placeholder={"none"}
               style={{
                 height: "472px",

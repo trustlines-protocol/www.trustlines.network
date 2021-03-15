@@ -6,7 +6,7 @@ import useIsDevice from "../../hooks/useIsDevice";
 
 export const Slide = ({ children }) => {
   return (
-    <div className={"container px-4 mx-auto slide-content mb-72"}>
+    <div className={"container px-4 mx-auto slide-content mb-24 sm:mb-72"}>
       <div className={"grid grid-cols-2 sm:grid-cols-3"}>{children}</div>
     </div>
   );
@@ -21,7 +21,7 @@ export const SlideImage = ({ image, order }) => {
   return (
     <GatsbyImage
       image={image}
-      alt={"test"}
+      alt={"slider image"}
       className={"rounded z-0"}
       style={isMobile ? {} : { minHeight: "400px" }}
       key={"slide-image-" + order}
