@@ -12,14 +12,14 @@ export default function NavItemMobile({ subNavItems = [], to, label }) {
         {label}
       </Link>
       {subNavItems.map((item, i) => (
-        <Link
+        <a
           key={`${item.label}-${i}`}
-          to={item.to}
+          href={item.to}
           target="_blank"
           rel="noreferrer"
         >
           {item.label}
-        </Link>
+        </a>
       ))}
     </div>
   );
