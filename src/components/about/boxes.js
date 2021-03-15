@@ -126,6 +126,7 @@ function Box({
           }`}
         >
           <GatsbyImage
+            alt="About box image"
             image={getImage(image)}
             key={"about-box-image-" + title}
             className={reverse ? "" : "transform -scale-x-100"}

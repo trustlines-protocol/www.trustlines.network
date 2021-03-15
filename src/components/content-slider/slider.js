@@ -43,7 +43,6 @@ export default function Slider({ slides, activePage, onPageChange }) {
 
   const slideImage = getImage(meta.content_image);
 
-  console.log('key', key)
   return (
     <div className={"static" + key} key={key}>
       <div className={"absolute w-full -z-10 hidden sm:block"}>
@@ -61,7 +60,7 @@ export default function Slider({ slides, activePage, onPageChange }) {
               key={meta.order}
               image={image}
               loading={"eager"}
-              alt={"test"}
+              alt={"slider-background-image"}
               placeholder={"none"}
               style={{
                 height: "472px",

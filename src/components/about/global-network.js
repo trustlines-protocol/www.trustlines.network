@@ -54,7 +54,7 @@ export default function GlobalNetwork() {
         </div>
       </div>
       <div className="flex-1 flex flex-row justify-end mb-8 md:mb-0">
-        <GatsbyImage image={getImage(markdownRemark.frontmatter.image)} />
+        <GatsbyImage alt="global network image" image={getImage(markdownRemark.frontmatter.image)} />
       </div>
     </div>
   );
