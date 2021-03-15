@@ -7,7 +7,7 @@ slide_background_image: images/trustlines-bg.jpg
 content_image: images/trustlines.jpg
 bottom_links:
   - link: /about
-    label: Learn More
+    label: Learn more
 ---
 
 ## What is the Trustlines Network?

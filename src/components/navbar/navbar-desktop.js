@@ -11,7 +11,7 @@ export default function NavbarDesktop({ navItems = [] }) {
       <div className="flex h-24 pb-4 flex-col justify-end mx-auto container">
         <div className="flex flex-row justify-between items-center px-2">
           <Link to="/">
-            <img src={Logo} />
+            <img src={Logo} alt="Trustlines network logo" />
           </Link>
           <div className="flex flex-row gap-6 items-center">
             {navItems.map((item) => (
@@ -23,6 +23,7 @@ export default function NavbarDesktop({ navItems = [] }) {
                 "https://docs.trustlines.network/docs/resources/wp_content/how_trustlines_works.html"
               }
               target="_blank"
+              rel="noreferrer"
             >
               <div className="text-sm lg:text-base">How it works</div>
             </Link>

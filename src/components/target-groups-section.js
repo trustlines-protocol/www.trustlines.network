@@ -103,6 +103,9 @@ function TargetGroupItem(props) {
             isCircle
             textColor="coral-red"
             bgColor="coral-red-lighter"
+            aria-label={
+              isExpanded ? "Button with minus icon" : "Button with plus icon"
+            }
           />
         </div>
       </div>
@@ -150,7 +153,7 @@ function TargetGroupItemContactForm() {
             <ArrowDownIcon size={16} className="stroke-2" />
           )
         }
-        label="Contact Us"
+        label="Contact us"
         textColor={"white"}
         hoverTextColor={"coral-red"}
         bgColor={"coral-red"}

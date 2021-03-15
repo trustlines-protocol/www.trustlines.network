@@ -23,7 +23,7 @@ export default function DownloadSection() {
             bgColor={"rich-black"}
             ringColor={"transparent"}
             hoverBgColor={"app-blue"}
-            label="Download For Free"
+            label="Download for free"
             className={
               "w-28 h-28 flex flex-col items-center justify-center py-4 px-3 gap-0 text-center "
             }
@@ -66,7 +66,7 @@ export default function DownloadSection() {
               bgColor={"rich-black"}
               ringColor={"transparent"}
               hoverBgColor={"app-blue"}
-              label="Learn More"
+              label="Learn more"
               glowColor={"app-blue"}
               Icon={
                 <Circle
@@ -83,6 +83,7 @@ export default function DownloadSection() {
             <img
               className="h-96 -mt-52 md:mt-0 md:object-cover md:h-auto md:w-full"
               src={GradientCircle}
+              alt="Gradient circle background graphic"
             />
             <div className="absolute top-0 left-0 h-full md:-left-48">
               <StaticImage

@@ -43,6 +43,7 @@ function SubNavItem(props) {
       className="flex flex-col p-4 hover:bg-gray-300 rounded-lg"
       to={props.to}
       target="_blank"
+      rel="noreferrer"
     >
       <div className="font-semibold">{props.label}</div>
       {/* <div className="text-xs text-rich-black-lightest mt-2">{props.subLabel}</div> */}

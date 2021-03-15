@@ -36,7 +36,7 @@ export default function ContactSection() {
                 <ArrowDownIcon size={16} className="stroke-4/3" />
               )
             }
-            label="Contact Us"
+            label="Contact us"
             textColor="rich-black"
             bgColor="neon-pink"
             iconPosition="right"

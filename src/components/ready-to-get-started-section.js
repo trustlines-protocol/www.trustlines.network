@@ -54,7 +54,7 @@ export default function ReadyToGetStartedSection() {
             />
             <IconButton
               Icon={<MailIcon size={16} className="stroke-4/3" />}
-              label="Get in Touch"
+              label="Get in touch"
               bgColor="white"
               textColor="coral-red"
               hoverTextColor="black"
@@ -71,7 +71,7 @@ export default function ReadyToGetStartedSection() {
             />
             <IconButton
               Icon={<TwitterIcon size={16} className="stroke-4/3" />}
-              label="Follow Us"
+              label="Follow us"
               bgColor="white"
               textColor="coral-red"
               hoverTextColor="black"
