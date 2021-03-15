@@ -26,12 +26,12 @@ export default function Grant() {
 
   return (
     <div className="mx-auto px-4 container flex flex-col-reverse md:flex-row py-14 md:py-28">
-      <div className="flex-1 flex flex-col gap-8 justify-center">
+      <div className="flex-1 flex flex-col space-y-8 justify-center">
         <div className="text-2xl md:text-3xl font-semibold text-rich-black max-w-xs md:max-w-md">
           {markdownRemark.frontmatter.title}
         </div>
         <div
-          className="text-base md:text-lg md:pr-8 max-w-md gap-4 flex flex-col"
+          className="text-base md:text-lg md:pr-8 max-w-md space-y-4 flex flex-col"
           dangerouslySetInnerHTML={{ __html: markdownRemark.html }}
         />
         <div className="flex">

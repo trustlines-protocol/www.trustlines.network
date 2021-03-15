@@ -12,7 +12,7 @@ export default function Footer() {
     <div className="bg-rich-black">
       <div className="mx-auto container">
         <div
-          className="flex flex-col md:flex-row gap-8 justify-between pt-8
+          className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8 justify-between pt-8
         md:pt-16 pb-7 md:pb-14 px-4 md:border-b border-rich-black-lighter"
         >
           {FooterBoxes.map((footerBox) => (
@@ -30,7 +30,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-between md:py-28 gap-2  px-4">
+        <div className="flex flex-col md:flex-row justify-between md:py-28 space-y-2 md:space-y-0 md:space-x-2 px-4">
           <div className="flex-1">
             <div className="text-rich-black-lightest font-semibold pb-2 text-center md:text-left">
               Trustlines is aimed at{" "}
@@ -68,7 +68,7 @@ export default function Footer() {
 
 function FooterBox({ title, links, withSocialMediaLinks }) {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col space-y-2">
       <div className="text-white md:text-base font-semibold mb-2 text-center md:text-left">
         {title}
       </div>

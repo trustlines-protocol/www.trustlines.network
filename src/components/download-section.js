@@ -25,7 +25,7 @@ export default function DownloadSection() {
             hoverBgColor={"app-blue"}
             label="Download for free"
             className={
-              "w-28 h-28 flex flex-col items-center justify-center py-4 px-3 gap-0 text-center "
+              "w-28 h-28 flex flex-col items-center justify-center py-4 px-3 text-center "
             }
             whitespaceClass={"whitespace-normal"}
             isCircle={true}
@@ -37,7 +37,7 @@ export default function DownloadSection() {
           />
         </div>
         <div className="flex-1 flex flex-col p-4 md:py-8 md:px-10 justify-between">
-          <div className="-mt-28 mb-4 md:my-0">
+          <div className="mt-28 sm:-mt-28 mb-4 md:my-0">
             <div className="text-xs md:text-base font-semibold text-rich-black-lightest">
               Trustlines App
             </div>
@@ -78,20 +78,19 @@ export default function DownloadSection() {
             />
           </div>
         </div>
-        <div className="flex-1 -z-1">
-          <div className="h-96 md:h-auto relative flex flex-row justify-end">
-            <img
-              className="h-96 -mt-52 md:mt-0 md:object-cover md:h-auto md:w-full"
-              src={GradientCircle}
-              alt="Gradient circle background graphic"
+        <div className="relative flex-1 -z-1">
+          <img
+            className="h-96 ml-auto -mt-52 xs:-mt-32 sm:-mt-40 md:mt-0 md:object-cover md:h-auto md:w-full"
+            src={GradientCircle}
+            alt="Gradient circle background graphic"
+          />
+          <div className="absolute top-0 right-0 md:h-full md:-left-48">
+            <StaticImage
+              src="../content/download/images/phone.png"
+              layout="constrained"
+              alt="Trustlines app image"
+              className="float-right w-96 md:w-auto md:h-auto"
             />
-            <div className="absolute top-0 left-0 h-full md:-left-48">
-              <StaticImage
-                src="../content/download/images/phone.png"
-                layout="constrained"
-                alt="Trustlines app image"
-              />
-            </div>
           </div>
         </div>
       </div>

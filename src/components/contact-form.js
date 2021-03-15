@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import IconButton from "./icon-button";
 import ArrowRightIcon from "./icons/arrow-right";
+import ChevronDownIcon from "./icons/chevron-down";
 
 import GetInTouchTopicsJSON from "../content/get-in-touch-topics.json";
 import CloseButton from "./close-button";
@@ -54,7 +55,7 @@ export default function ContactForm(props) {
     <form
       id={"contactUs"}
       name={"contactUs"}
-      className={`flex flex-col gap-4 mt-4 ${props.hidden ? "hidden" : ""}`}
+      className={`flex flex-col space-y-4 mt-4 ${props.hidden ? "hidden" : ""}`}
       action={FORM_POST_URL}
       method="POST"
       onSubmit={submitForm}
@@ -79,7 +80,11 @@ export default function ContactForm(props) {
       )}
 
       {showSuccessMessage && (
-        <div className={"flex justify-between rounded p-2 bg-majorelle-blue text-white"}>
+        <div
+          className={
+            "flex justify-between rounded p-2 bg-majorelle-blue text-white"
+          }
+        >
           Your message was submitted successfully. We'll get back to you ASAP.
           <CloseButton
             className="cursor-pointer hover:opacity-50"
@@ -90,15 +95,18 @@ export default function ContactForm(props) {
         </div>
       )}
 
-      <div className="flex flex-col md:flex-row gap-4">
+      <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
         <Input placeholder="Name" name="name" required />
         <Input placeholder="Email" name="email" required />
-        <div className="flex-1 flex py-4 md:py-0 px-6 bg-gray-300 rounded-full overflow-hidden overflow-ellipsis">
+        <div
+          className={`
+        flex-1 flex flex-row items-center py-4 md:py-0 px-6 
+        bg-gray-300 rounded-full overflow-hidden overflow-ellipsis
+        `}
+        >
           <select
-
             name="topic"
-            className="flex-1 bg-gray-300 text-sm font-semibold w-full focus:outline-none"
-
+            className="flex-1 bg-gray-300 text-sm font-semibold w-full focus:outline-none appearance-none"
             required
             defaultValue=""
           >
@@ -111,9 +119,10 @@ export default function ContactForm(props) {
               />
             ))}
           </select>
+          <ChevronDownIcon />
         </div>
       </div>
-      <div className="flex flex-col md:flex-row gap-4 items-center">
+      <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4 items-center">
         <textarea
           name="message"
           className="w-full md:w-auto flex-1 px-6 py-4 bg-gray-300 rounded-full text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-majorelle-blue"

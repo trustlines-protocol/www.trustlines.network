@@ -16,7 +16,7 @@ export default function SocialLinksRow({
   const { textColorClassName } = COLOR_NAME_CLASSES[iconColor] || {};
 
   return (
-    <div className={`flex flex-row gap-4 mb-4 items-center ${className}`}>
+    <div className={`flex flex-row space-x-4 mb-4 items-center ${className}`}>
       <a
         href={SocialMediaLinks.twitter}
         target="_blank"

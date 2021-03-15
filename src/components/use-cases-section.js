@@ -8,6 +8,7 @@ import IconButton from "./icon-button";
 
 import { useHover } from "../hooks/useHover";
 import { useIsDevice } from "../hooks/useIsDevice";
+import useIsClient from "../hooks/useIsClient";
 
 export default function UseCasesSection() {
   const query = graphql`
@@ -32,7 +33,7 @@ export default function UseCasesSection() {
 
   return (
     <div className="container mx-auto px-4 flex flex-col mb-24 sm:mb-32">
-      <div className="flex flex-row justify-between mb-3 gap-10">
+      <div className="flex flex-row justify-between mb-3 space-x-10">
         <div>
           <div className="text-3xl font-semibold mb-2">
             Why People Powered Money?
@@ -67,10 +68,12 @@ export default function UseCasesSection() {
           />
         </div>
       </div>
-      <div className="flex flex-col gap-6 md:flex-row md:gap-2">
-        {data.allUseCasesJson.edges.map(({ node }) => (
-          <UseCaseCard key={node.title} {...node} />
-        ))}
+      <div className="flex flex-col space-y-6">
+        <div className="flex flex-col md:flex-row md:space-x-2">
+          {data.allUseCasesJson.edges.map(({ node }) => (
+            <UseCaseCard key={node.title} {...node} />
+          ))}
+        </div>
         <IconButton
           Icon={<PlusIcon className="stroke-current text-white stroke-4/3" />}
           label="More"
@@ -91,6 +94,7 @@ export default function UseCasesSection() {
 function UseCaseCard(props) {
   const [hoverRef, isHovered] = useHover();
   const isMobile = useIsDevice("tablet");
+  const [, key] = useIsClient();
 
   const image = getImage(props.image);
 
@@ -99,15 +103,16 @@ function UseCaseCard(props) {
   return (
     <div
       ref={hoverRef}
-      className={`flex-1 flex flex-col rounded-3xl shadow-card-gray overflow-hidden cursor-pointer ${
-        expandCard ? "mt-0" : "mt-8"
+      className={`flex-1 flex flex-col rounded-3xl shadow-card-gray overflow-hidden cursor-pointer translate-z-0 ${
+        isMobile ? "mt-6" : isHovered ? "mt-0" : "mt-8"
       }`}
       onClick={() => window.open(props.readMoreLink, "_blank")}
+      key={key}
     >
       <GatsbyImage
         image={image}
         alt={`${props.title} image`}
-        className="max-h-28 sm:max-h-56 md:max-h-full"
+        className="max-h-28 sm:max-h-56 md:max-h-full overflow-hidden"
       />
       <div className="p-4">
         <div className="text-sm lg:text-base font-semibold text-rich-black mb-2">
@@ -117,7 +122,7 @@ function UseCaseCard(props) {
           {props.description}
         </div>
         <a
-          className={`h-6 mt-2 font-semibold flex flex-row items-center gap-1 text-coral-red ${
+          className={`h-6 mt-2 font-semibold flex flex-row items-center text-coral-red ${
             expandCard ? "block" : "hidden"
           }`}
           href={props.readMoreLink}
@@ -127,7 +132,7 @@ function UseCaseCard(props) {
           Read more
           <ArrowRightIcon
             size={16}
-            className="stroke-current text-coral-red stroke-2"
+            className="stroke-current text-coral-red stroke-2 ml-1"
           />
         </a>
       </div>

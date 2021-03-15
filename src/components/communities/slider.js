@@ -59,7 +59,7 @@ export default function Slider() {
           {title}
         </div>
         <div
-          className={`flex flex-col md:flex-row items-center gap-8 md:gap-4 ${
+          className={`flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-4 ${
             didSliderStart ? "visible" : "invisible"
           }`}
         >
@@ -108,7 +108,7 @@ function CheckCircle({ activeIndex }) {
 
 function Indicator({ totalNum, activeIndex, onClick }) {
   return (
-    <div className="flex flex-row gap-2">
+    <div className="flex flex-row space-x-2">
       {Array(totalNum)
         .fill(0)
         .map((_, index) => (

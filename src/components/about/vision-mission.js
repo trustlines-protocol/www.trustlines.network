@@ -24,7 +24,7 @@ export default function AboutVisionMission() {
 
   return (
     <div className="container mx-auto pb-20 px-4">
-      <div className="flex flex-col md:flex-row gap-8">
+      <div className="flex flex-col space-y-8 md:flex-row md:space-y-0 md:space-x-8">
         {visionMissionData.map(({ node }, i) => (
           <div key={i} className="flex-1">
             <div className="text-gray-300 text-6xl font-semibold mb-4 md:mb-8">

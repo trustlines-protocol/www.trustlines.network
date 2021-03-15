@@ -13,7 +13,7 @@ export default function NavbarDesktop({ navItems = [] }) {
           <Link to="/">
             <img src={Logo} alt="Trustlines network logo" />
           </Link>
-          <div className="flex flex-row gap-6 items-center">
+          <div className="flex flex-row space-x-6 items-center">
             {navItems.map((item) => (
               <NavItem key={item.label} {...item} />
             ))}

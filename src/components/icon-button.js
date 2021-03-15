@@ -33,10 +33,14 @@ export default function IconButton(props) {
 
   const IconComponent = React.cloneElement(Icon, {
     size: Icon.props.size,
-    className: `${Icon.props.className} stroke-current ${groupTextColorClassName}`,
+    className: `${
+      Icon.props.className
+    } stroke-current ${groupTextColorClassName} ${
+      label ? (iconPosition === "left" ? "mr-2" : "ml-2") : ""
+    }`,
   });
 
-  const cssClasses = `${className} group rounded-full flex items-center justify-center gap-2 cursor-pointer ${
+  const cssClasses = `${className} group rounded-full flex items-center justify-center cursor-pointer ${
     isCircle ? "p-0 h-10 w-10" : "px-4 py-3 h-11"
   }
     focus:outline-none text-sm md:text-base ${whitespaceClass} z-10 ring-2 transition-all duration-500 ease-in-out ${
