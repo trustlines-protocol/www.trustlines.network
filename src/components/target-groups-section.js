@@ -153,7 +153,7 @@ function TargetGroupItemContactForm() {
             <ArrowDownIcon size={16} className="stroke-2" />
           )
         }
-        label="Contact Us"
+        label="Contact us"
         textColor={"white"}
         hoverTextColor={"coral-red"}
         bgColor={"coral-red"}

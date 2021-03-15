@@ -1,7 +1,7 @@
 ---
 title: Apply for a Grant
 bottom_link: https://trustlines.foundation/grants.html
-bottom_link_label: Find Out More
+bottom_link_label: Find out more
 image: images/pig.png
 ---
 

@@ -2,7 +2,7 @@
 title: The Trustlines Network is Global
 image: images/global-network.png
 bottom_links:
-  - label: Learn More
+  - label: Learn more
     link: ""
 ---
 
