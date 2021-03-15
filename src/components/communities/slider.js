@@ -5,16 +5,19 @@ import CheckIcon from "../icons/check";
 import useIsDevice from "../../hooks/useIsDevice";
 
 import SliderData from "../../content/communities/slider.json";
+import useIsClient from "../../hooks/useIsClient";
 
 export default function Slider() {
+  const [, key] = useIsClient();
   const { title, slides } = SliderData;
-  const [currentSlide, setCurrentSlide] = useState(null);
-  const sliderRef = useRef(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const titleRef = useRef(null);
 
-  const { isVisible } = useVisibilitySensor(sliderRef, {
+  const { isVisible } = useVisibilitySensor(titleRef, {
     intervalCheck: false,
     scrollCheck: true,
     resizeCheck: true,
+    partiallyVisible: "bottom",
   });
 
   useEffect(() => {
@@ -33,7 +36,7 @@ export default function Slider() {
       );
       return () => clearInterval(intervalID);
     }
-  }, [isVisible]);
+  }, [isVisible, key]);
 
   const didSliderStart = currentSlide !== null;
 
@@ -41,13 +44,14 @@ export default function Slider() {
 
   return (
     <div
-      ref={sliderRef}
+      key={key}
       className={`transition-colors duration-500 ${
         didSliderStart ? "bg-coral-red" : "bg-cyber-yellow"
       } ${isMobile ? "h-screen" : "section"}`}
     >
       <div className="container mx-auto px-4 flex flex-col justify-evenly h-full items-center md:items-start">
         <div
+          ref={titleRef}
           className={`font-semibold text-3xl lg:text-6xl text-center md:text-left ${
             didSliderStart ? "text-coral-pastel" : "text-cyber-yellow-darker"
           }`}

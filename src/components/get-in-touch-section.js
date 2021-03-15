@@ -6,13 +6,18 @@ import ArrowUpIcon from "./icons/arrow-up";
 import ContactForm from "./contact-form";
 
 import { useIsDevice } from "../hooks/useIsDevice";
+import useIsClient from "../hooks/useIsClient";
 
 export default function GetInTouchSection() {
+  const [, key] = useIsClient();
   const [isExpanded, setIsExpanded] = useState(false);
   const isMobile = useIsDevice("tablet");
 
   return (
-    <div className="bg-rich-black-lighter md:h-96 md:bg-gray-200 flex flex-col justify-center items-center mb-32">
+    <div
+      key={key}
+      className="bg-rich-black-lighter md:h-96 md:bg-gray-200 flex flex-col justify-center items-center mb-24 sm:mb-32"
+    >
       <div className="container mx-auto p-4">
         <div className="flex flex-row justify-between items-center">
           <div>

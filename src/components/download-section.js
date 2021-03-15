@@ -12,7 +12,7 @@ export default function DownloadSection() {
   const [showOverlay, setShowOverlay] = useState(false);
 
   return (
-    <div className="container mx-auto px-4 mb-32">
+    <div className="container mx-auto px-4 mb-24 sm:mb-32">
       <div className="relative rounded-3xl shadow-card-blue flex flex-col-reverse md:flex-row overflow-hidden">
         {showOverlay && (
           <DownloadOverlay onClickClose={() => setShowOverlay(false)} />
