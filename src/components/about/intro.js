@@ -21,7 +21,7 @@ export default function AboutIntro() {
 
   return (
     <div className="container mx-auto py-20 px-4">
-      <div className="flex flex-col md:flex-row gap-8">
+      <div className="flex flex-col space-y-8 md:flex-row md:space-y-0 md:space-x-8">
         {introTexts.map(({ node }, i) => (
           <div key={i} className="flex-1">
             <div

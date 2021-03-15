@@ -42,7 +42,7 @@ export default function ReadyToGetStartedSection() {
           <div className="mb-6 text-center text-rich-black font-semibold text-2xl md:text-3xl max-w-xs md:max-w-full ">
             Ready to get started with Trustlines?
           </div>
-          <div className="flex flex-col md:flex-row gap-4 pb-8 px-4 w-full md:w-auto">
+          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 pb-8 px-4 w-full md:w-auto">
             <IconButton
               Icon={<DownloadIcon size={16} className="stroke-4/3" />}
               label="Download the App"

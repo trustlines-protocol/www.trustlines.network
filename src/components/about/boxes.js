@@ -87,7 +87,7 @@ function Box({
           className={`container-half px-4 ${reverse ? "mr-auto" : "ml-auto"}`}
         >
           <div
-            className={`flex flex-col justify-center text-white py-8 gap-4 ${
+            className={`flex flex-col justify-center text-white py-8 space-y-4 ${
               reverse ? "md:pl-8" : "md:pr-8"
             }`}
           >
@@ -98,7 +98,7 @@ function Box({
               {title}
             </div>
             <div
-              className="xl:text-lg flex flex-col gap-4 max-w-md"
+              className="xl:text-lg flex flex-col space-y-4 max-w-md"
               dangerouslySetInnerHTML={{ __html: html }}
             />
             {(bottomLinks || []).map(({ link, label }) => (

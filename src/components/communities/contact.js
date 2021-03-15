@@ -24,7 +24,7 @@ export default function ContactSection() {
   return (
     <div className="bg-pink-pastel">
       <div className="mx-auto container flex flex-col justify-center px-4 section py-8">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-4">
           <div className="text-2xl text-center md:text-left md:text-3xl font-semibold text-rich-black max-w-lg">
             {frontmatter.title}
           </div>

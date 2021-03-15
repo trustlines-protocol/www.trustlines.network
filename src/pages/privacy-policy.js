@@ -14,7 +14,7 @@ export default function PrivacyPolicy({ data }) {
         />
       </CustomHelmet>
       <div
-        className="privacy-policy mx-auto container flex flex-col gap-4 py-10"
+        className="privacy-policy mx-auto container flex flex-col space-y-4 py-10"
         dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
       />
     </div>

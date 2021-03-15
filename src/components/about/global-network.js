@@ -28,7 +28,7 @@ export default function GlobalNetwork() {
 
   return (
     <div className="mx-auto px-4 container flex flex-col-reverse md:flex-row py-14 md:py-28">
-      <div className="flex-1 flex flex-col gap-8 justify-center">
+      <div className="flex-1 flex flex-col space-y-8 justify-center">
         <div className="text-2xl md:text-3xl font-semibold text-rich-black max-w-xs md:max-w-md">
           {markdownRemark.frontmatter.title}
         </div>
@@ -54,7 +54,10 @@ export default function GlobalNetwork() {
         </div>
       </div>
       <div className="flex-1 flex flex-row justify-end mb-8 md:mb-0">
-        <GatsbyImage alt="global network image" image={getImage(markdownRemark.frontmatter.image)} />
+        <GatsbyImage
+          alt="global network image"
+          image={getImage(markdownRemark.frontmatter.image)}
+        />
       </div>
     </div>
   );

@@ -16,8 +16,8 @@ export default function DownloadOverlay(props) {
           onClick={props.onClickClose}
         />
       </div>
-      <div className="flex flex-col items-center gap-11">
-        <div className="flex flex-col md:flex-row justify-center gap-12">
+      <div className="flex flex-col items-center space-y-11">
+        <div className="flex flex-col md:flex-row justify-center space-y-12 md:space-y-0 md:space-x-12">
           <DownloadButton
             icon={<AppleIcon />}
             label="App Store"
@@ -47,7 +47,7 @@ export default function DownloadOverlay(props) {
 function DownloadButton(props) {
   return (
     <a
-      className="flex flex-row gap-2 items-center cursor-pointer hover:opacity-50"
+      className="flex flex-row space-x-2 items-center cursor-pointer hover:opacity-50"
       href={props.href}
       target="_blank"
       rel="noreferrer"

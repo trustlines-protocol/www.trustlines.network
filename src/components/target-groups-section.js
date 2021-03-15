@@ -85,7 +85,7 @@ function TargetGroupItem(props) {
             {groupName.split(" ")[1]}
           </div>
         </div>
-        <div className="flex-1 flex flex-row w-full items-center gap-4 mt-4 md:mt-0">
+        <div className="flex-1 flex flex-row w-full items-center space-x-4 mt-4 md:mt-0">
           <div className="flex-1">
             <div className="text-sm md:text-lg text-rich-black max-w-xs">
               {actionTitle}
@@ -112,11 +112,11 @@ function TargetGroupItem(props) {
       {isExpanded && (
         <div className="py-5 md:py-10">
           <div
-            className="flex flex-col gap-4 text-sm md:text-lg text-rich-black"
+            className="flex flex-col space-y-4 text-sm md:text-lg text-rich-black"
             dangerouslySetInnerHTML={{ __html: html }}
           />
           {Array.isArray(bottomLinks) && (
-            <div className="flex flex-col md:flex-row mt-10 gap-8">
+            <div className="flex flex-col md:flex-row mt-10 space-y-8 md:space-x-8 md:space-y-0">
               {bottomLinks.map((bottomLink) => (
                 <a
                   key={bottomLink.label}
@@ -128,7 +128,7 @@ function TargetGroupItem(props) {
                   {bottomLink.label}
                   <ArrowRightIcon
                     size={18}
-                    className="stroke-current text-coral-red stroke-2"
+                    className="stroke-current text-coral-red stroke-2 ml-1"
                   />
                 </a>
               ))}
