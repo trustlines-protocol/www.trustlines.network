@@ -17,16 +17,16 @@ export default function NavbarDesktop({ navItems = [] }) {
             {navItems.map((item) => (
               <NavItem key={item.label} {...item} />
             ))}
-            <Link
+            <a
               className="bg-gray-100 px-8 py-4 cursor-pointer rounded-full hover:bg-gray-300 whitespace-nowrap"
-              to={
+              href={
                 "https://docs.trustlines.network/docs/resources/wp_content/how_trustlines_works.html"
               }
               target="_blank"
               rel="noreferrer"
             >
               <div className="text-sm lg:text-base">How it works</div>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
