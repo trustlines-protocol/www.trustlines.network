@@ -61,5 +61,15 @@ module.exports = {
         icon: `src/images/favicon.png`,
       },
     },
+    {
+      resolve: "gatsby-plugin-matomo",
+      options: {
+        siteId: "5",
+        matomoPhpScript: "matomo.php",
+        matomoJsScript: "matomo.js",
+        matomoUrl: "https://stats.trustlines.network",
+        siteUrl: "trustlines.network",
+      },
+    },
   ],
 };
