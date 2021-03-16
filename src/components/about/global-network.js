@@ -36,7 +36,7 @@ export default function GlobalNetwork() {
           className="text-base md:text-lg md:pr-8 max-w-md"
           dangerouslySetInnerHTML={{ __html: markdownRemark.html }}
         />
-        <div className="flex">
+        {/* <div className="flex">
           {markdownRemark.frontmatter.bottomLinks.map(({ link, label }) => (
             <IconButton
               key={label}
@@ -51,7 +51,7 @@ export default function GlobalNetwork() {
               glowColor="coral-red"
             />
           ))}
-        </div>
+        </div> */}
       </div>
       <div className="flex-1 flex flex-row justify-end mb-8 md:mb-0">
         <GatsbyImage
