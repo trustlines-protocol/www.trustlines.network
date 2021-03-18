@@ -15,7 +15,7 @@ export default function Grant() {
           bottomLinkLabel: bottom_link_label
           image {
             childImageSharp {
-              gatsbyImageData(placeholder: BLURRED, width: 520)
+              gatsbyImageData(placeholder: BLURRED)
             }
           }
         }
@@ -53,6 +53,8 @@ export default function Grant() {
         <GatsbyImage
           alt="grant image"
           image={getImage(markdownRemark.frontmatter.image)}
+          objectFit="contain"
+          className="max-h-64 md:max-h-full"
         />
       </div>
     </div>

@@ -121,12 +121,6 @@
   transform: translateZ(0);
 }
 
-@media (min-width: 640px) {
-  .container-half {
-    max-width: 320px;
-  }
-}
-
 @media (min-width: 768px) {
   .container-half {
     max-width: 384px;
