@@ -30,7 +30,7 @@ export default function JoinSection() {
       <img
         src={HeroImage}
         alt="hero image"
-        className="object-cover md:h-auto md:w-full md:object-contain"
+        className="h-96 w-auto object-cover md:h-auto md:w-full md:object-contain"
       />
       <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center container mx-auto px-4 text-white">
         <SectionTextWithButton
