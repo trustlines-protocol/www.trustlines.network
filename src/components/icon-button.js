@@ -36,7 +36,7 @@ export default function IconButton(props) {
     className: `${
       Icon.props.className
     } stroke-current ${groupTextColorClassName} ${
-      label ? (iconPosition === "left" ? "mr-2" : "ml-2") : ""
+      label ? (isCircle ? "" : iconPosition === "left" ? "mr-2" : "ml-2") : ""
     }`,
   });
 

@@ -17,7 +17,7 @@ export default function GlobalNetwork() {
           }
           image {
             childImageSharp {
-              gatsbyImageData(placeholder: BLURRED, width: 520)
+              gatsbyImageData(placeholder: BLURRED)
             }
           }
         }
@@ -57,6 +57,8 @@ export default function GlobalNetwork() {
         <GatsbyImage
           alt="global network image"
           image={getImage(markdownRemark.frontmatter.image)}
+          className="max-h-64 md:max-h-full"
+          objectFit="contain"
         />
       </div>
     </div>

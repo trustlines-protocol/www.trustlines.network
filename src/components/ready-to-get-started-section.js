@@ -11,6 +11,7 @@ import TwitterIcon from "./icons/twitter-outlined";
 import { useIsDevice } from "../hooks/useIsDevice";
 
 import SocialMediaLinks from "../content/social-media-links.json";
+import BgDesktop from "../content/get-started/images/bg-desktop.svg";
 import useIsClient from "../hooks/useIsClient";
 
 export default function ReadyToGetStartedSection() {
@@ -32,11 +33,7 @@ export default function ReadyToGetStartedSection() {
             layout="fullWidth"
           />
         ) : (
-          <StaticImage
-            alt={"bg-desktop"}
-            src="../content/get-started/images/bg-desktop.png"
-            layout="fullWidth"
-          />
+          <img alt={"bg-desktop"} src={BgDesktop} className="w-screen" />
         )}
         <div className="absolute flex justify-center items-center top-0 left-0 right-0 bottom-0 flex-col">
           <div className="mb-6 text-center text-rich-black font-semibold text-2xl md:text-3xl max-w-xs md:max-w-full ">

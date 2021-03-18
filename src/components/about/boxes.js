@@ -36,7 +36,7 @@ export default function AboutBoxes() {
               }
               image {
                 childImageSharp {
-                  gatsbyImageData(placeholder: BLURRED, width: 620)
+                  gatsbyImageData(placeholder: BLURRED)
                 }
               }
             }
@@ -84,7 +84,9 @@ function Box({
         className={`flex-1 ${bgColorClassName} flex flex-col justify-center`}
       >
         <div
-          className={`container-half px-4 ${reverse ? "mr-auto" : "ml-auto"}`}
+          className={`container-half px-4 ${
+            reverse ? "md:mr-auto" : "md:ml-auto"
+          }`}
         >
           <div
             className={`flex flex-col justify-center text-white py-8 space-y-4 ${
@@ -129,7 +131,7 @@ function Box({
             alt="About box image"
             image={getImage(image)}
             key={"about-box-image-" + title}
-            className={reverse ? "" : "transform -scale-x-100"}
+            className={`max-h-96 ${reverse ? "" : "transform -scale-x-100"}`}
           />
         </div>
       </div>

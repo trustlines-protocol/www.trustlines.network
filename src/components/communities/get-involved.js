@@ -34,7 +34,7 @@ export default function GetInvolvedSection() {
           textColor="coral-red"
           Button={
             <IconButton
-              Icon={<BookmarkIcon />}
+              Icon={<BookmarkIcon className="stroke-4/3" />}
               label={frontmatter.bottomLinkLabel}
               href={frontmatter.bottomLinkAttachment.publicURL}
               textColor="white"
