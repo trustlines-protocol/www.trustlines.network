@@ -13,9 +13,7 @@ export default function GetInvolvedSection() {
       ) {
         frontmatter {
           title
-          bottomLinkAttachment: bottom_link_attachment {
-            publicURL
-          }
+          bottomLink: bottom_link
           bottomLinkLabel: bottom_link_label
         }
         html
@@ -36,7 +34,7 @@ export default function GetInvolvedSection() {
             <IconButton
               Icon={<BookmarkIcon className="stroke-4/3" />}
               label={frontmatter.bottomLinkLabel}
-              href={frontmatter.bottomLinkAttachment.publicURL}
+              href={frontmatter.bottomLink}
               textColor="white"
               bgColor="coral-red"
             />
