@@ -1,6 +1,6 @@
 ---
 title: Want to grow your community?
-bottom_link_attachment: "./files/community-toolkit.pdf"
+bottom_link: https://docs.google.com/document/d/1Nnam5NRBxbVqMJ7GrCcldSoFEtf1urMsZt63jfwS644
 bottom_link_label: Download Community Toolkit
 ---
 

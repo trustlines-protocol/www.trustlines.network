@@ -1,6 +1,6 @@
 ---
 title: Want to Get Involved?
-bottom_link_attachment: "./files/chapter-lead.pdf"
+bottom_link: https://docs.google.com/document/d/1ChYwfczX06Ifaf3joPVFlwJsGhmEpZhDdujVGor1bl0
 bottom_link_label: Becoming a Chapter Organizer
 ---
 

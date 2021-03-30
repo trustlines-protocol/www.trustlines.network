@@ -11,9 +11,7 @@ export default function GrowSection() {
       markdownRemark(fileAbsolutePath: { glob: "**/communities/grow.md" }) {
         frontmatter {
           title
-          bottomLinkAttachment: bottom_link_attachment {
-            publicURL
-          }
+          bottomLink: bottom_link
           bottomLinkLabel: bottom_link_label
         }
         html
@@ -34,7 +32,7 @@ export default function GrowSection() {
             <IconButton
               Icon={<DownloadIcon className="stroke-4/3" />}
               label={frontmatter.bottomLinkLabel}
-              href={frontmatter.bottomLinkAttachment.publicURL}
+              href={frontmatter.bottomLink}
               textColor="white"
               bgColor="dark-green"
             />
