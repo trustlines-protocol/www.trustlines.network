@@ -31,5 +31,19 @@
         "to": "https://trustlines.foundation/faq.html"
       }
     ]
+  },
+  {
+    "label": "News & Events",
+    "to": "#",
+    "subNavItems": [
+      {
+        "label": "News",
+        "to": "https://blog.trustlines.network/"
+      },
+      {
+        "label": "Events",
+        "to": "https://forum.trustlines.network/c/network/events/13"
+      }
+    ]
   }
 ]
