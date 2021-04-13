@@ -13,13 +13,7 @@ import ContentHero from "../components/content-hero/hero";
 export default function Landing() {
   return (
     <div>
-      <CustomHelmet>
-        <title>Home - Trustlines network</title>
-        <meta
-          name="description"
-          content="The Trustlines Network is the first project to create a universally accessible medium of exchange."
-        />
-      </CustomHelmet>
+      <CustomHelmet title="Home | Trustlines Network - Building a better financial system" />
       <ContentHero />
       <ContentSlider />
       <DownloadSection />

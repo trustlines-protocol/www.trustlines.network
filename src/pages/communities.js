@@ -12,13 +12,7 @@ import ContactSection from "../components/communities/contact";
 export default function Communities() {
   return (
     <div>
-      <CustomHelmet>
-        <title>Communities - Trustlines network</title>
-        <meta
-          name="description"
-          content="Strengthen the circular economy and encourage sustainable trade loops in your community"
-        />
-      </CustomHelmet>
+      <CustomHelmet title="Communities | Trustlines Network - Building a better financial system" />
       <JoinSection />
       <GrowSection />
       <MapSection />
