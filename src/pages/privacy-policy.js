@@ -6,13 +6,10 @@ import CustomHelmet from "../components/custom-helmet";
 export default function PrivacyPolicy({ data }) {
   return (
     <div>
-      <CustomHelmet>
-        <title>Privacy Policy</title>
-        <meta
-          name="description"
-          content="Privacy policy page meta description"
-        />
-      </CustomHelmet>
+      <CustomHelmet
+        title="Privacy Policy | Trustlines Network - Building a better financial
+          system"
+      />
       <div
         className="privacy-policy mx-auto container flex flex-col space-y-4 py-10"
         dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}

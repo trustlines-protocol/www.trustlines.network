@@ -6,13 +6,11 @@ import CustomHelmet from "../components/custom-helmet";
 export default function Imprint({ data }) {
   return (
     <div>
-      <CustomHelmet>
-        <title>Legal Imprint</title>
-        <meta
-          name="description"
-          content="Legal imprint page meta description"
-        />
-      </CustomHelmet>
+      <CustomHelmet
+        title="Legal Imprint | Trustlines Network - Building a better financial
+          system"
+      />
+
       <div
         className="privacy-policy mx-auto container flex flex-col space-y-4 py-10"
         dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}

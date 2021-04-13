@@ -11,10 +11,7 @@ import GetStartedSection from "../components/ready-to-get-started-section";
 export default function About() {
   return (
     <div>
-      <CustomHelmet>
-        <title>About - Trustlines network</title>
-        <meta name="description" content="Financial inclusion for all people" />
-      </CustomHelmet>
+      <CustomHelmet title="About | Trustlines Network - Building a better financial system" />
       <AboutHero />
       <AboutIntro />
       <AboutVisionMission />
