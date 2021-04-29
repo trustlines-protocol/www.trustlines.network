@@ -67,6 +67,8 @@ module.exports = {
         "card-blue": "0px 0px 25px rgba(0, 122, 255, 0.1)",
         "card-gray": "0px 0px 25px rgba(0, 0, 0, 0.08)",
         "card-neon-pink": "0px 0px 25px 0px rgba(255, 160, 183, 0.25)",
+        "card-coral-red": " 0px 0px 12.1988px rgba(255, 124, 78, 0.22)",
+        "card-dark-green": "0px 0px 12.1988px rgba(14, 195, 144, 0.17)",
         "glow-app-blue": "0px 15px 37px rgba(0, 122, 255, 0.25)",
         "glow-coral-red": "0px 15px 37px rgba(255, 124, 78, 0.25)",
       },

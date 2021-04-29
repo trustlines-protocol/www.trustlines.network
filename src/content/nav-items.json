@@ -45,5 +45,9 @@
         "to": "https://forum.trustlines.network/c/network/events/13"
       }
     ]
+  },
+  {
+    "label": "Explorer",
+    "to": "/explorer"
   }
 ]
