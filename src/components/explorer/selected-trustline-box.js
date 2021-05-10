@@ -37,7 +37,9 @@ export default function SelectedTrustlineBox({ network, from, to }) {
       />
       <LabeledRow
         label={"To"}
-        value={isTrustlineSelected ? shortenAddress(trustline.user) : "-"}
+        value={
+          isTrustlineSelected ? shortenAddress(trustline.counterParty) : "-"
+        }
       />
       <LabeledRow
         label={"Credit Given"}
