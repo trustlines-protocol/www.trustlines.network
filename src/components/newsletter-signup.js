@@ -9,7 +9,9 @@ export default function NewsletterSignup() {
   const [emailAddress, setEmailAddress] = React.useState("");
   const [didSent, setDidSent] = React.useState(false);
   const [hideNewsletterSignup, setHideNewsletterSignup] = React.useState(
-    localStorage.getItem("hideNewsletterSignup") || "idle"
+    localStorage.getItem("hideNewsletterSignup") ||
+      sessionStorage.getItem("hideNewsletterSignup") ||
+      "idle"
   );
 
   const handleClickSend = async () => {
@@ -32,7 +34,7 @@ export default function NewsletterSignup() {
 
   const handleClickClose = () => {
     setHideNewsletterSignup(true);
-    localStorage.setItem("hideNewsletterSignup", true);
+    sessionStorage.setItem("hideNewsletterSignup", true);
   };
 
   if (hideNewsletterSignup !== "idle") {
