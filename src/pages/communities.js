@@ -8,6 +8,7 @@ import SliderSection from "../components/communities/slider";
 import GetInvolvedSection from "../components/communities/get-involved";
 import GrantSection from "../components/communities/grant";
 import ContactSection from "../components/communities/contact";
+import NewsletterSignup from "../components/newsletter-signup";
 
 export default function Communities() {
   return (
@@ -20,6 +21,7 @@ export default function Communities() {
       <GetInvolvedSection />
       <GrantSection />
       <ContactSection />
+      <NewsletterSignup />
     </div>
   );
 }
