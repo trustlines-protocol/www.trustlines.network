@@ -3,7 +3,7 @@
     "title": "Websites",
     "links": [
       {
-        "label": "Trustlines Blog",
+        "label": "Blog",
         "to": "https://blog.trustlines.network/"
       },
       {
@@ -11,7 +11,7 @@
         "to": "https://trustlines.foundation/"
       },
       {
-        "label": "Trustlines Docs",
+        "label": "Docs",
         "to": "https://docs.trustlines.network/"
       }
     ]
@@ -20,15 +20,15 @@
     "title": "Community",
     "links": [
       {
-        "label": "Trustlines Forum",
+        "label": "Forum",
         "to": "https://forum.trustlines.network/"
       },
       {
-        "label": "Trustlines Newsletter",
+        "label": "Newsletter",
         "to": "https://foundation.us20.list-manage.com/subscribe?u=ad97861a3786f82a87c0c7417&id=7125095980"
       },
       {
-        "label": "Trustlines Network in Telegram",
+        "label": "Telegram",
         "to": "https://t.me/trustlines_network"
       }
     ]
@@ -37,15 +37,15 @@
     "title": "Developers",
     "links": [
       {
-        "label": "Trustlines in GitHub",
+        "label": "GitHub",
         "to": "https://github.com/trustlines-protocol"
       },
       {
-        "label": "Trustlines Dev Docs",
+        "label": "Dev Docs",
         "to": "https://dev.trustlines.network/"
       },
       {
-        "label": "Trustlines Technical Chat",
+        "label": "Technical Chat",
         "to": "https://gitter.im/trustlines/community"
       }
     ]

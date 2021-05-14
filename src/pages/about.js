@@ -7,6 +7,7 @@ import AboutVisionMission from "../components/about/vision-mission";
 import AboutBoxes from "../components/about/boxes";
 import AboutGlobalNetwork from "../components/about/global-network";
 import GetStartedSection from "../components/ready-to-get-started-section";
+import NewsletterSignup from "../components/newsletter-signup";
 
 export default function About() {
   return (
@@ -18,6 +19,7 @@ export default function About() {
       <AboutBoxes />
       <AboutGlobalNetwork />
       <GetStartedSection />
+      <NewsletterSignup />
     </div>
   );
 }

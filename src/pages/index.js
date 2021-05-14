@@ -9,6 +9,7 @@ import TargetGroupSection from "../components/target-groups-section";
 import CommunitiesMapSection from "../components/communities-map-landing";
 import GetStartedSection from "../components/ready-to-get-started-section";
 import ContentHero from "../components/content-hero/hero";
+import NewsletterSignup from "../components/newsletter-signup";
 
 export default function Landing() {
   return (
@@ -22,6 +23,7 @@ export default function Landing() {
       <TargetGroupSection />
       <CommunitiesMapSection />
       <GetStartedSection />
+      <NewsletterSignup />
     </div>
   );
 }

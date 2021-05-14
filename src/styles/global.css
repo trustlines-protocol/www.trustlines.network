@@ -37,6 +37,10 @@
   .privacy-policy ul {
     @apply text-rich-black-lightest list-disc pl-8;
   }
+
+  button {
+    @apply focus:outline-none;
+  }
 }
 
 .arrow-up {
@@ -136,4 +140,8 @@
   .container-half {
     max-width: 512px;
   }
+}
+
+.newsletter-drop-shadow {
+  filter: drop-shadow(0px 0px 44px rgba(0, 0, 0, 0.25));
 }

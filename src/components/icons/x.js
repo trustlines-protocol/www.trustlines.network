@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Check({ className }) {
+export default function X() {
   return (
     <svg
       width="24"
@@ -8,10 +8,17 @@ export default function Check({ className }) {
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={className}
     >
       <path
-        d="M20 6L9 17L4 12"
+        d="M18 6L6 18"
+        stroke="#DBDBDC"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M6 6L18 18"
+        stroke="#DBDBDC"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"

@@ -99,7 +99,7 @@ function CheckCircle({ activeIndex }) {
         rounded-full bg-coral-pastel flex flex-row justify-center items-center`}
       >
         <div className="h-14 w-14 rounded-full bg-white flex flex-row justify-center items-center">
-          <CheckIcon />
+          <CheckIcon className="stroke-current text-coral-red" />
         </div>
       </div>
     </div>
