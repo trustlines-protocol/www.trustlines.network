@@ -8,11 +8,17 @@ import Check from "./icons/check";
 export default function NewsletterSignup() {
   const [emailAddress, setEmailAddress] = React.useState("");
   const [didSent, setDidSent] = React.useState(false);
-  const [hideNewsletterSignup, setHideNewsletterSignup] = React.useState(
-    localStorage.getItem("hideNewsletterSignup") ||
-      sessionStorage.getItem("hideNewsletterSignup") ||
-      "idle"
-  );
+  const [hideNewsletterSignup, setHideNewsletterSignup] = React.useState(true);
+
+  React.useEffect(() => {
+    if (localStorage) {
+      setHideNewsletterSignup(
+        localStorage.getItem("hideNewsletterSignup") ||
+          sessionStorage.getItem("hideNewsletterSignup") ||
+          "idle"
+      );
+    }
+  }, []);
 
   const handleClickSend = async () => {
     try {
