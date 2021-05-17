@@ -25,7 +25,11 @@ export default function CustomHelmet({ title }) {
         itemProp="image"
         content="https://trustlines.network/static/5482f8ccf5ad3923212df820d2ce7bbe/10fc8/trustlines.webp"
       />
-      <meta name="google-site-verification" content="HL3TOtDXbLI7elMpxJckrsQT6bhamDiefyPzH-tZLuk" />
+      <meta
+        name="google-site-verification"
+        content="HL3TOtDXbLI7elMpxJckrsQT6bhamDiefyPzH-tZLuk"
+      />
+      <meta name="msvalidate.01" content="461226232A0CE4B34E124EE5F4510557" />
       <meta property="og:type" content="website" />
       <meta
         property="og:image"
