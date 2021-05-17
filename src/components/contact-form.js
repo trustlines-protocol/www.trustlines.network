@@ -85,7 +85,8 @@ export default function ContactForm(props) {
             "flex justify-between rounded p-2 bg-majorelle-blue text-white"
           }
         >
-          Your message was submitted successfully. We'll get back to you ASAP.
+          Your message was submitted successfully. We&apos;ll get back to you
+          ASAP.
           <CloseButton
             className="cursor-pointer hover:opacity-50"
             onClick={() => {
