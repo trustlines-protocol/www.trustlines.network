@@ -49,9 +49,9 @@ export default function NewsletterSignup() {
 
   return (
     <div className="flex flex-row fixed bottom-0 justify-center w-full sm:mb-4 z-50 sm:h-40 sm:mx-4">
-      <div className="flex flex-row rounded-lg bg-white newsletter-drop-shadow overflow-hidden">
+      <div className="flex flex-row rounded-lg bg-white newsletter-drop-shadow">
         <button
-          className="flex-col justify-center bg-white p-3 cursor-pointer hidden sm:flex border-r border-gray-100"
+          className="flex-col justify-center bg-white p-3 cursor-pointer hidden sm:flex border-r border-gray-100 rounded-lg"
           onClick={handleClickClose}
         >
           <X />
@@ -71,7 +71,7 @@ export default function NewsletterSignup() {
             </button>
           </div>
           {didSent ? (
-            <div className="sm:text-xl font-semibold">
+            <div className="sm:text-xl font-semibold tracking-tight">
               <div className="hidden sm:block">🎉</div>
               We sent you a confirmation email.
               <br className="hidden sm:block" />
@@ -80,7 +80,7 @@ export default function NewsletterSignup() {
           ) : (
             <>
               <div className="flex flex-col sm:flex-row justify-between">
-                <div className="flex sm:text-xl font-semibold text-black">
+                <div className="flex sm:text-xl font-semibold text-black tracking-tight">
                   Be the first
                   <br className="hidden sm:block" /> to receive updates
                 </div>
