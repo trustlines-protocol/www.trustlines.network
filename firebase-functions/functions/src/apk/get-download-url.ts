@@ -5,6 +5,10 @@ import * as admin from "firebase-admin";
 
 import serviceAccount from "./trustlines-production-service-account.json";
 
+const app = admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount as any),
+});
+
 export const apkGetDownloadUrl = functions
   .region(region)
   .https.onRequest((req: any, res: any) => {
@@ -23,9 +27,6 @@ export const apkGetDownloadUrl = functions
       res.status(403).send("Forbidden!");
     }
 
-    const app = admin.initializeApp({
-      credential: admin.credential.cert(serviceAccount as any),
-    });
     const storage = admin.storage(app);
     const bucket = storage.bucket("trustlines-38c29.appspot.com");
     const file = bucket.file("app-production-release.apk");
