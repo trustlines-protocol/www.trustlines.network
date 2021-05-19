@@ -8,10 +8,10 @@
     "strict": true,
     "target": "es2017",
     "moduleResolution": "node",
-    "types": []
+    "types": [],
+    "resolveJsonModule": true,
+    "esModuleInterop": true
   },
   "compileOnSave": true,
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }

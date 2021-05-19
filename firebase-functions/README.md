@@ -2,15 +2,20 @@
 
 This folder contains the firebase cloud functions for the trustlines.network site.
 
+## Firebase service account
+
+As we are using Firebase Storage to store the production release of the app, we need a firebase cloud function to retrieve the download url. This function can be found in `src/apk/get-download-url.ts`. For this we also need a service account that has access to the bucket of the `Trustlines Production` firebase project. Therefore copy the respective service account credentials JSON from 1Password and put it in `src/apk/trustlines-production-service-account.json`.
+
 ## Environment variables
+
 The functions rely on some env variables to work. An example `env.dist.json`
 file is distributed in the functions folder. Change the file name to either
 `env.dev.json` or `env.prod.json` depending on what kind of config you are providing.
 
 The emails.contactUs variable accepts multiple emails separated by comma.
 
-
 If you are testing the functions locally run:
+
 ```
 yarn config:set:dev
 ```
