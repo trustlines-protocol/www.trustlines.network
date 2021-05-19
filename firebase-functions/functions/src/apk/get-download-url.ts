@@ -5,6 +5,9 @@ import * as admin from "firebase-admin";
 
 import serviceAccount from "./trustlines-production-service-account.json";
 
+const BUCKET_NAME = "trustlines-38c29.appspot.com";
+const FILE_NAME = "app-production-release.apk";
+
 const app = admin.initializeApp({
   credential: admin.credential.cert(serviceAccount as any),
 });
@@ -28,8 +31,8 @@ export const apkGetDownloadUrl = functions
     }
 
     const storage = admin.storage(app);
-    const bucket = storage.bucket("trustlines-38c29.appspot.com");
-    const file = bucket.file("app-production-release.apk");
+    const bucket = storage.bucket(BUCKET_NAME);
+    const file = bucket.file(FILE_NAME);
 
     file
       .getSignedUrl({
