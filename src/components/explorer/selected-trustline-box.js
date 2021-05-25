@@ -42,11 +42,11 @@ export default function SelectedTrustlineBox({ network, from, to }) {
         }
       />
       <LabeledRow
-        label={"Credit Given"}
+        label={"Given credit line"}
         value={isTrustlineSelected ? formatNum(trustline.given, network) : "-"}
       />
       <LabeledRow
-        label={"Credit Received"}
+        label={"Received credit line"}
         value={
           isTrustlineSelected ? formatNum(trustline.received, network) : "-"
         }

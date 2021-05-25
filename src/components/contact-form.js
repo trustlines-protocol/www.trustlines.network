@@ -101,13 +101,13 @@ export default function ContactForm(props) {
         <Input placeholder="Email" name="email" required />
         <div
           className={`
-        flex-1 flex flex-row items-center py-4 md:py-0 px-6 
-        bg-gray-300 rounded-full overflow-hidden overflow-ellipsis
-        `}
+            flex-1 flex flex-row items-center py-4 md:py-0 px-6 
+            bg-gray-300 rounded-full overflow-hidden overflow-ellipsis
+          `}
         >
           <select
             name="topic"
-            className="flex-1 bg-gray-300 text-sm font-semibold w-full focus:outline-none appearance-none"
+            className="flex-1 bg-gray-300 text-sm font-semibold w-full focus:outline-none appearance-none custom-select-arrow"
             required
             defaultValue=""
           >
@@ -120,7 +120,6 @@ export default function ContactForm(props) {
               />
             ))}
           </select>
-          <ChevronDownIcon />
         </div>
       </div>
       <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4 items-center">
