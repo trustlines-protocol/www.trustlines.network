@@ -5,6 +5,7 @@ import { COLOR_NAME_CLASSES } from "../constants";
 import MessageBoxIcon from "./icons/message-box";
 import TwitterIcon from "./icons/twitter";
 import YoutubeIcon from "./icons/youtube";
+import LinkedInIcon from "./icons/linkedin";
 
 import SocialMediaLinks from "../content/social-media-links.json";
 
@@ -35,6 +36,17 @@ export default function SocialLinksRow({
         aria-label="Link to the youtube channel of the Trustlines Network"
       >
         <YoutubeIcon
+          size={iconSize}
+          className={`fill-current ${textColorClassName} hover:text-coral-red`}
+        />
+      </a>
+      <a
+        href={SocialMediaLinks.linkedin}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Link to the LinkedIn page of the Trustlines Network"
+      >
+        <LinkedInIcon
           size={iconSize}
           className={`fill-current ${textColorClassName} hover:text-coral-red`}
         />
