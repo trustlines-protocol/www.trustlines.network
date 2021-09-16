@@ -20,7 +20,7 @@ export default function NavbarDesktop({ navItems = [] }) {
             <a
               className="bg-gray-100 px-8 py-4 cursor-pointer rounded-full hover:bg-gray-300 whitespace-nowrap"
               href={
-                "https://docs.trustlines.network/docs/resources/wp_content/how_trustlines_works.html"
+                "https://docs.trustlines.network/resources/wp_content/how_trustlines_works/"
               }
               target="_blank"
               rel="noreferrer"

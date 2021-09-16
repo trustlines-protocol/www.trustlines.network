@@ -29,7 +29,7 @@ export default function NavbarMobile({ navItems = [] }) {
           <a
             className="bg-gray-100 px-8 py-4 rounded-full font-semibold text-2xl"
             href={
-              "https://docs.trustlines.network/docs/resources/wp_content/how_trustlines_works.html"
+              "https://docs.trustlines.network/resources/wp_content/how_trustlines_works/"
             }
             target="_blank"
             rel="noreferrer"

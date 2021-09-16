@@ -63,7 +63,7 @@ export default function UseCasesSection() {
             isCircle={true}
             Icon={<PlusIcon className="stroke-current text-white stroke-4/3" />}
             href={
-              "https://docs.trustlines.network/docs/resources/wp_content/use_in_the_real_world.html"
+              "https://docs.trustlines.network/resources/wp_content/use_in_the_real_world/"
             }
           />
         </div>
@@ -83,7 +83,7 @@ export default function UseCasesSection() {
           hoverBgColor="rich-black"
           className="md:hidden"
           href={
-            "https://docs.trustlines.network/docs/resources/wp_content/use_in_the_real_world.html"
+            "https://docs.trustlines.network/resources/wp_content/use_in_the_real_world/"
           }
         />
       </div>
