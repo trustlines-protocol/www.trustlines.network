@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-pages-about-js","path":"/about/","result":{"pageContext":{}},"staticQueryHashes":["1775280404","2734389235","3888846342","422181045"]}
+{
+    "componentChunkName": "component---src-pages-about-js",
+    "path": "/about/",
+    "result": {"pageContext":{}},
+    "staticQueryHashes": ["1775280404","2734389235","3888846342","422181045"]}

@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-pages-imprint-js","path":"/imprint/","result":{"data":{"markdownRemark":{"html":"<h1>Legal Imprint</h1>\n<p>The Trustlines Foundation provides the technical set-up for content creation but does not create the content itself. The page represents the views and opinions of the ecosystem.</p>\n<p>Trustlines Foundation</br>\nLegal seat: Vaduz</br>\nRegistered ad correspondence address:</br>\nIndustriering 40</br>\n9491 Ruggell</br>\nLiechtenstein</br>\ncontact@trustlines.foundation</br></p>\n<p>Handelsregisternummer:\nFL-0002.592.935-7</p>"}},"pageContext":{}},"staticQueryHashes":[]}
+{
+    "componentChunkName": "component---src-pages-imprint-js",
+    "path": "/imprint/",
+    "result": {"data":{"markdownRemark":{"html":"<h1>Legal Imprint</h1>\n<p>The Trustlines Foundation provides the technical set-up for content creation but does not create the content itself. The page represents the views and opinions of the ecosystem.</p>\n<p>Trustlines Foundation</br>\nLegal seat: Vaduz</br>\nRegistered ad correspondence address:</br>\nIndustriering 40</br>\n9491 Ruggell</br>\nLiechtenstein</br>\ncontact@trustlines.foundation</br></p>\n<p>Handelsregisternummer:\nFL-0002.592.935-7</p>"}},"pageContext":{}},
+    "staticQueryHashes": []}
