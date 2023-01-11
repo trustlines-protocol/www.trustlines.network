@@ -30,7 +30,7 @@
     "gatsby-remark-default-html-attrs": "^1.0.1",
     "gatsby-source-filesystem": "^3.0.0",
     "gatsby-transformer-json": "^3.0.0",
-    "gatsby-transformer-remark": "^3.0.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^3.0.0",
     "gatsby-transformer-yaml": "^3.0.0",
     "leaflet": "^1.7.1",
